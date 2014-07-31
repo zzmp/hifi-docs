@@ -1,0 +1,26 @@
+{
+  "name": "hifi-docs",
+  "version": "0.0.1",
+  "homepage": "docs.hifidelity.io",
+  "authors": [
+    "bsima <bensima@gmail.com>"
+  ],
+  "description": "Documentation for hifidelity.io",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "lunr.js": "~0.5.4",
+    "mustache": "~0.8.2",
+    "date.format": "~1.2.3",
+    "uri.js": "~1.13.2",
+    "bootstrap": "~3.2.0"
+  }
+}
