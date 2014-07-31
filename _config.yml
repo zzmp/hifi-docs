@@ -1,12 +1,15 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-baseurl: ""
-url: "http://yourdomain.com"
-twitter_username: jekyllrb
-github_username:  jekyll
+title: High Fidelity Docs
+email: contact@highfidelity.io
+description: "Developer documentation for High Fidelity"
+baseurl: "http://docs.highfidelity.io"
+url: "http://docs.highfidelity.io"
+twitter_username: highfidelityinc
+github_username:  highfidelity
 
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# Content settings
+category-list: [api, c++, javascript]
