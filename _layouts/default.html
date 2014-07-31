@@ -15,5 +15,16 @@
 
     {% include footer.html %}
 
+    <!-- JavaScript dependencies -->
+    <script src="{{ "bower_components/jquery/dist/jquery.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+    <script src="{{ "bower_components/bootstrap/dist/js/bootstrap.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+    <script src="{{ "bower_components/date.format/date.format.js" | prepend: site.baseurl}}" type="text/javascript"></script>
+    <script src="{{ "bower_components/mustache/mustache.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+    <script src="{{ "bower_components/uri.js/src/URI.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+    <script src="{{ "bower_components/lunr.js/lunr.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+    
+    <!-- Site Script -->
+    <script src="{{ "assets/main.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+
     </body>
 </html>
