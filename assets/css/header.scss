@@ -1,0 +1,107 @@
+/* ## Header Styles ##
+ *
+ * Source order looks like this:
+ *    1. logo
+ *    2. alpha
+ *    3. code
+ *    4. blog
+ *    5. worklist
+ *    6. jobs
+ *    7. company
+ */
+.hf.header {
+    list-style: none;
+    margin: 0;
+    height: 140px;
+
+    background-color: $lt-grey;
+    font-family: proxima-nova, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hf.header > .item {
+    padding: 1em;
+    color: $grey;
+    width: auto;
+    text-decoration: none;
+}
+
+.hf.header > .item:hover {
+    text-decoration: none;
+    border-bottom: none;
+    color: $black;
+}
+
+#logo {
+    background: url(/assets/images/hifi-logo-docs.png) no-repeat center;
+    background-size: 80px 80px;
+    vertical-align: top;
+    text-indent: -9999px !important;
+    display: block;
+    width: 80px;
+    height: 80px;
+    order: 4;
+}
+#alpha    { order: 1 }
+#code     { order: 2 }
+#docs     { order: 3 }
+#worklist { order: 5 }
+#jobs     { order: 6 }
+#blog     { order: 7 }
+
+
+/* Medium screens */
+@media all and (max-width: $medium) {
+    .hf.header { justify-content: space-around; }
+    .hf.header > .item { flex: 1 auto; }
+}
+
+/* Small screens */
+@media all and (max-width: $small) {
+    /* On small screens, we use column direction instead of row */
+    .hf.header { 
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap; 
+        padding: 0;
+        height: auto;
+    }
+
+    .hf.header .item {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255,255,255,0.3);
+        border-bottom: 1px solid tgba(0,0,0,0.1);
+        flex: 1 auto;
+        width: 100%;
+    }
+    
+    .hf.header .item:last-of-type {
+        border-bottom: none;
+    }
+
+    #logo {
+        background: none;
+        height: auto;
+        text-indent: 0px !important;
+        order: 1;
+        width: 100%;
+    }
+    #alpha    { order: 2 }
+    #code     { order: 3 }
+    #docs     { order: 4 }
+    #worklist { order: 5 }
+    #jobs     { order: 6 }
+    #blog     { order: 7 }
+}

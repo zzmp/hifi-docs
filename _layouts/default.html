@@ -3,33 +3,48 @@
 
   {% include head.html %}
 
-    <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrap row">
-        <div id="index" class="col-md-3">
-          <!-- put index listing here -->
-        </div>
-        <div id="page" class="col-md-9">
-          {{ content }}
-        </div>
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-    <!-- JavaScript dependencies -->
-    <script src="{{ "bower_components/jquery/dist/jquery.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-    <script src="{{ "bower_components/bootstrap/dist/js/bootstrap.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-    <script src="{{ "bower_components/date.format/date.format.js" | prepend: site.baseurl}}" type="text/javascript"></script>
-    <script src="{{ "bower_components/mustache/mustache.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-    <script src="{{ "bower_components/uri.js/src/URI.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-    <script src="{{ "bower_components/lunr.js/lunr.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+    <body id="{{ page.title }}">
     
-    <!-- Site Script -->
-    <script src="{{ "assets/main.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+      {% include header.html %}
 
+      <div class="hf page">
+        {{ content }}
+      </div>
+
+      {% include footer.html %}
+
+      <!-- JavaScript dependencies -->
+      <script src="{{ "/bower_components/jquery/dist/jquery.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+      <script src="{{ "/bower_components/bootstrap/dist/js/bootstrap.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+      <script src="{{ "/bower_components/date.format/date.format.js" | prepend: site.baseurl}}" type="text/javascript"></script>
+      <script src="{{ "/bower_components/mustache/mustache.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+      <script src="{{ "/bower_components/uri.js/src/URI.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+      <script src="{{ "/bower_components/lunr.js/lunr.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+      <script src="{{ "/assets/search.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+    
+      <!-- Site Script -->
+      <script src="{{ "/assets/main.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+      <script type="text/javascript">
+        $(function() {
+        $('#search-query').lunrSearch({
+        indexUrl: '/search.json',
+        results:  '#search-results',
+        entries:  '.entries',
+        template: '#search-results-template'
+        });
+        });
+      </script>
+      {% raw %}
+      <script id="search-results-template" type="text/mustache">
+        {{#entries}}
+        <article>
+          <h3>
+            {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
+            <a href="{{url}}">{{title}}</a>
+          </h3>
+        </article>
+        {{/entries}}
+      </script>
+      {% endraw %}
     </body>
 </html>

@@ -1,0 +1,18 @@
+/* Index Component
+ *
+ * Not to be confused with the index page, which is actually called the
+ * "Home Component" in this case.
+ */
+
+.hf.page > .index  { 
+    flex: 1; 
+    border-right: 1px solid #E2E2E2;
+}
+.hf.page > .index > .search > form > input {
+    border-right: 0;
+    border-top: 0;
+    font-size: 14px;
+}
+.hf.page > .index > .search > form {
+    padding: 0px;
+}

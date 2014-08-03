@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<!-- The api layout lists a search bar on the side
+     and a content section on the right. -->
+
+<div class="hf api page">
+
+  <aside class="hf index">
+    {% include search_form.html %}
+    {% include search_results.html %}
+  </aside>
+
+  <article class="">
+  {{ content }}
+  </article>
+
+</div>

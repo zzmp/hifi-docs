@@ -21,6 +21,7 @@
     "mustache": "~0.8.2",
     "date.format": "~1.2.3",
     "uri.js": "~1.13.2",
-    "bootstrap": "~3.2.0"
+    "bootstrap": "~3.2.0",
+    "inuit-starter-kit": "~0.2.8"
   }
 }
