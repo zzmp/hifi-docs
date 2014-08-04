@@ -45,7 +45,8 @@ module Jekyll
           :title => entry.title, 
           :url => entry.url,
           :date => entry.date,
-          :categories => entry.categories,
+          :category => entry.category,
+          :class => entry.class,
           :body => entry.body
         }
         

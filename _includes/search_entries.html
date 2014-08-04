@@ -2,10 +2,11 @@
 <script id="search-results-template" type="text/mustache">
   {{#entries}}
     <article>
-      <h3>
-        {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
-        <a href="{{url}}">{{title}}</a>
-      </h3>
+      <a href="{{url}}">
+        <span class="title">{{title}}
+        </span>
+        <span class="details">{{ page.class }} > {{ page.category }}</span>
+      </a>
     </article>
   {{/entries}}
 </script>

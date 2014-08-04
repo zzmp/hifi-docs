@@ -23,17 +23,6 @@
       <!-- Site Script -->
       <script src="{{ "/assets/main.js" | prepend: site.baseurl }}" type="text/javascript"></script>
 
-      {% raw %}
-      <script id="search-results-template" type="text/mustache">
-        {{#entries}}
-        <div class="entry">
-          <h3>
-            {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
-            <a href="{{url}}">{{title}}</a>
-          </h3>
-        </article>
-        {{/entries}}
-      </script>
-      {% endraw %}
+      {% include search_entries.html %}
     </body>
 </html>
