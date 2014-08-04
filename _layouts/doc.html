@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<!-- The api layout lists a search bar on the left 
+     side and a content section on the right. -->
+
+<div class="hf doc page">
+  {% include search_form.html %}
+
+  {% include edit_on_github.html %}
+
+  <aside class="hf index">
+    {% include search_results.html %}
+  </aside>
+
+  <article class="hf article">    
+    {{ content }}
+  </article>
+</div>

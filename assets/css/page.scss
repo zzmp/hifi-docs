@@ -1,0 +1,151 @@
+/* Page Components
+ *
+ * Contains 4 sections, in two groups
+ *   -neck
+ *      -search
+ *      -links
+ *   -body
+ *      -index
+ *      -article
+ */
+
+
+/* Page Declarations */
+
+.hf.page {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+    justify-content: center;
+
+    max-width: 910px;
+    margin: auto;
+}
+
+.hf.page .search > form > input {
+    border: 1px solid #E2E2E2;
+    padding: 15px;
+    font-style: italic;
+    width: 370px;
+}
+
+/* Home Page */
+
+.hf.home.page { justify-content: center; }
+
+.hf.home.page > .search { flex: 2 2 100%; }
+
+.hf.home.page > section { 
+    flex: 1 1 50%; 
+    padding: 30px;                       
+    border: 1px dashed #CBCBCB; 
+}
+
+.hf.home.page > section:last-of-type { border-left: 0 }
+
+.hf.home.page .search > form {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.hf.home.page .search > form > input {
+    font-size: 16px;
+}
+
+/* Doc Page */
+
+.hf.doc.page > .search { flex: 1 1 30%; }
+
+.hf.doc.page > .search > form {
+    padding: 0px;
+}
+
+.hf.doc.page > .search > form > input {
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+    width: 100%;
+}
+
+.hf.doc.page > .search > form > input,
+.hf.links {
+    font-size: 14px;
+}
+
+.hf.links { 
+    flex: 2 1 70%;
+    align-self: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hf.links > a {
+    color: $grey;
+    padding: 15px;
+}
+
+.hf.links > a:hover {
+    color: $dk-grey;
+    text-decoration: none;
+    border: 0;
+}
+
+.hf.index  { 
+    flex: 1 1 30%; 
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    border-color: #E2E2E2;
+}
+
+.hf.doc.page > article {
+    flex: 2 1 70%;
+    border-top: 1px solid #E2E2E2;
+    padding: 30px;
+}
+
+@media all and (max-width: 800px) {
+    .hf.home.page > section { flex: 1 1 100%; }
+    .hf.home.page > section:last-of-type { 
+        border-top: 0; 
+        border-left: 1px dashed #CBCBCB;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .hf.home.page > .search > form { 
+        padding: 0; 
+    }
+    .hf.doc.page > .search > form > input {
+        text-align: center;
+        width: 100%;
+        border: 0;
+    }
+    .hf.page > section { flex: 1 100%; }
+
+    .using      { order: 1 }
+    .developing { order: 2 }
+
+    .hf.search > form > input { border-bottom: 1px }
+    .hf.index { border: 0; margin: 0; padding: 0;}
+    
+    .hf.index .entry,
+    .hf.index > section > .entries > p
+    { padding: 10px 30px; }
+
+    .hf.search, .hf.index, .hf.links, article
+    { flex: 1 1 100% }
+
+    .hf.search  { order: 1 }
+    .hf.index   { order: 2 }
+    article     { order: 3 }
+    .hf.links   { order: 4;
+                  border-top: 1px solid $lt-grey; }
+
+}

@@ -25,6 +25,7 @@ $small:  600px;
 
 $black:   #333;
 $grey:    #999;
+$dk-grey: #666;
 $lt-grey: #EDEDED;
 $blue:    #2799C7;
 
@@ -39,7 +40,24 @@ a:hover { color: $blue; text-decoration: none; border-bottom: 1px solid $blue; }
 
 /* Imports */
 
-@import 'api.scss';
-@import 'article.scss';
 @import 'header.scss';
-@import 'index.scss';
+@import 'page.scss';
+
+/* A few footer styles */
+footer { 
+    color: $dk-grey;
+    font-size: 16px;
+    max-width: 640px;
+    margin: 0px auto;
+    border-top: 1px solid $lt-grey;
+    text-align: center;
+}
+#ubernerds {
+    text-align: center;
+    margin-top: 15px;
+}
+#ubernerds p, #ubernerds ul, #ubernerds li {
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+}

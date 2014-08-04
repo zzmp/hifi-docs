@@ -1,5 +1,5 @@
 ---
-layout: api
+layout: doc
 title: Test Page
 ---
 
