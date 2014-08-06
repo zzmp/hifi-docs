@@ -1,8 +1,9 @@
 ---
 layout: doc
 title: Vec3 MyAvatar.position
-class: avatar
-category: properties
+collection: api
+category: avatars
+tags: properties
 ---
 
 Click is a Python package for creating beautiful command line interfaces in a composable way with as little code as necessary. It's the Command

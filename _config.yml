@@ -11,5 +11,18 @@ github_username:  highfidelity
 markdown: kramdown
 permalink: pretty
 
-# Content settings
-category-list: [api, c++, javascript]
+collections:
+  api:
+    output: true
+  articles:
+    output: true
+  
+api-categories: [avatars, particles, vocels, audio]
+article-categories: [getting-started, scripts, settings, avatars, voxels, audio]
+
+# API content settings
+#api-section-list: [avatars, particles, voxels, audio]
+#api-category-list: [properties, functions, attachments, animations]
+
+# Article content settings
+#article-section-list: [getting-started, scripts, settings, avatars, voxels, audio]

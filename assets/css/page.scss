@@ -1,12 +1,6 @@
 /* Page Components
  *
- * Contains 4 sections, in two groups
- *   -neck
- *      -search
- *      -links
- *   -body
- *      -index
- *      -article
+ * I just put them all in here cause they're all pretty related.
  */
 
 
@@ -41,22 +35,27 @@
 
 .hf.home.page > .search { flex: 2 2 100%; }
 
-.hf.home.page > section { 
+.hf.home.page section { 
     flex: 1 1 50%; 
     padding: 30px;                       
     border: 1px dashed #CBCBCB; 
 }
 
-.hf.home.page > section:last-of-type { border-left: 0 }
+.hf.home.page section:last-of-type { border-left: 0 }
 
-.hf.home.page .search > form {
+.hf.home.page > .search > form {
     display: flex;
     justify-content: center;
     padding: 30px;
 }
 
-.hf.home.page .search > form > input {
+.hf.home.page > .search > form > input {
     font-size: 16px;
+}
+
+.hf.home.page > .index ul { list-style-type: none }
+.hf.home.page > .index a {
+    padding: 3px;
 }
 
 /* Doc Page */
@@ -74,9 +73,14 @@
     width: 100%;
 }
 
-.hf.doc.page > .search > form > input,
-.hf.links {
-    font-size: 14px;
+.hf.doc.page > .search > form > input {
+    font-size: 1em;
+}
+
+.hf.doc.page > article {
+    flex: 2 1 70%;
+    border-top: 1px solid #E2E2E2;
+    padding: 30px;
 }
 
 .hf.links { 
@@ -89,6 +93,7 @@
 .hf.links > a {
     color: $grey;
     padding: 15px;
+    font-size: .9em;
 }
 
 .hf.links > a:hover {
@@ -97,40 +102,71 @@
     border: 0;
 }
 
-.hf.index  { 
+.hf.doc.page .index  { 
     flex: 1 1 30%; 
     border-width: 1px 1px 0 0;
     border-style: solid;
     border-color: #E2E2E2;
+    display: block;
 }
 
-.hf.index a {
-    font-size: 16px;
+.hf.doc.page .index h2 {
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0.25em 0;
+}
+
+.hf.doc.page .index h3 {
+    font-size: 1.1em;
+    padding-left: 1em;
+    margin: 0.25em 0;
+}
+
+.hf.doc.page .index ul {
+    list-style-type: none;
+    margin-left: 1em;
+    padding: 0;
+}
+
+.hf.doc.page .index a {
+    padding: 0.25em 1em;
+}
+
+/* Index component */
+
+.index { display: flex; width: 100% }
+
+.index a {
     width: 100%;
     padding: 10px 15px;
     display: block;
 }
-.hf.index a:hover { 
+
+.index a:hover { 
     background: $lt-grey;
     border: 0 
 }
 
-.hf.index .entries > article span {
+.index span { display: block; width: 100%; }
+.index span.title {
+    font-size: 1em;
+    color: $dk-grey;
+}
+.index span.details {
+    font-size: .9em;
+    color: $grey;
+}
+
+.index .entries > article span {
     width: 100%;
     display: block;
 }
 
-.hf.index .entries > article .details {
+.index .entries > article .details {
     font-size: 12px;
     color: $dk-grey;
 }
 
-
-.hf.doc.page > article {
-    flex: 2 1 70%;
-    border-top: 1px solid #E2E2E2;
-    padding: 30px;
-}
 
 @media all and (max-width: 800px) {
     .hf.home.page > section { flex: 1 1 100%; }
