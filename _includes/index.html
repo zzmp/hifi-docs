@@ -6,7 +6,7 @@
     {% for page in site.articles %}
     {% if page.category == cat %}
     <li>
-      <a href="{{ page.link }}">
+      <a href="{{ page.url }}">
         <span class="title">{{ page.title }}</span>
         <span class="details">{{ page.tags }}</span>
       </a>
