@@ -197,13 +197,12 @@
     .hf.index > section > .entries > p
     { padding: 10px 30px; }
 
-    .hf.search, .hf.index, .hf.links, article
-    { flex: 1 1 100% }
+    .search, .index, .links, article
+    { flex: 1 1 100% !important }
 
     .hf.search  { order: 1 }
-    .hf.index   { order: 2 }
-    article     { order: 3 }
-    .hf.links   { order: 4;
+    article     { order: 2 }
+    .hf.links   { order: 3;
                   border-top: 1px solid $lt-grey; }
-
+    .hf.index   { order: 4 }
 }

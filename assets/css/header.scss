@@ -18,6 +18,7 @@
     font-family: proxima-nova, sans-serif;
     font-weight: bold;
     font-size: 16px;
+    text-align: center;
 
     display: -webkit-box;
     display: -moz-box;
@@ -32,13 +33,15 @@
 }
 
 .hf.header > .item {
-    padding: 1em;
+    padding: .5em .9em;
     color: $grey;
     width: auto;
     text-decoration: none;
+    border-left: 1px solid #DDD;
 }
 
-.hf.header > .item:hover {
+.hf.header > .item:hover,
+#docs {
     text-decoration: none;
     border-bottom: none;
     color: $black;
@@ -47,6 +50,7 @@
 #logo {
     background: url(/assets/images/hifi-logo-docs.png) no-repeat center;
     background-size: 80px 80px;
+    border: none;
     vertical-align: top;
     text-indent: -9999px !important;
     display: block;
@@ -54,6 +58,9 @@
     height: 80px;
     order: 4;
 }
+
+#alpha, #worklist { border: none }
+
 #alpha    { order: 1 }
 #code     { order: 2 }
 #docs     { order: 3 }
