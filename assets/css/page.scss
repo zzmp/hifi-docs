@@ -60,6 +60,12 @@
 
 /* Doc Page */
 
+.hf.doc.page > .search,
+.hf.doc.page > .links {
+    // fix to lineup the borders
+    margin-bottom: -1px;
+}
+
 .hf.doc.page > .search { flex: 1 1 30%; }
 
 .hf.doc.page > .search > form {
@@ -67,7 +73,7 @@
 }
 
 .hf.doc.page > .search > form > input {
-    border-left: 0;
+    //border-left: 0;
     border-top: 0;
     border-bottom: 0;
     width: 100%;
