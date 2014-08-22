@@ -11,7 +11,10 @@
      
       {% include footer.html %}
 
-      <!-- JavaScript dependencies -->
+      <!-- 
+		  JavaScript dependencies
+	  	  TODO: compile and minify these with Grunt 
+	  -->
       <script src="{{ "/bower_components/jquery/dist/jquery.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
       <script src="{{ "/bower_components/bootstrap/dist/js/bootstrap.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
       <script src="{{ "/bower_components/date.format/date.format.js" | prepend: site.baseurl}}" type="text/javascript"></script>
@@ -19,6 +22,11 @@
       <script src="{{ "/bower_components/uri.js/src/URI.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
       <script src="{{ "/bower_components/lunr.js/lunr.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
       <script src="{{ "/assets/search.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+      
+	  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	  <!-- Only use local MathJax when in dire situations
+	  <script src="{{ "/bower_components/MathJax/Mathjax.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+	  -->
     
       <!-- Site Script -->
       <script src="{{ "/assets/main.js" | prepend: site.baseurl }}" type="text/javascript"></script>

@@ -40,7 +40,7 @@ module Jekyll
     def initialize(site, base, dir, name, pagesdir)
       @site = site
       @base = base
-      @dir = dir
+      @dir  = dir
       @name = name
 
       process(name)

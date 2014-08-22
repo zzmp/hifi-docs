@@ -2158,7 +2158,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Quadon-Bold,Georgia,serif;
-  font-weight: normal; }
+  font-weight: normal;
+  margin-top: 1em; }
 
 h2 {
   color: #3398cb;
@@ -2518,7 +2519,7 @@ a:hover {
  * Much love to @mojombo!
  */
 .highlight {
-  background: #ededed; }
+  background: transparent; }
 
 .highlight .lineno {
   color: #666666; }
@@ -2786,7 +2787,12 @@ a:hover {
   text-indent: -1.6em; }
 
 pre, code {
-  font-family: "FantasqueSansMono-Regular"; }
+  font-family: "FantasqueSansMono-Regular";
+  background: #ededed; }
+
+pre {
+  padding: .2em .4em;
+  margin: .5em 0; }
 
 /* A few footer styles */
 footer {
