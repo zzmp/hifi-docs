@@ -23,6 +23,12 @@
     "uri.js": "~1.13.2",
     "bootstrap": "~3.2.0",
     "inuit-starter-kit": "~0.2.8",
-    "fontawesome": "~4.1.0"
+    "fontawesome": "~4.1.0",
+    "inuit-reset": "~0.1.1",
+    "inuit-paragraphs": "~0.1.4",
+    "inuit-headings": "~0.2.2",
+    "inuit-page": "~0.2.1",
+    "inuit-lists": "~0.1.0",
+    "inuit-images": "~0.3.2"
   }
 }

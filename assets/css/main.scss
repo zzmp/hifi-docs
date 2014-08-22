@@ -1,21 +1,41 @@
 /* We use the Inuit CSS framework for organizing styles,
  * which necessitates these imports: */
+
+// Settings
 @import "../../bower_components/inuit-defaults/settings.defaults";
 
+// Tools
 @import "../../bower_components/inuit-functions/tools.functions";
 @import "../../bower_components/inuit-mixins/tools.mixins";
 
+// Generic
 @import "../../bower_components/inuit-normalize/generic.normalize";
+@import "../../bower_components/inuit-reset/generic.reset";
 @import "../../bower_components/inuit-box-sizing/generic.box-sizing";
 
+// Base
 @import "../../bower_components/inuit-page/base.page";
+@import "../../bower_components/inuit-headings/base.headings";
+@import "../../bower_components/inuit-paragraphs/base.paragraphs";
+@import "../../bower_components/inuit-lists/base.lists";
+@import "../../bower_components/inuit-images/base.images";
 
-// Import Font Awesome
-@import "../../bowers_components/fontawesome/scss/font-awesome.scss";
+
+// Import Font Awesome icons
+@import "../../bower_components/fontawesome/scss/font-awesome.scss";
+
+// Import web fonts
+@import "//hello.myfonts.net/count/2b9bf7";
+@font-face {
+	font-family: 'Quadon-Bold';
+	src: url('/assets/fonts/2B9BF7_0_0.eot');
+	src: url('/assets/fonts/2B9BF7_0_0.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/2B9BF7_0_0.woff') format('woff'),url('/assets/fonts/2B9BF7_0_0.ttf') format('truetype');
+}
+ 
 
 /* Note:
  *
- * We do use Bootstrap, linked via the header before the main stylesheet.
+ * We sometimes use Bootstrap, linked via the header before the main stylesheet.
  * Hoever, sometimes you don't want to use Bootstrap styles. All of the 
  * super-custom styles are prefixed with the `hf` class.
  *
@@ -23,29 +43,50 @@
  * ## Global Styles and Settings ##
  * 
  * Screen sizes: */
-$medium: 800px;
+$medium: 900px;
 $small:  600px;
 
-$black:   #333;
+$black:   #0D0D0D;
 $grey:    #999;
 $dk-grey: #666;
-$lt-grey: #EDEDED;
-$blue:    #2799C7;
+$lt-grey: #DDDDDD;
+$blue:    #3398CB;
+$beige:   #EDEDED; // really only used in the header
 
-h2 {
-    font-size: 26px;
-    color: $blue;
-    margin-top: 0px;
+body {
+	font-size: 16px;
+	font-family: "Helvetica", sans-serif;
 }
 
-a { color: $blue; }
+h1,h2,h3,h4,h5,h6 { font-family: Quadon-Bold,Georgia,serif; font-weight: normal; }
+
+h2      { color: $blue; margin-top: 0; }
+article { font-family: proxima-nova, sans-serif; }
+p       { margin: .6em 0px 1.2em; }
+ul, ol  { margin: 1em 0 1em 2em; }
+
+a, a:link, a:visited { color: $blue; text-decoration: none; }
 a:hover { color: $blue; text-decoration: none; border-bottom: 1px solid $blue; }
 
 
-/* Imports */
+/* Component Imports */
 
 @import 'header.scss';
 @import 'page.scss';
+@import 'syntax.scss';
+
+.hf.doc.page .search .icon {
+	top: 0.6em;
+	height: 1em;
+	width: 0;
+	text-indent: -1.5em;
+}
+
+.hf.home.page .search .icon { 
+	position: relative;
+	top: 0.75em;
+	text-indent: -1.6em;
+}
 
 /* A few footer styles */
 footer { 

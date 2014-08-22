@@ -21,38 +21,47 @@ Click in three points:
 
 What does it look like?  Here is an example of a simple Click program:
 
-    @click.command()
-    @click.option('--count', default=1, help='Number of greetings.')
-    @click.option('--name', prompt='Your name',
-                  help='The person to greet.')
-    def hello(count, name):
-        """Simple program that greets NAME for a total of COUNT times."""
-        for x in range(count):
-            click.echo('Hello %s!' % name)
-
+	{% highlight python linenos %}
+	@click.command()
+	@click.option('--count', default=1, help='Number of greetings.')
+	@click.option('--name', prompt='Your name',
+		help='The person to greet.')
+	def hello(count, name):
+		"""Simple program that greets NAME for a total of COUNT times."""
+		for x in range(count):
+			click.echo('Hello %s!' % name)
+			
     if __name__ == '__main__':
-        hello()
+		hello()
+	{% endhighlight %}
 
 And what it looks like when run:
 
-    $ python hello.py --count=3
+	{% highlight bash %}
+	$ python hello.py --count=3
     Your name: John
     Hello John!
     Hello John!
     Hello John!
+	{% endhighlight %}
 
 It automatically generates nicely formatted help pages:
 
-    $ python hello.py --help
+	{% highlight sh %}
+	$ python hello.py --help
     Usage: hello.py [OPTIONS]
-
-      Simple program that greets NAME for a total of COUNT times.
-
+	
+	Simple program that greets NAME for a total of COUNT times.
+	  
     Options:
       --count INTEGER  Number of greetings.
       --name TEXT      The person to greet.
       --help           Show this message and exit.
+	{% endhighlight %}
+
 
 You can get the library directly from PyPI:
 
-    pip install click
+	{% highlight bash %}
+    $ pip install click
+	{% endhighlight %}
