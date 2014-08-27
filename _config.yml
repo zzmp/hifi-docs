@@ -18,7 +18,7 @@ collections:
   articles:
     output: true
   
-api-categories: [avatars, particles, vocels, audio]
+api-categories: [avatars, particles, voxels, audio]
 article-categories: [getting-started, scripts, settings, avatars, voxels, audio]
 
 # API content settings
