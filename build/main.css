@@ -2169,7 +2169,7 @@ a:hover {
 .hf.header {
   list-style: none;
   margin: 0;
-  height: 140px;
+  height: 120px;
   background-color: #EDEDED;
   font-family: proxima-nova, sans-serif;
   font-weight: bold;
@@ -2192,7 +2192,7 @@ a:hover {
           align-items: center; }
 
 .hf.header > .item {
-  padding: .5em .9em;
+  padding: .5em .8em;
   color: #999;
   width: auto;
   text-decoration: none;
@@ -2338,6 +2338,118 @@ a:hover {
     -webkit-order: 7;
         -ms-flex-order: 7;
             order: 7; } }
+/**
+ * HighFidelity's footer styling
+ *
+ * This file is assumed to be included on every HF page when using the
+ * common layout. Each shared rule for the footer should live here. 
+ * 
+ * Page-specific styling on the footer should be at their own styling file(s).
+ *
+ */
+#site-links {
+  margin-bottom: 60px;
+  font-size: 16px;
+  max-width: 645px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  text-align: center; }
+
+#site-links p,
+#site-links li,
+#site-links a {
+  font-family: proxima-nova, sans-serif;
+  color: #878787; }
+
+#site-links ul {
+  list-style-type: none;
+  margin: -1px auto 0;
+  padding: 0;
+  border-top: 1px solid #dadada;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(75%, white), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(top, white 0%, white 75%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to bottom, white 0%, white 75%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0); }
+
+@media screen and (max-width: 530px) {
+  #site-links ul {
+    width: 328px; }
+
+  #site-links ul,
+  #site-links ul + ul {
+    margin: 0 auto; } }
+#site-links ul li {
+  display: inline-block;
+  text-align: center;
+  border-right: 1px solid #dadada; }
+
+#site-links li a {
+  text-decoration: none;
+  padding: 18px 0px;
+  display: inline-block;
+  width: 103px;
+  color: #cccccc; }
+
+@media screen and (max-width: 770px) {
+  #site-links li a {
+    padding: 10px 0px;
+    width: 82px; } }
+@media screen and (max-width: 530px) {
+  #site-links li a {
+    padding: 10px 0 5px;
+    width: 50px; } }
+#site-links ul + ul li a {
+  font-weight: bold;
+  padding: 28px 0; }
+
+@media screen and (max-width: 770px) {
+  #site-links ul + ul li a {
+    padding: 18px 0; } }
+#site-links li.selected a,
+#site-links li.selected a > i {
+  color: #3698bf;
+  text-decoration: none;
+  border: none; }
+
+#site-links li a:hover,
+#site-links li a:hover > i {
+  color: #000;
+  text-decoration: none;
+  border: none; }
+
+#site-links li a:active,
+#site-links li a:active i {
+  color: #3698bf;
+  text-decoration: none;
+  border: none; }
+
+#site-links p {
+  text-align: center;
+  font-size: 16px;
+  padding: 13px 0; }
+
+#site-links p:last-child {
+  margin-top: 30px; }
+
+#site-links a > i,
+#site-links a > img {
+  color: #262626;
+  display: block;
+  padding-bottom: 8px;
+  margin: 0 auto;
+  font-size: 1.6em;
+  width: 32px;
+  height: 28px; }
+
+#site-links ul li:last-child {
+  border-right: none; }
+
+@media screen and (max-width: 530px) {
+  #site-links a > img {
+    display: inline; }
+
+  #site-links a > span {
+    display: none; } }
 /* Page Components
  *
  * I just put them all in here cause they're all pretty related.
@@ -2356,14 +2468,53 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 910px;
-  margin: auto; }
+  margin: 0 auto; }
 
+/* Search */
 .hf.page .search > form > input {
+  color: #3398CB;
+  font-size: 20px;
   border: 1px solid #E2E2E2;
-  padding: 15px;
-  font-style: italic;
+  padding: 11px 11px 11px 17px;
   width: 370px; }
 
+.hf.page .search > form > input:focus {
+  outline: none; }
+
+.hf.home.page #search-results {
+  margin: 0 auto 42px auto;
+  width: 792px;
+  border: 0; }
+
+.hf.home.page #search-results .search-result {
+  float: left;
+  width: 370px;
+  margin: 0 13px; }
+
+.hf.home.page #search-results .search-result a {
+  color: #0D0D0D; }
+
+.hf.home.page #search-results .search-result a:hover {
+  color: #3398CB;
+  text-decoration: none;
+  border-bottom: none; }
+
+.hf.home.page #search-results .search-result .collection {
+  font-size: .9em;
+  color: #999; }
+
+.hf.home.page #search-results .header {
+  float: left;
+  width: 370px;
+  border-top: 1px dashed #CBCBCB;
+  margin: 10px 13px; }
+
+@media all and (max-width: 806px) {
+  .hf.home.page #search-results {
+    width: 396px; }
+
+  .hf.home.page #search-results .header.right {
+    display: none; } }
 /* Home Page */
 .hf.home.page {
   -webkit-box-pack: center;
@@ -2397,10 +2548,13 @@ a:hover {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px; }
+  padding: 30px 30px 20px 30px; }
 
-.hf.home.page > .search > form > input {
-  font-size: 16px; }
+.hf.page > .search > form > input + i.fa {
+  color: #0D0D0D; }
+
+.hf.page > .search > form > input:focus + i.fa {
+  color: #3398CB; }
 
 .search > form > input[type="submit"] {
   font-family: FontAwesome; }
@@ -2424,6 +2578,7 @@ a:hover {
 .hf.doc.page > .search > form > input {
   border-top: 0;
   border-bottom: 0;
+  padding: 14px;
   width: 100%; }
 
 .hf.doc.page > .search > form > input,
@@ -2593,24 +2748,24 @@ a:hover {
         -ms-flex-order: 1;
             order: 1; }
 
-  article {
+  .hf.index .index {
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2; }
 
-  .hf.links {
+  article {
     -webkit-box-ordinal-group: 4;
     -webkit-order: 3;
         -ms-flex-order: 3;
-            order: 3;
-    border-top: 1px solid #DDDDDD; }
+            order: 3; }
 
-  .hf.index {
+  .hf.links {
     -webkit-box-ordinal-group: 5;
     -webkit-order: 4;
         -ms-flex-order: 4;
-            order: 4; } }
+            order: 4;
+    border-top: 1px solid #DDDDDD; } }
 /* Shamelessly stolen from https://github.com/mojombo/tpw/blob/master/css/syntax.css
  * Much love to @mojombo!
  */
@@ -2890,14 +3045,8 @@ pre {
   padding: .2em .4em;
   margin: .5em 0; }
 
-/* A few footer styles */
 footer {
-  color: #666;
-  font-size: 16px;
-  max-width: 640px;
-  margin: 0px auto;
-  border-top: 1px solid #DDDDDD;
-  text-align: center; }
+  margin-top: 30px !important; }
 
 #ubernerds {
   text-align: center;
