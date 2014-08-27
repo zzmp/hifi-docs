@@ -19,15 +19,67 @@
     justify-content: center;
 
     max-width: 910px;
-    margin: auto;
+    margin: 0 auto;
 }
 
+
+/* Search */
+
 .hf.page .search > form > input {
+    color: $blue;
+    font-size: 20px;
     border: 1px solid #E2E2E2;
-    padding: 15px;
-    font-style: italic;
+    padding: 11px 11px 11px 17px;
     width: 370px;
 }
+
+.hf.page .search > form > input:focus {
+    outline: none;
+}
+
+.hf.home.page #search-results {
+    margin: 0 auto 42px auto;
+    width: 792px;
+    border: 0;
+}
+
+.hf.home.page #search-results .search-result {
+    float: left;
+    width: 370px;
+    margin: 0 13px;
+}
+
+.hf.home.page #search-results .search-result a {
+    color: $black;
+}
+
+.hf.home.page #search-results .search-result a:hover {
+    color: $blue;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.hf.home.page #search-results .search-result .collection {
+    font-size: .9em;
+    color: $grey;
+}
+
+.hf.home.page #search-results .header {
+    float: left;
+    width: 370px;
+    border-top: 1px dashed #CBCBCB;
+    margin: 10px 13px;
+}
+
+@media all and (max-width: 806px) {
+    .hf.home.page #search-results {
+        width: 396px;
+    }
+    .hf.home.page #search-results .header.right {
+        display: none;
+    }
+}
+
 
 /* Home Page */
 
@@ -46,11 +98,14 @@
 .hf.home.page > .search > form {
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding: 30px 30px 20px 30px;
 }
 
-.hf.home.page > .search > form > input {
-    font-size: 16px;
+.hf.page > .search > form > input + i.fa  {
+    color: $black;
+}
+.hf.page > .search > form > input:focus + i.fa  {
+    color: $blue;
 }
 
 .search > form > input[type="submit"] {
@@ -74,6 +129,7 @@
     //border-left: 0;
     border-top: 0;
     border-bottom: 0;
+    padding: 14px;
     width: 100%;
 }
 
