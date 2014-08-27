@@ -263,8 +263,8 @@
     { flex: 1 1 100% !important }
 
     .hf.search  { order: 1 }
-    article     { order: 2 }
-    .hf.links   { order: 3;
+    .hf.index .index { order: 2 }
+    article     { order: 3 }
+    .hf.links   { order: 4;
                   border-top: 1px solid $lt-grey; }
-    .hf.index   { order: 4 }
 }
