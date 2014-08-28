@@ -1,0 +1,12 @@
+{% raw %}
+<script id="search-results-template" type="text/mustache">
+  {{#entries}}
+    <article class="search-result">
+      <a href="{{url}}">
+        <span class="title">{{title}}</span>
+        <span class="collection"> <i class="fa fa-angle-right"></i> {{ collection }}</span>
+      </a>
+    </article>
+  {{/entries}}
+</script>
+{% endraw %}

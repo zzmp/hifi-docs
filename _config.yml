@@ -1,0 +1,29 @@
+# Site settings
+title: High Fidelity Docs
+email: contact@highfidelity.io
+description: "Developer documentation for High Fidelity"
+baseurl: ""
+url: "http://docs.highfidelity.io"
+twitter_username: highfidelityinc
+github_username:  highfidelity
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+highlighter: pygments
+
+collections:
+  api:
+    output: true
+  articles:
+    output: true
+  
+api-categories: [avatars, particles, voxels, audio]
+article-categories: [getting-started, scripts, settings, avatars, voxels, audio]
+
+# API content settings
+#api-section-list: [avatars, particles, voxels, audio]
+#api-category-list: [properties, functions, attachments, animations]
+
+# Article content settings
+#article-section-list: [getting-started, scripts, settings, avatars, voxels, audio]

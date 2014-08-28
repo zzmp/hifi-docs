@@ -1,0 +1,151 @@
+/* We use the Inuit CSS framework for organizing styles,
+ * which necessitates these imports: */
+
+// Settings
+@import "../../bower_components/inuit-defaults/settings.defaults";
+
+// Tools
+@import "../../bower_components/inuit-functions/tools.functions";
+@import "../../bower_components/inuit-mixins/tools.mixins";
+
+// Generic
+@import "../../bower_components/inuit-normalize/generic.normalize";
+@import "../../bower_components/inuit-reset/generic.reset";
+@import "../../bower_components/inuit-box-sizing/generic.box-sizing";
+
+// Base
+@import "../../bower_components/inuit-page/base.page";
+@import "../../bower_components/inuit-headings/base.headings";
+@import "../../bower_components/inuit-paragraphs/base.paragraphs";
+@import "../../bower_components/inuit-lists/base.lists";
+@import "../../bower_components/inuit-images/base.images";
+
+
+// Import Font Awesome icons
+@import "../../bower_components/fontawesome/scss/font-awesome.scss";
+
+// Import web fonts
+@import "//hello.myfonts.net/count/2b9bf7";
+@font-face {
+	font-family: 'Quadon-Bold';
+	src: url('/assets/fonts/2B9BF7_0_0.eot');
+	src: url('/assets/fonts/2B9BF7_0_0.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/2B9BF7_0_0.woff') format('woff'),url('/assets/fonts/2B9BF7_0_0.ttf') format('truetype');
+}
+@import "//openfontlibrary.org/face/fantasque-sans-mono";
+@font-face {
+  font-family: 'FantasqueSansMono-BoldItalic';
+  src: url('/assets/fonts/FantasqueSansMono-BoldItalic.eot'); /* IE 9 Compatibility Mode */
+  src: url('/assets/fonts/FantasqueSansMono-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+       url('/assets/fonts/FantasqueSansMono-BoldItalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+       url('/assets/fonts/FantasqueSansMono-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/FantasqueSansMono-BoldItalic.svg#strippedname:/home/jany/Polices/Cosmic/Sources/FantasqueSansMono-BoldItalic.sfd') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: Fantasque Sans Mono Bold Italic;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'FantasqueSansMono-Bold';
+  src: url('/assets/fonts/FantasqueSansMono-Bold.eot'); /* IE 9 Compatibility Mode */
+  src: url('/assets/fonts/FantasqueSansMono-Bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+       url('/assets/fonts/FantasqueSansMono-Bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+       url('/assets/fonts/FantasqueSansMono-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/FantasqueSansMono-Bold.svg#strippedname:/home/jany/Polices/Cosmic/Sources/FantasqueSansMono-Bold.sfd') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: Fantasque Sans Mono Bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'SPLFirstVisitorFoundSoughtXY() 607.100000 521.000000 710.000000';
+  src: url('/assets/fonts/FantasqueSansMono-RegItalic.eot'); /* IE 9 Compatibility Mode */
+  src: url('/assets/fonts/FantasqueSansMono-RegItalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+       url('/assets/fonts/FantasqueSansMono-RegItalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+       url('/assets/fonts/FantasqueSansMono-RegItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/FantasqueSansMono-RegItalic.svg#strippedname:/home/jany/Polices/Cosmic/Sources/FantasqueSansMono-RegItalic.sfd') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: SPLFirstVisitorFoundSoughtXY() 607.100000 841.000000 1036.000000;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'FantasqueSansMono-Regular';
+  src: url('/assets/fonts/FantasqueSansMono-Regular.eot'); /* IE 9 Compatibility Mode */
+  src: url('/assets/fonts/FantasqueSansMono-Regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+       url('/assets/fonts/FantasqueSansMono-Regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+       url('/assets/fonts/FantasqueSansMono-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/FantasqueSansMono-Regular.svg#strippedname:/home/jany/Polices/Cosmic/Sources/FantasqueSansMono-Regular.sfd') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: Fantasque Sans Mono Regular;
+  font-style: italic;
+}
+ 
+
+/* Note:
+ *
+ * We sometimes use Bootstrap, linked via the header before the main stylesheet.
+ * Hoever, sometimes you don't want to use Bootstrap styles. All of the 
+ * super-custom styles are prefixed with the `hf` class.
+ *
+ *
+ * ## Global Styles and Settings ##
+ * 
+ * Screen sizes: */
+$medium: 900px;
+$small:  600px;
+
+$black:   #0D0D0D;
+$grey:    #999;
+$dk-grey: #666;
+$lt-grey: #DDDDDD;
+$blue:    #3398CB;
+$beige:   #EDEDED; // really only used in the header
+
+body {
+	font-size: 18px;
+	font-family: proxima-nova, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 { font-family: Quadon-Bold,Georgia,serif; font-weight: normal; margin-top: 1em; }
+
+h2      { color: $blue; margin-top: 0; }
+article { font-family: proxima-nova, sans-serif; }
+p       { margin: .6em 0px 1.2em; }
+ul, ol  { margin: 1em 0 1em 2em; }
+
+a, a:link, a:visited { color: $blue; text-decoration: none; }
+a:hover { color: $blue; text-decoration: none; border-bottom: 1px solid $blue; }
+
+
+/* Component Imports */
+
+@import 'header.scss';
+@import 'footer.scss';
+@import 'page.scss';
+@import 'syntax.scss';
+
+.hf.doc.page .search .icon {
+	top: 0.6em;
+	height: 1em;
+	width: 0;
+	text-indent: -1.5em;
+    //color: $blue;
+}
+
+.hf.home.page .search .icon { 
+	position: relative;
+	top: 0.75em;
+	text-indent: -1.6em;
+    //color: $blue;
+}
+
+pre,code { font-family: "FantasqueSansMono-Regular"; background: $beige; }
+pre { padding: .2em .4em; margin: .5em 0;}
+
+footer { 
+    margin-top: 30px !important;
+}
+
+#ubernerds {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#ubernerds p, #ubernerds ul, #ubernerds li {
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+}
