@@ -6,6 +6,10 @@ layout: default
      side and a content section on the right. -->
 
 <div class="hf doc page">
+  <div class="component-header">
+      {{ page.category | replace: '-', ' ' | capitalize }}
+  </div>
+
   {% include search_form.html %}
 
   {% include edit_on_github.html %}
