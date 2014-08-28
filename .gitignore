@@ -1,3 +1,3 @@
 _site
 *#*
-assets/css/.sass-cache/*
+.sass-cache/
