@@ -2167,9 +2167,6 @@ article {
 p {
   margin: .6em 0px 1.2em; }
 
-ul, ol {
-  margin: 1em 0 1em 2em; }
-
 a, a:link, a:visited {
   color: #3398CB;
   text-decoration: none; }
@@ -2422,9 +2419,9 @@ a:hover {
   #site-links a > span {
     display: none; } }
 /* Page Components
- *
- * I just put them all in here cause they're all pretty related.
- */
+*
+* I just put them all in here cause they're all pretty related.
+*/
 /* Page Declarations */
 .hf.page {
   display: -webkit-box;
@@ -2492,7 +2489,7 @@ a:hover {
 
 .hf.home.page section {
   flex: 1 1 50%;
-  padding: 30px;
+  padding: 20px 20px 20px 20px;
   border: 1px dashed #CBCBCB; }
 
 .hf.home.page section:last-of-type {
@@ -2624,6 +2621,61 @@ a:hover {
 .index .entries > article .details {
   font-size: 12px;
   color: #666; }
+
+div.index h3.getting-started {
+  background: url(/assets/images/icons/getting-started.svg) no-repeat;
+  background-size: 40px 50px;
+  padding-left: 50px;
+  background-position: 6px -9px;
+  height: 40px;
+  line-height: 32px; }
+
+div.index h3.scripts {
+  background: url(/assets/images/icons/scripts.svg) no-repeat;
+  background-size: 35px 50px;
+  padding-left: 50px;
+  background-position: 6px -9px;
+  height: 35px;
+  line-height: 35px; }
+
+div.index h3.settings {
+  background: url(/assets/images/icons/settings.svg) no-repeat;
+  background-size: 30px 54px;
+  padding-left: 50px;
+  background-position: 6px -9px;
+  height: 35px;
+  line-height: 32px; }
+
+div.index h3.avatars {
+  background: url(/assets/images/icons/avatars.svg) no-repeat;
+  background-size: 30px 60px;
+  padding-left: 50px;
+  background-position: 6px -9px;
+  height: 40px;
+  line-height: 40px; }
+
+div.index h3.voxels {
+  background: url(/assets/images/icons/voxels.svg) no-repeat;
+  background-size: 30px 53px;
+  padding-left: 50px;
+  background-position: 6px -9px;
+  height: 35px;
+  line-height: 35px; }
+
+div.index h3.audio {
+  background: url(/assets/images/icons/docs-audio.svg) no-repeat;
+  background-size: 38px 50px;
+  padding-left: 50px;
+  background-position: 6px -9px;
+  height: 35px;
+  line-height: 30px; }
+
+div.index h3 {
+  margin-top: 10px !important;
+  font-size: 20px; }
+
+div.index ul {
+  padding-left: 50px; }
 
 @media all and (max-width: 800px) {
   .hf.home.page > section {
@@ -2967,5 +3019,10 @@ footer {
   display: inline;
   margin: 0px;
   padding: 0px; }
+
+.fa-search:before {
+  color: #3398cb;
+  position: relative;
+  top: -2px; }
 
 /*# sourceMappingURL=main.min.css.map */

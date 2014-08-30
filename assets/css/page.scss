@@ -1,7 +1,7 @@
 /* Page Components
- *
- * I just put them all in here cause they're all pretty related.
- */
+*
+* I just put them all in here cause they're all pretty related.
+*/
 
 
 /* Page Declarations */
@@ -11,20 +11,15 @@
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex;  
-  
+    display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
-
     justify-content: center;
-
     max-width: 910px;
     margin: 0 auto;
 }
 
-
 /* Search */
-
 .hf.page .search > form > input {
     color: $blue;
     font-size: 20px;
@@ -83,17 +78,23 @@
 
 /* Home Page */
 
-.hf.home.page { justify-content: center; }
-
-.hf.home.page > .search { flex: 2 2 100%; }
-
-.hf.home.page section { 
-    flex: 1 1 50%; 
-    padding: 30px;                       
-    border: 1px dashed #CBCBCB; 
+.hf.home.page {
+    justify-content: center;
 }
 
-.hf.home.page section:last-of-type { border-left: 0 }
+.hf.home.page > .search {
+    flex: 2 2 100%;
+}
+
+.hf.home.page section {
+    flex: 1 1 50%;
+    padding: 20px 20px 20px 20px;
+    border: 1px dashed #CBCBCB;
+}
+
+.hf.home.page section:last-of-type {
+    border-left: 0
+}
 
 .hf.home.page > .search > form {
     display: flex;
@@ -112,7 +113,10 @@
     font-family: FontAwesome;
 }
 
-.hf.home.page > .index ul { list-style-type: none }
+.hf.home.page > .index ul {
+    list-style-type: none;
+}
+
 .hf.home.page > .index a {
     padding: 3px;
 }
@@ -146,7 +150,7 @@
     padding: 30px;
 }
 
-.hf.links { 
+.hf.links {
     flex: 2 1 70%;
     align-self: center;
     display: flex;
@@ -166,8 +170,8 @@
     border: 0;
 }
 
-.hf.doc.page .index  { 
-    flex: 1 1 30%; 
+.hf.doc.page .index  {
+    flex: 1 1 30%;
     border-width: 1px 1px 0 0;
     border-style: solid;
     border-color: #E2E2E2;
@@ -204,10 +208,13 @@
     padding-top: 22px;
 }
 
-
 /* Index component */
 
-.index { display: flex; width: 100%; padding: .6em; }
+.index {
+    display: flex;
+    width: 100%;
+    padding: .6em;
+}
 
 .index a {
     width: 100%;
@@ -215,12 +222,16 @@
     display: block;
 }
 
-.index a:hover { 
+.index a:hover {
     background: $beige;
-    border: 0 
+    border: 0
 }
 
-.index span { display: block; width: 100%; }
+.index span {
+    display: block;
+    width: 100%;
+}
+
 .index span.title {
     font-size: 1em;
     color: $dk-grey;
@@ -240,42 +251,130 @@
     color: $dk-grey;
 }
 
+div.index h3.getting-started {
+    background: url(/assets/images/icons/getting-started.svg) no-repeat;
+    background-size: 40px 50px;
+    padding-left: 50px;
+    background-position: 6px -9px;
+    height: 40px;
+    line-height: 32px;
+}
+
+div.index h3.scripts {
+    background: url(/assets/images/icons/scripts.svg) no-repeat;
+    background-size: 35px 50px;
+    padding-left: 50px;
+    background-position: 6px -9px;
+    height: 35px;
+    line-height: 35px;
+}
+
+div.index h3.settings {
+    background: url(/assets/images/icons/settings.svg) no-repeat;
+    background-size: 30px 54px;
+    padding-left: 50px;
+    background-position: 6px -9px;
+    height: 35px;
+    line-height: 32px;
+}
+
+div.index h3.avatars {
+    background: url(/assets/images/icons/avatars.svg) no-repeat;
+    background-size: 30px 60px;
+    padding-left: 50px;
+    background-position: 6px -9px;
+    height: 40px;
+    line-height: 40px;
+}
+
+div.index h3.voxels {
+    background: url(/assets/images/icons/voxels.svg) no-repeat;
+    background-size: 30px 53px;
+    padding-left: 50px;
+    background-position: 6px -9px;
+    height: 35px;
+    line-height: 35px;
+}
+
+div.index h3.audio {
+    background: url(/assets/images/icons/docs-audio.svg) no-repeat;
+    background-size: 38px 50px;
+    padding-left: 50px;
+    background-position: 6px -9px;
+    height: 35px;
+    line-height: 30px;
+}
+
+div.index h3 {
+    margin-top: 10px !important;
+    font-size: 20px;
+}
+
+div.index ul {
+    padding-left: 50px;
+}
 
 @media all and (max-width: 800px) {
-    .hf.home.page > section { flex: 1 1 100%; }
-    .hf.home.page > section:last-of-type { 
-        border-top: 0; 
+    .hf.home.page > section {
+        flex: 1 1 100%;
+    }
+    .hf.home.page > section:last-of-type {
+        border-top: 0;
         border-left: 1px dashed #CBCBCB;
     }
 }
 
 @media all and (max-width: 600px) {
-    .hf.home.page > .search > form { 
-        padding: 0; 
+    .hf.home.page > .search > form {
+        padding: 0;
     }
     .hf.doc.page > .search > form > input {
         text-align: center;
         width: 100%;
         border: 0;
     }
-    .hf.page > section { flex: 1 100%; }
+    .hf.page > section {
+        flex: 1 100%;
+    }
+    .using      {
+        order: 1;
+    }
+    .developing {
+        order: 2;
+    }
 
-    .using      { order: 1 }
-    .developing { order: 2 }
+    .hf.search > form > input {
+        border-bottom: 1px;
+    }
+    .hf.index {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
 
-    .hf.search > form > input { border-bottom: 1px }
-    .hf.index { border: 0; margin: 0; padding: 0;}
-    
     .hf.index .entry,
-    .hf.index > section > .entries > p
-    { padding: 10px 30px; }
+    .hf.index > section > .entries > p {
+        padding: 10px 30px;
+    }
 
-    .search, .index, .links, article
-    { flex: 1 1 100% !important }
+    .search, .index, .links, article {
+        flex: 1 1 100% !important;
+    }
 
-    .hf.search  { order: 1 }
-    .hf.index .index { order: 2 }
-    article     { order: 3 }
-    .hf.links   { order: 4;
-                  border-top: 1px solid $lt-grey; }
+    .hf.search {
+        order: 1;
+    }
+
+    .hf.index .index {
+        order: 2;
+    }
+
+    article {
+        order: 3;
+    }
+
+    .hf.links {
+        order: 4;
+        border-top: 1px solid $lt-grey;
+    }
 }

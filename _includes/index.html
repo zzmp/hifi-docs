@@ -1,7 +1,7 @@
 <section class="hf using">
   <h2>Using</h2>
   {% for cat in site.article-categories %}
-  <h3>{{ cat | replace: '-', ' ' | capitalize }}</h3>
+  <h3 class="{{cat}}">{{ cat | replace: '-', ' ' | capitalize }}</h3>
   <ul>
     {% for page in site.articles %}
     {% if page.category == cat %}
@@ -20,7 +20,7 @@
 <section class="hf developing">
   <h2>Developing</h2>
   {% for cat in site.api-categories %}
-  <h3>{{ cat | replace: '-', ' ' | capitalize }}</h3>
+  <h3 class="{{cat}}">{{ cat | replace: '-', ' ' | capitalize }}</h3>
   <ul>
     {% for page in site.api %}
     {% if page.category == cat %}
