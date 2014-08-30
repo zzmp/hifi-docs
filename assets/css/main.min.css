@@ -2498,7 +2498,7 @@ a:hover {
 .hf.home.page > .search > form {
   display: flex;
   justify-content: center;
-  padding: 38px 30px 15px 30px; }
+  padding: 27px 30px 15px 30px; }
 
 .hf.page > .search > form > input + i.fa {
   color: #0D0D0D; }
@@ -2625,7 +2625,6 @@ a:hover {
 div.index h3.getting-started {
   background: url(/assets/images/icons/getting-started.svg) no-repeat;
   background-size: 40px 50px;
-  padding-left: 50px;
   background-position: 6px -9px;
   height: 40px;
   line-height: 32px; }
@@ -2633,7 +2632,6 @@ div.index h3.getting-started {
 div.index h3.scripts {
   background: url(/assets/images/icons/scripts.svg) no-repeat;
   background-size: 35px 50px;
-  padding-left: 50px;
   background-position: 6px -9px;
   height: 35px;
   line-height: 35px; }
@@ -2641,7 +2639,6 @@ div.index h3.scripts {
 div.index h3.settings {
   background: url(/assets/images/icons/settings.svg) no-repeat;
   background-size: 30px 54px;
-  padding-left: 50px;
   background-position: 6px -9px;
   height: 35px;
   line-height: 32px; }
@@ -2649,7 +2646,6 @@ div.index h3.settings {
 div.index h3.avatars {
   background: url(/assets/images/icons/avatars.svg) no-repeat;
   background-size: 30px 60px;
-  padding-left: 50px;
   background-position: 6px -9px;
   height: 40px;
   line-height: 40px; }
@@ -2657,7 +2653,6 @@ div.index h3.avatars {
 div.index h3.voxels {
   background: url(/assets/images/icons/voxels.svg) no-repeat;
   background-size: 30px 53px;
-  padding-left: 50px;
   background-position: 6px -9px;
   height: 35px;
   line-height: 35px; }
@@ -2665,16 +2660,67 @@ div.index h3.voxels {
 div.index h3.audio {
   background: url(/assets/images/icons/docs-audio.svg) no-repeat;
   background-size: 38px 50px;
-  padding-left: 50px;
   background-position: 6px -9px;
   height: 35px;
   line-height: 30px; }
 
 div.index h3 {
   margin-top: 10px !important;
-  font-size: 20px; }
+  font-size: 20px;
+  padding-left: 50px; }
 
 div.index ul {
+  padding-left: 50px; }
+
+div.index ul.devices {
+  padding-left: 0px !important; }
+
+div.index ul.devices li span.cameras {
+  background: url(/assets/images/icons/hmds.svg) no-repeat;
+  background-size: 35px 53px;
+  background-position: 0px -9px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 50px; }
+
+div.index ul.devices li span.hand-controllers {
+  background: url(/assets/images/icons/hand-controlers.svg) no-repeat;
+  background-size: 19px 66px;
+  background-position: 6px -9px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 50px; }
+
+div.index ul.devices li span.hdm {
+  background: url(/assets/images/icons/hmds.svg) no-repeat;
+  background-size: 35px 53px;
+  background-position: 0px -9px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 50px; }
+
+div.index ul.devices li span.motion-capture-suits {
+  background: url(/assets/images/icons/mocap-suits.svg) no-repeat;
+  background-size: 21px 65px;
+  background-position: 6px -9px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 50px; }
+
+div.index ul.devices li span.motion-controllers {
+  background: url(/assets/images/icons/motion-controllers.svg) no-repeat;
+  background-size: 25px 60px;
+  background-position: 6px -9px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 50px; }
+
+div.index ul.devices li span.smartphones {
+  background: url(/assets/images/icons/smartphones.svg) no-repeat;
+  background-size: 18px 59px;
+  background-position: 6px -9px;
+  height: 40px;
+  line-height: 40px;
   padding-left: 50px; }
 
 @media all and (max-width: 800px) {

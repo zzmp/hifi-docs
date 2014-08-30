@@ -2,12 +2,12 @@
   <h2>Using</h2>
   {% for cat in site.article-categories %}
   <h3 class="{{cat}}">{{ cat | replace: '-', ' ' | capitalize }}</h3>
-  <ul>
+  <ul class="{{cat}}">
     {% for page in site.articles %}
     {% if page.category == cat %}
     <li>
       <a href="{{ page.url }}">
-        <span class="title">{{ page.title }}</span>
+        <span class="title {{page.key}}">{{ page.title }}</span>
         <span class="details">{{ page.tags }}</span>
       </a>
     </li>
@@ -21,7 +21,7 @@
   <h2>Developing</h2>
   {% for cat in site.api-categories %}
   <h3 class="{{cat}}">{{ cat | replace: '-', ' ' | capitalize }}</h3>
-  <ul>
+  <ul class="{{cat}}">
     {% for page in site.api %}
     {% if page.category == cat %}
     <li>
