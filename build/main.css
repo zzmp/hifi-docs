@@ -2796,6 +2796,24 @@ div.index ul.devices li span.smartphones {
   line-height: 40px;
   padding-left: 50px; }
 
+div.index ul.build-from-source li span.windows {
+  background: url(/assets/images/icons/windows.svg) no-repeat; }
+
+div.index ul.build-from-source li span.mac {
+  background: url(/assets/images/icons/mac.svg) no-repeat; }
+
+div.index ul.build-from-source li span.linux {
+  background: url(/assets/images/icons/mac.svg) no-repeat; }
+
+div.index ul.build-from-source li span.windows,
+div.index ul.build-from-source li span.linux,
+div.index ul.build-from-source li span.mac {
+  background-size: 25px 47px;
+  background-position: 0px -9px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 30px; }
+
 @media all and (max-width: 800px) {
   .hf.home.page > section {
     -webkit-box-flex: 1;
