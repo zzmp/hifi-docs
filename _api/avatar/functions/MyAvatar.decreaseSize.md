@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Vec3 MyAvatar.decreaseSize()
+title: MyAvatar.decreaseSize()
 collection: api
 category: avatars
 tags: functions
