@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: MyAvatar.setJointData(string _jointName_, Quat _rotation_) 
+title: MyAvatar.setJointData(string jointName, Quat rotation) 
 collection: api
 category: avatars
 tags: functions
