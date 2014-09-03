@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Frequently Asked Questions (FAQ)
+title: Choose an avatar
 collection: articles
 category: getting-started
 tags: []

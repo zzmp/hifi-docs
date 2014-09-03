@@ -21,7 +21,7 @@ collections:
     output: true
   
 api-categories: [avatars, particles, build-from-source, voxels, audio]
-article-categories: [getting-started, scripts, settings, avatars, devices, voxels, audio]
+article-categories: [getting-started, scripts, settings, avatars, devices, "voxels-meshes & particles", audio]
 
 # API content settings
 #api-section-list: [avatars, particles, voxels, audio]

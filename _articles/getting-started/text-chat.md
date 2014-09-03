@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Javascript API
+title: Text chat
 collection: articles
 category: getting-started
 tags: [javascript]

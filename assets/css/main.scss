@@ -125,10 +125,9 @@ a:hover { color: $blue; text-decoration: none; border-bottom: 1px solid $blue; }
 }
 
 .hf.home.page .search .icon { 
-	position: relative;
-	top: 0.75em;
-	text-indent: -1.6em;
-    //color: $blue;
+    position: relative;
+    top: 17px;
+    left: 18px;
 }
 
 pre,code { font-family: "FantasqueSansMono-Regular"; background: $beige; }

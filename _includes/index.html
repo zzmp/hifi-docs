@@ -1,6 +1,7 @@
 <section class="hf using">
   <h2>Using</h2>
   {% for cat in site.article-categories %}
+  <i></i>
   <h3 class="{{cat}}">{{ cat | replace: '-', ' ' | capitalize }}</h3>
   <ul class="{{cat}}">
     {% for page in site.articles %}
@@ -8,7 +9,6 @@
     <li>
       <a href="{{ page.url }}">
         <span class="title {{page.key}}">{{ page.title }}</span>
-        <span class="details">{{ page.tags }}</span>
       </a>
     </li>
     {% endif %}
@@ -20,6 +20,7 @@
 <section class="hf developing">
   <h2>Developing</h2>
   {% for cat in site.api-categories %}
+  <i></i>
   <h3 class="{{cat}}">{{ cat | replace: '-', ' ' | capitalize }}</h3>
   <ul class="{{cat}}">
     {% for page in site.api %}

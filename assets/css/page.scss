@@ -24,12 +24,15 @@
     color: $blue;
     font-size: 20px;
     border: 1px solid #E2E2E2;
-    padding: 11px 11px 11px 17px;
-    width: 370px;
+    padding: 11px 11px 11px 26px;
+    width: 100%;
+    border: 0px;
+    border-bottom: 1px solid #ccc;
 }
 
 .hf.page .search > form > input:focus {
     outline: none;
+    font-weight: bold;
 }
 
 .hf.home.page #search-results {
@@ -88,8 +91,19 @@
 
 .hf.home.page section {
     flex: 1 1 50%;
-    padding: 20px 20px 20px 20px;
-    border: 1px dashed #CBCBCB;
+}
+
+.hf.home.page section h2 {
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.hf.home.page section.using {
+    margin-right: 20px;
+}
+
+.hf.home.page section.developing {
+    margin-left: 20px;
 }
 
 .hf.home.page section:last-of-type {
@@ -99,7 +113,6 @@
 .hf.home.page > .search > form {
     display: flex;
     justify-content: center;
-    padding: 27px 30px 15px 30px;
 }
 
 .hf.page > .search > form > input + i.fa  {
@@ -114,11 +127,15 @@
 }
 
 .hf.home.page > .index ul {
-    list-style-type: none;
+    list-style-type: disc;
+    list-style-position: inside;
+    font-size: 10px;
+    padding-bottom: 20px;
 }
 
 .hf.home.page > .index a {
-    padding: 3px;
+    padding: 0px;
+    font-size: 15px;
 }
 
 /* Doc Page */
@@ -213,7 +230,8 @@
 .index {
     display: flex;
     width: 100%;
-    padding: .6em;
+    padding-left: 22px;
+    padding-top: 40px;
 }
 
 .index a {
@@ -222,9 +240,14 @@
     display: block;
 }
 
-.index a:hover {
-    background: $beige;
-    border: 0
+.index ul li:hover a {
+    border: 0px;
+    color: #3398cb
+}
+
+.index ul li:hover,
+.index ul li:hover a span {
+    color: #3398cb;
 }
 
 .index span {
@@ -255,7 +278,7 @@ div.index h3.getting-started {
     background: url(/assets/images/icons/getting-started.svg) no-repeat;
     background-size: 40px 50px;
     background-position: 6px -9px;
-    height: 40px;
+    height: 35px;
     line-height: 32px;
 }
 
@@ -275,7 +298,7 @@ div.index h3.settings {
     line-height: 32px;
 }
 
-div.index h3.avatars {
+div.index .using h3.avatars {
     background: url(/assets/images/icons/avatars.svg) no-repeat;
     background-size: 30px 60px;
     background-position: 6px -9px;
@@ -283,7 +306,15 @@ div.index h3.avatars {
     line-height: 40px;
 }
 
-div.index h3.voxels {
+div.index .developing h3.avatars {
+    background: url(/assets/images/icons/avatars-developing.svg) no-repeat;
+    background-size: 30px 60px;
+    background-position: 6px -9px;
+    height: 40px;
+    line-height: 40px;
+}
+
+div.index .using h3.voxels-meshes {
     background: url(/assets/images/icons/voxels.svg) no-repeat;
     background-size: 30px 53px;
     background-position: 6px -9px;
@@ -291,8 +322,24 @@ div.index h3.voxels {
     line-height: 35px;
 }
 
-div.index h3.audio {
+div.index .developing h3.voxels {
+    background: url(/assets/images/icons/voxels-developing.svg) no-repeat;
+    background-size: 30px 53px;
+    background-position: 6px -9px;
+    height: 35px;
+    line-height: 35px;
+}
+
+div.index .using h3.audio {
     background: url(/assets/images/icons/docs-audio.svg) no-repeat;
+    background-size: 38px 50px;
+    background-position: 6px -9px;
+    height: 35px;
+    line-height: 30px;
+}
+
+div.index .developing h3.audio {
+    background: url(/assets/images/icons/audio-developing.svg) no-repeat;
     background-size: 38px 50px;
     background-position: 6px -9px;
     height: 35px;
@@ -309,13 +356,14 @@ div.index ul {
     padding-left: 50px;
 }
 
-div.index ul.devices {
-    padding-left: 0px !important;
+div.index ul.devices,
+div.index ul.build-from-source {
+    list-style-type: none !important;
 }
 
 div.index ul.devices li span.cameras {
-    background: url(/assets/images/icons/hmds.svg) no-repeat;
-    background-size: 35px 53px;
+    background: url(/assets/images/icons/3d-camera.svg) no-repeat;
+    background-size: 40px 60px;
     background-position: 0px -9px;
     height: 40px;
     line-height: 40px;
@@ -376,7 +424,7 @@ div.index ul.build-from-source li span.mac {
 }
 
 div.index ul.build-from-source li span.linux {
-    background: url(/assets/images/icons/mac.svg) no-repeat;
+    background: url(/assets/images/icons/linux.svg) no-repeat;
 }
 
 div.index ul.build-from-source li span.windows,
@@ -387,6 +435,15 @@ div.index ul.build-from-source li span.mac {
     height: 30px;
     line-height: 30px;
     padding-left: 30px;
+}
+
+.hf.home.page > .index ul li {
+    line-height: 22px;
+}
+
+.hf.home.page section i {
+    border-bottom: 1px dashed #ccc;
+    display: block;
 }
 
 @media all and (max-width: 800px) {

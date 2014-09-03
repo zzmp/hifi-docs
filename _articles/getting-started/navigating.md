@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Running Local Servers
+title: Navigating
 collection: articles
 category: avatars
 tags: 
