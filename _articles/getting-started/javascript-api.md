@@ -23,7 +23,9 @@ If you are running on the interface client, the 'Avatar' is you, and is called '
 * float MyAvatar.bodyRoll
 * Quat MyAvatar.orientation 
 * Quat MyAvatar.headOrientation
-* float MyAvatar.headPitch 
+* float MyAvatar.headPitch
+* float MyAvatar.headYaw
+* float MyAvatar.headRoll
 * float MyAvatar.audioLoudness 
 * float MyAvatar.audioAverageLoudness 
 * String MyAvatar.displayName
@@ -32,27 +34,31 @@ If you are running on the interface client, the 'Avatar' is you, and is called '
 * String MyAvatar.billboardURL 
 * array MyAvatar.jointNames
 * String MyAvatar.sessionUUID
-* number MyAvatar.collisionGroups
+* number MyAvatar.collisionGroups - done
 * bool MyAvatar.shouldRenderLocally 
 * number MyAvatar.motionBehaviors
 * Vec3 MyAvatar.gravity
-
+* String MyAvatar.chatMessage
 
 ### Functions:
 
 * Vec3 MyAvatar.getTargetAvatarPosition()
-The position of the avatar that you are looking at.
-* MyAvatar.updateCollisionGroups()
-* MyAvatar.goHome() 
+* MyAvatar.goHome()
 * MyAvatar.increaseSize()
 * MyAvatar.decreaseSize()
 * MyAvatar.resetSize()
-* MyAvatar.updateLocationInDataServer()
-* MyAvatar.addThrust(Vec3 trust)
+* MyAvatar.addThrust(Vec3 thrust)
 * Vec3 MyAvatar.getThrust()
-* MyAvatar.setThrust(Vec3 newTrust)
-* MyAvatar.updateMotionBehaviorsFromMenu()
-
+* MyAvatar.setThrust(Vec3 newThrust)
+* Vec3 MyAvatar.getJointPosition(int index)
+* Vec3 MyAvatar.getJointPosition(const QString& name)
+* Quat MyAvatar.getJointCombinedRotation(int index)
+* Quat MyAvatar.getJointCombinedRotation(const QString& name)
+* Vec3 MyAvatar.getAcceleration()
+* Vec3 MyAvatar.getAngularVelocity()
+* Vec3 MyAvatar.getAngularAcceleration()
+* int MyAvatar.getJointIndex(const QString& name)
+* MyAvatar.setBlendshape(QString name, float val)
 
 ### Callback Functions:
 

@@ -1,13 +1,13 @@
 ---
 layout: doc
-title: MyAvatar.updateLocationInDataServer()
+title: MyAvatar.setThrust(Vec3 newThrust)
 collection: api
 category: avatars
 tags: functions
 ---
 
-Description text
+Description
 
 ```
-example
+code example here
 ```
