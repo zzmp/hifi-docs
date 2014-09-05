@@ -8,6 +8,8 @@ tags: functions
 
 Returns a your avatar's _thrust_ property.
 
+## Example
+
 ```
 > JSON.stringify(MyAvatar.getThrust())
 < {"x":0,"y":0,"z":0}
