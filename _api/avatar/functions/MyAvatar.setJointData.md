@@ -6,7 +6,7 @@ category: avatars
 tags: functions
 ---
 
-`setJointData` sets a target body part rotation's in quaternion. 
+`setJointData` sets a target bodypart's rotation in quaternion. 
 
 ## Example
 
@@ -25,7 +25,7 @@ for (var i = 0; i < jointList.length; i++) {
 print(jointMappings + "\n# Joint list end"); 
 ```
 
-After some preliminaries, the script sets MyAvater.setJointData() in several fun configurations to give the avatar a funny walk.
+After some preliminaries, the script sets `MyAvatar.setJointData()` in several fun configurations to give the avatar a funny walk.
 
 ``
 Script.update.connect(function(deltaTime) {
@@ -39,7 +39,7 @@ Script.update.connect(function(deltaTime) {
 });
 ```
 
-Upon the conclusion of the script, the affected joint data is cleared, returning the Avatar to the standing position: 
+Upon the conclusion of the script, the affected joint data is cleared, returning the MyAvatar to the standing position: 
 
 ```
 Script.scriptEnding.connect(function() {
