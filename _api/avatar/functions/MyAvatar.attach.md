@@ -27,13 +27,12 @@ Using the JavaScript Console, first set the attachmentURL:
 > var guitarModel = "https://s3-us-west-1.amazonaws.com/highfidelity-public/models/attachments/guitar.fst";
 ```
 
-Next, attach `guitarModel` to your avatar's hips:
+Next, attach `guitarModel` to MyAvatar's hips:
 
 ```
 > MyAvatar.attach(guitarModel, "Hips", {x: -0.0, y: -0.0, z: 0.0}, Quat.fromPitchYawRollDegrees(0, 0, 0), 1.0);
+> MyAvatar.getAttachmentData();
 ```
-
-MyAvatar.getAttachmentData()
 Observe that your avatar is now being impaled by a guitar. 
 
 To remove the guitar, run `MyAvatar.detachOne(guitarModel);`.
