@@ -27,7 +27,7 @@ print(jointMappings + "\n# Joint list end");
 
 After some preliminaries, the script sets `MyAvatar.setJointData()` in several fun configurations to give the avatar a funny walk.
 
-``
+```
 Script.update.connect(function(deltaTime) {
     cumulativeTime += deltaTime;
     MyAvatar.setJointData("RightUpLeg", Quat.fromPitchYawRollDegrees(AMPLITUDE * Math.sin(cumulativeTime * FREQUENCY), 0.0, 0.0));
