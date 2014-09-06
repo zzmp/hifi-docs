@@ -6,7 +6,9 @@ category: avatars
 tags: functions
 ---
 
-Decreases the scale of your avatar by the `SCALING_RATIO`, which has default value .05. The minimum scale of the avatar (`MAX_AVATAR_SCALE`) is .05.
+`decreaseSize` decreases the scale of MyAvatar by the `SCALING_RATIO`, which has default value .05. The minimum scale of the avatar (`MIN_AVATAR_SCALE`) is .05.
+
+## Example
 
 ```
 > MyAvatar.scale

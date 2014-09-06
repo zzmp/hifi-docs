@@ -6,7 +6,9 @@ category: avatars
 tags: functions
 ---
 
-Given a string name of a MyAvatar joint, this function returns the index of the bodypart. 
+Given the string name of a MyAvatar joint, `getJointIndex` returns the index of the bodypart. 
+
+## Example
 
 ```
 > MyAvatar.getJointIndex("Shoes")

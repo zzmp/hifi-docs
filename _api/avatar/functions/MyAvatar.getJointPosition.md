@@ -1,13 +1,18 @@
 ---
 layout: doc
-title: Vec3 MyAvatar.getJointPosition( parameter)
-parameters: int index OR const QString& name
+title: Vec3 MyAvatar.getJointPosition(int index)
 collection: api
 category: avatars
 tags: functions
 ---
 
-This function accepts either a string (example, "Hips") or an integer index of a target body part, and returns a vector of the position of the body part in question. 
+`getJointPosition` accepts either a string (example, "Hips") or an integer index of a target body part, and returns a vector of the position of the body part in question. 
+
+## Overloads
+
+* Vec3 MyAvatar.getJointPosition(QString& name)
+
+## Example
 
 ```
 > JSON.stringify(MyAvatar.getJointPosition("Hips"))

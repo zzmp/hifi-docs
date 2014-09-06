@@ -6,7 +6,9 @@ category: avatars
 tags: functions
 ---
 
-Returns _MyAvatar.position_, which describes the position of the avatar that your mouse is hovering over. If your mouse is not currently hovering over an avatar, all fields are zero. 
+`getTargetAvatarPosition` returns a three-dimensional vector describing the position of the avatar that your mouse is hovering over. If your mouse is not currently hovering over an avatar, all fields are zero. 
+
+## Example
 
 ```
 > JSON.stringify(MyAvatar.getTargetAvatarPosition())

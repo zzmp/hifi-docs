@@ -8,6 +8,8 @@ tags: properties
 
 The collision group setting determine what types of things the MyAvatar class instance should collide with in the physics simulation. For example, voxels would be one group and collisions between MyAvatar and voxels could enabled or disabled.
 
+## Example
+
 The collision group settings in the Menu can be set/unset by script or by menu, as shown below.
 
 Using the JavaScript Console, run 
