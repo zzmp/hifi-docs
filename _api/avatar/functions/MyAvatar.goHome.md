@@ -6,7 +6,7 @@ category: avatars
 tags: functions
 ---
 
-`goHome` sends your avatar back to its origin.
+`goHome` sends MyAvatar back to its origin.
 
 ## Example
 
