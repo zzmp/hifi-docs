@@ -15,15 +15,52 @@
     {% endfor %}
   </ul>
   {% endfor %}
+  <h2>Managing</h2>
+  {% for manage in site.managing-categories %}
+  <i></i>
+  <h3 class="{{manage}}">{{ manage | replace: '-', ' ' | capitalize }}</h3>
+  <ul class="{{manage}}">
+    {% for page in site.managing %}
+    {% if page.category == manage %}
+    <li>
+      <a href="{{ page.url }}">
+        <span class="title {{page.key}}">{{ page.title }}</span>
+      </a>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+  {% endfor %}
+
 </section>
 
 <section class="hf developing">
   <h2>Developing</h2>
+  <i></i>
+  <h3 class="javascript-api">JavaScript API</h3>
   {% for cat in site.api-categories %}
+  <h3 class="{{cat}}">&nbsp;</h3>
+  <ul class="javascript-api {{cat}}">
+    <li class="sub-category">{{ cat | replace: '-', ' ' | capitalize }}</li>
+    {% for page in site.api %}
+    {% if page.category == cat %}
+    <li>
+      <a href="{{ page.url }}">
+        <i></i>
+        <span class="title {{page.key}}">{{ page.title }}</span>
+        <span class="details">{{ page.tags }}</span>
+      </a>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+  {% endfor %}
+
+  {% for cat in site.api-article-categories %}
   <i></i>
   <h3 class="{{cat}}">{{ cat | replace: '-', ' ' | capitalize }}</h3>
   <ul class="{{cat}}">
-    {% for page in site.api %}
+    {% for page in site.api-articles %}
     {% if page.category == cat %}
     <li>
       <a href="{{ page.url }}">

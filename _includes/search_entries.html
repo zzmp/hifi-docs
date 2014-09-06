@@ -1,12 +1,21 @@
 {% raw %}
 <script id="search-results-template" type="text/mustache">
-  {{#entries}}
-    <article class="search-result">
-      <a href="{{url}}">
-        <span class="title">{{title}}</span>
-        <span class="collection"> <i class="fa fa-angle-right"></i> {{ collection }}</span>
-      </a>
-    </article>
-  {{/entries}}
+        {{#entries}}
+            {{#api}}
+                    <article class="search-result search-result-api">
+                        <a href="{{url}}">
+                            <span class="title">{{title}}</span>
+                        </a>
+                    </article>
+            {{/api}}
+            {{^api}}
+                        <article class="search-result search-result-user">
+                            <a href="{{url}}">
+                                <span class="title">{{title}}</span>
+                            </a>
+                        </article>
+            {{/api}}
+        {{/entries}}
+
 </script>
 {% endraw %}

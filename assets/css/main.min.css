@@ -2207,8 +2207,8 @@ a:hover {
   align-items: center; }
 
 .hf.header > .item {
-  padding: .5em .8em;
-  color: #999;
+  padding: 0px 10px;
+  color: #DDDDDD;
   width: auto;
   text-decoration: none;
   border-left: 1px solid #DDDDDD; }
@@ -2221,14 +2221,15 @@ a:hover {
 
 #logo {
   background: url(/assets/images/hifi-logo-grey.svg) no-repeat center;
-  background-size: 60px 60px;
+  background-size: 55px 55px;
   border: none;
   vertical-align: top;
   text-indent: -9999px !important;
   display: block;
-  width: 100px;
-  height: 60px;
-  order: 4; }
+  width: 70px;
+  height: 55px;
+  order: 4;
+  background-position: 3px 0px; }
 
 #alpha, #worklist {
   border: none; }
@@ -2431,7 +2432,7 @@ a:hover {
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   justify-content: center;
-  max-width: 910px;
+  max-width: 848px;
   margin: 0 auto; }
 
 /* Search */
@@ -2448,33 +2449,59 @@ a:hover {
   outline: none;
   font-weight: bold; }
 
+.hf.home.page #search-header,
 .hf.home.page #search-results {
-  margin: 0 auto 32px auto;
-  width: 792px;
-  border: 0; }
+  width: 100%; }
 
 .hf.home.page #search-results .search-result {
   float: left;
-  width: 370px;
-  margin: 0 13px; }
+  width: 100%; }
 
 .hf.home.page #search-results .search-result a {
-  color: #0D0D0D; }
+  color: #333;
+  font-size: 14px; }
+
+.hf.home.page #search-results .search-result a b {
+  color: #3398CB; }
 
 .hf.home.page #search-results .search-result a:hover {
   color: #3398CB;
   text-decoration: none;
   border-bottom: none; }
 
-.hf.home.page #search-results .search-result .collection {
-  font-size: .9em;
-  color: #999; }
+.hf.home.page #search-results .header h3 {
+  font-size: 16px;
+  color: #999999;
+  border-bottom: 1px dashed #cbcbcb;
+  margin-top: 20px; }
 
-.hf.home.page #search-results .header {
+.hf.home.page #search-results .header.left {
+  margin-right: 25px;
+  margin-left: 20px;
   float: left;
-  width: 370px;
-  border-top: 1px dashed #CBCBCB;
-  margin: 10px 13px; }
+  width: calc(50% - 45px); }
+
+.hf.home.page #search-results .header.right {
+  margin-left: 25px;
+  float: left;
+  width: calc(50% - 25px); }
+
+.hf.home #search-entries-user {
+  float: left;
+  width: 50%;
+  margin-left: 20px;
+  width: calc(50% - 20px);
+  margin-top: 5px; }
+
+.hf.home #search-entries-api {
+  float: left;
+  width: 50%;
+  margin-left: 25px;
+  width: calc(50% - 25px);
+  margin-top: 5px; }
+
+.hf.doc #search-header {
+  display: none; }
 
 @media all and (max-width: 806px) {
   .hf.home.page #search-results {
@@ -2497,10 +2524,10 @@ a:hover {
   line-height: 40px; }
 
 .hf.home.page section.using {
-  margin-right: 20px; }
+  margin-right: 25px; }
 
 .hf.home.page section.developing {
-  margin-left: 20px; }
+  margin-left: 25px; }
 
 .hf.home.page section:last-of-type {
   border-left: 0; }
@@ -2523,6 +2550,10 @@ a:hover {
   list-style-position: inside;
   font-size: 10px;
   padding-bottom: 20px; }
+
+.hf.home.page > .index ul.javascript-api {
+  padding-bottom: 15px !important;
+  list-style: none; }
 
 .hf.home.page > .index a {
   padding: 0px;
@@ -2605,7 +2636,7 @@ a:hover {
   display: flex;
   width: 100%;
   padding-left: 22px;
-  padding-top: 40px; }
+  padding-top: 30px; }
 
 .index a {
   width: 100%;
@@ -2625,7 +2656,7 @@ a:hover {
   width: 100%; }
 
 .index span.title {
-  font-size: 1em;
+  font-size: 15px;
   color: #666; }
 
 .index span.details {
@@ -2646,6 +2677,10 @@ div.index h3.getting-started {
   background-position: 6px -9px;
   height: 35px;
   line-height: 32px; }
+
+div.index h3.javascript-api {
+  height: 40px;
+  line-height: 30px; }
 
 div.index h3.scripts {
   background: url(/assets/images/icons/scripts.svg) no-repeat;
@@ -2668,7 +2703,7 @@ div.index .using h3.avatars {
   height: 40px;
   line-height: 40px; }
 
-div.index .developing h3.avatars {
+div.index .developing h3.avatar {
   background: url(/assets/images/icons/avatars-developing.svg) no-repeat;
   background-size: 30px 60px;
   background-position: 6px -9px;
@@ -2696,6 +2731,27 @@ div.index .using h3.audio {
   height: 35px;
   line-height: 30px; }
 
+div.index .using h3.devices {
+  background: url(/assets/images/icons/devices.svg) no-repeat;
+  background-size: 38px 50px;
+  background-position: 6px -9px;
+  height: 35px;
+  line-height: 35px; }
+
+div.index .using h3.assignment-clients {
+  background: url(/assets/images/icons/assignment-clients.svg) no-repeat;
+  background-size: 38px 50px;
+  background-position: 6px -9px;
+  height: 35px;
+  line-height: 30px; }
+
+div.index .using h3.domains {
+  background: url(/assets/images/icons/domains.svg) no-repeat;
+  background-size: 33px 55px;
+  background-position: 6px -9px;
+  height: 35px;
+  line-height: 37px; }
+
 div.index .developing h3.audio {
   background: url(/assets/images/icons/audio-developing.svg) no-repeat;
   background-size: 38px 50px;
@@ -2705,19 +2761,29 @@ div.index .developing h3.audio {
 
 div.index h3 {
   margin-top: 10px !important;
-  font-size: 20px;
-  padding-left: 50px; }
+  font-size: 20px; }
 
-div.index ul {
+div.index .using ul,
+div.index .using h3 {
   padding-left: 50px; }
 
 div.index ul.devices,
 div.index ul.build-from-source {
   list-style-type: none !important; }
 
+div.index h3.diagrams,
+div.index h3.build-from-source {
+  height: 40px;
+  line-height: 40px; }
+
+div.index ul.javascript-api {
+  display: inline-block;
+  padding-left: 0px;
+  width: calc(100% - 70px); }
+
 div.index ul.devices li span.cameras {
   background: url(/assets/images/icons/3d-camera.svg) no-repeat;
-  background-size: 40px 60px;
+  background-size: 30px 60px;
   background-position: 0px -9px;
   height: 40px;
   line-height: 40px;
@@ -2725,7 +2791,7 @@ div.index ul.devices li span.cameras {
 
 div.index ul.devices li span.hand-controllers {
   background: url(/assets/images/icons/hand-controlers.svg) no-repeat;
-  background-size: 19px 66px;
+  background-size: 16px 63px;
   background-position: 6px -9px;
   height: 40px;
   line-height: 40px;
@@ -2733,7 +2799,7 @@ div.index ul.devices li span.hand-controllers {
 
 div.index ul.devices li span.hdm {
   background: url(/assets/images/icons/hmds.svg) no-repeat;
-  background-size: 35px 53px;
+  background-size: 28px 53px;
   background-position: 0px -9px;
   height: 40px;
   line-height: 40px;
@@ -2741,7 +2807,7 @@ div.index ul.devices li span.hdm {
 
 div.index ul.devices li span.motion-capture-suits {
   background: url(/assets/images/icons/mocap-suits.svg) no-repeat;
-  background-size: 21px 65px;
+  background-size: 15px 55px;
   background-position: 6px -9px;
   height: 40px;
   line-height: 40px;
@@ -2757,8 +2823,8 @@ div.index ul.devices li span.motion-controllers {
 
 div.index ul.devices li span.smartphones {
   background: url(/assets/images/icons/smartphones.svg) no-repeat;
-  background-size: 18px 59px;
-  background-position: 6px -9px;
+  background-size: 14px 55px;
+  background-position: 14px -9px;
   height: 40px;
   line-height: 40px;
   padding-left: 50px; }
@@ -2779,7 +2845,7 @@ div.index ul.build-from-source li span.mac {
   background-position: 0px -9px;
   height: 30px;
   line-height: 30px;
-  padding-left: 30px; }
+  padding-left: 50px; }
 
 .hf.home.page > .index ul li {
   line-height: 22px; }
@@ -2787,6 +2853,43 @@ div.index ul.build-from-source li span.mac {
 .hf.home.page section i {
   border-bottom: 1px dashed #ccc;
   display: block; }
+
+li.sub-category {
+  font-size: 15px;
+  font-weight: bold;
+  list-style-type: none; }
+
+li.sub-category:hover {
+  color: #333; }
+
+div.index .developing h3.avatar,
+div.index .developing h3.voxels,
+div.index .developing h3.audio,
+div.index .developing h3.particles {
+  width: 40px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0px !important;
+  margin-right: 10px; }
+
+#search-results p {
+  margin: 0px;
+  font-size: 15px;
+  color: #ddd;
+  margin-top: 4px; }
+
+.hf.home.page > .index ul.javascript-api i {
+  width: 0px;
+  height: 0px;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+  border-left: 5px solid #333;
+  display: inline-block; }
+
+.hf.home.page > .index ul.javascript-api span.title {
+  display: inline-block;
+  width: calc(100% - 18px);
+  margin-left: 3px; }
 
 @media all and (max-width: 800px) {
   .hf.home.page > section {
@@ -3106,7 +3209,7 @@ div.index ul.build-from-source li span.mac {
   width: 0;
   text-indent: -1.5em; }
 
-.hf.home.page .search .icon {
+.hf.home .search .icon {
   position: relative;
   top: 17px;
   left: 18px; }

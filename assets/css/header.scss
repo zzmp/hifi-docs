@@ -31,8 +31,8 @@
 }
 
 .hf.header > .item {
-    padding: .5em .8em;
-    color: $grey;
+    padding: 0px 10px;
+    color: #DDDDDD;
     width: auto;
     text-decoration: none;
     border-left: 1px solid #DDDDDD;
@@ -47,14 +47,15 @@
 
 #logo {
     background: url(/assets/images/hifi-logo-grey.svg) no-repeat center;
-    background-size: 60px 60px;
+    background-size: 55px 55px;
     border: none;
     vertical-align: top;
     text-indent: -9999px !important;
     display: block;
-    width: 100px;
-    height: 60px;
+    width: 70px;
+    height: 55px;
     order: 4;
+    background-position: 3px 0px;
 }
 
 #alpha, #worklist { border: none }
