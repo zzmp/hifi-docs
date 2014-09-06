@@ -6,7 +6,7 @@ category: avatars
 tags: properties
 ---
 
-`skeletonModelURL`, a string, returns the URL of the MyAvatar's skeleton's `.fst` file. An .fst file is just a text file that gives us information on the model, its textures, blendshape mappings, and skeleton mappings. 
+`skeletonModelURL`, a string, returns the URL of the MyAvatar's skeleton's '.fst' file. An .fst file is just a text file that gives us information on the model, its textures, blendshape mappings, and skeleton mappings. 
 
 ## Example
 
