@@ -2627,9 +2627,8 @@ a:hover {
 .hf.doc.page .component-header {
   flex: 1 1 100%;
   font-family: Quadon-Bold,Georgia,serif;
-  font-size: 26px;
-  color: #0D0D0D;
-  padding-top: 22px; }
+  font-size: 20px;
+  color: #333; }
 
 /* Index component */
 .index {
@@ -3204,10 +3203,11 @@ div.index .developing h3.particles {
 
 /* Literal.Number.Integer.Long */
 .hf.doc.page .search .icon {
-  top: 0.6em;
-  height: 1em;
-  width: 0;
-  text-indent: -1.5em; }
+  position: absolute;
+  margin-top: 15px; }
+
+.hf.doc.page .search #search-query {
+  padding-left: 30px; }
 
 .hf.home .search .icon {
   position: relative;

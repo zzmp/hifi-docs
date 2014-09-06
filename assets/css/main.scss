@@ -117,11 +117,12 @@ a:hover { color: $blue; text-decoration: none; border-bottom: 1px solid $blue; }
 @import 'syntax.scss';
 
 .hf.doc.page .search .icon {
-	top: 0.6em;
-	height: 1em;
-	width: 0;
-	text-indent: -1.5em;
-    //color: $blue;
+    position: absolute;
+    margin-top: 15px;
+}
+
+.hf.doc.page .search #search-query {
+    padding-left: 30px;
 }
 
 .hf.home  .search .icon {
