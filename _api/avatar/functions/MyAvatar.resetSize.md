@@ -6,7 +6,7 @@ category: avatars
 tags: functions
 ---
 
-`resetSize` sets the `scale` of your avatar to 1. 
+`resetSize` sets the `scale` of MyAvatar to 1. 
 
 ## Example
 
