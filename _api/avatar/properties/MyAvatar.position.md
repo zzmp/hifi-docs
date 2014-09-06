@@ -6,7 +6,7 @@ category: avatars
 tags: properties
 ---
 
-`handPosition`, a vector, refers to the position of MyAvatar.
+`position`, a vector, refers to the position of MyAvatar.
 
 ## Example
 
