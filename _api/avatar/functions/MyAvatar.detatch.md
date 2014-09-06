@@ -6,7 +6,7 @@ category: avatars
 tags: functions
 ---
 
-`attach` appends an object to MyAvatar via a url to a model file. 
+`detach` removes an object from MyAvatar. 
 
 ## Overloads and Related Functions
 
