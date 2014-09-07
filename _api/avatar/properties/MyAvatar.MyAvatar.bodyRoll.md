@@ -10,8 +10,6 @@ tags: properties
 
 ## Example
 
-Using the JavaScript Console, run 
-
 ```
 > JSON.stringify(MyAvatar.bodyRoll)
 < 0.04965079948306084
