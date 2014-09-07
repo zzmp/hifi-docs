@@ -6,7 +6,7 @@ category: avatars
 tags: functions
 ---
 
-`getThrust` returns a MyAvatar's `thrust` property.
+`getThrust` returns MyAvatar's `thrust` property.
 
 ## Example
 
