@@ -10,7 +10,7 @@ tags: functions
 
 ## Example
 
-Take a look at the crazylegs script. 
+Take a look at the `crazylegs.js` script. 
 
 ```
 var FREQUENCY = 5.0;
@@ -25,7 +25,7 @@ for (var i = 0; i < jointList.length; i++) {
 print(jointMappings + "\n# Joint list end"); 
 ```
 
-After some preliminaries, the script sets `MyAvatar.setJointData()` in several fun configurations to give the avatar a funny walk.
+After some preliminaries, the script sets `MyAvatar.setJointData()` in several fun configurations to give MyAvatar a funny walk.
 
 ```
 Script.update.connect(function(deltaTime) {
@@ -39,7 +39,7 @@ Script.update.connect(function(deltaTime) {
 });
 ```
 
-Upon the conclusion of the script, the affected joint data is cleared, returning the MyAvatar to the standing position: 
+Upon the conclusion of the script, the affected joint data is cleared, returning MyAvatar to the standing position: 
 
 ```
 Script.scriptEnding.connect(function() {
