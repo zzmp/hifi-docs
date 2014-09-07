@@ -12,7 +12,7 @@ tags: functions
 
 Take a look at the `crazylegs.js` script. 
 
-First, joints wildly manipulated:
+First, joints are wildly manipulated:
 
 ```
 var FREQUENCY = 5.0;
