@@ -6,7 +6,9 @@ category: avatars
 tags: functions
 ---
 
-This function returns the angular velocity of MyAvatar as a vector.
+`getAngularVelocity` returns the angular velocity of MyAvatar as a vector.
+
+## Example
 
 ```
 > JSON.stringify(MyAvatar.getAngularVelocity())

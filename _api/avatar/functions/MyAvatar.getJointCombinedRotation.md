@@ -1,13 +1,18 @@
 ---
 layout: doc
-title: Vec3 MyAvatar.getJointCombinedRotation( parameter)
-parameters: int index OR const QString& name
+title: Vec3 MyAvatar.getJointCombinedRotation( int index)
 collection: api
 category: avatars
 tags: functions
 ---
 
-This function accepts either a string (example, "Hips") or an integer index of a target body part, and returns a vector of the combined rotation of the body part in question. 
+`getJointCombinedRotation` accepts either a string (example, "Hips") or an integer index of a target body part, and returns a vector of the combined rotation of the body part in question. 
+
+## Overloads
+
+* Vec3 MyAvatar.getJointCombinedRotation(const QString& name)
+
+## Example
 
 ```
 > JSON.stringify(MyAvatar.getJointCombinedRotation("Hips"))

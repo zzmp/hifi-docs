@@ -34,7 +34,7 @@ If you are running on the interface client, the 'Avatar' is you, and is called '
 * String MyAvatar.billboardURL 
 * array MyAvatar.jointNames
 * String MyAvatar.sessionUUID
-* number MyAvatar.collisionGroups - done
+* number MyAvatar.collisionGroups
 * bool MyAvatar.shouldRenderLocally 
 * number MyAvatar.motionBehaviors
 * Vec3 MyAvatar.gravity

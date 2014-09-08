@@ -6,7 +6,9 @@ category: avatars
 tags: functions
 ---
 
-This function returns the angular acceleration of MyAvatar as a vector.
+`getAngularAcceleration` returns the angular acceleration of MyAvatar as a vector.
+
+## Example
 
 ```
 > JSON.stringify(MyAvatar.getAngularAcceleration())

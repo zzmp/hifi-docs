@@ -6,7 +6,9 @@ category: avatars
 tags: functions
 ---
 
-Sends your avatar back to its origin.
+`goHome` sends MyAvatar back to its origin.
+
+## Example
 
 ```
 > JSON.stringify(MyAvatar.position)

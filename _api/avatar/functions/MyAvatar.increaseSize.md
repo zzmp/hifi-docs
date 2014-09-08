@@ -6,7 +6,9 @@ category: avatars
 tags: functions
 ---
 
-Increases the scale property of your avatar by the `SCALING_RATIO`, which has default value .05. The maximum scale of the avatar (`MAX_AVATAR_SCALE`) is 1000.
+`increaseSize` increases the scale property of MyAvatar by the `SCALING_RATIO`, which has default value .05. The maximum scale of the avatar (`MAX_AVATAR_SCALE`) is 1000.
+
+## Example
 
 ```
 > MyAvatar.scale

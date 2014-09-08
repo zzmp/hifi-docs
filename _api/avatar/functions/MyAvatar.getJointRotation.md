@@ -6,7 +6,9 @@ category: avatars
 tags: functions
 ---
 
-Returns current joint rotation in quaternion (_Quat_). 
+`getJointRotation` returns current joint rotation in quaternion. 
+
+## Example
 
 ```
 > bodyPart = MyAvatar.getJointNames()[3];
