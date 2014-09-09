@@ -6,7 +6,7 @@ category: avatars
 tags: properties
 ---
 
-`orientation`, a quaternion, represents the rotation of the avatar in relation relative to a coordinate system. 
+`orientation`, a quaternion, represents the rotation of MyAvatar in relation relative to a coordinate system. 
 
 ## Example
 
