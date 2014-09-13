@@ -5,4 +5,7 @@ $(function() {
         entries:  '.entries',
         template: '#search-results-template'
     });
+    if (tag != "") {
+      $('.methods-'+tag).addClass("selected");
+    }
 });

@@ -1,0 +1,33 @@
+{% for cat in site.article-categories %}
+<i></i>
+<h3 class="{{cat}}">{{ cat | replace: '-', ' ' | capitalize }}</h3>
+<ul class="{{cat}}">
+  {% for page in site.articles %}
+  {% if page.category == cat %}
+  <li>
+    <a href="{{ page.url }}">
+      <span class="title {{page.key}}">{{ page.title }}</span>
+    </a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+{% endfor %}
+<h2>Managing</h2>
+{% for manage in site.managing-categories %}
+<i></i>
+<h3 class="{{manage}}">{{ manage | replace: '-', ' ' | capitalize }}</h3>
+<ul class="{{manage}}">
+  {% for page in site.managing %}
+  {% if page.category == manage %}
+  <li>
+    <a href="{{ page.url }}">
+      <span class="title {{page.key}}">{{ page.title }}</span>
+    </a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+{% endfor %}
+
+

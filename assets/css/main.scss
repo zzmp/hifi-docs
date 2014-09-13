@@ -154,3 +154,9 @@ footer {
     position: relative;
     top: -2px;
 }
+
+pre, code {
+    font-family: Inconsolata, Menlo, Monaco, monospaced !important;
+    background: #EDEDED;
+    font-size: 14px;
+}

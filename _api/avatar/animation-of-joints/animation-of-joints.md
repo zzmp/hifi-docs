@@ -3,6 +3,8 @@ layout: doc
 title: Animation of Joints
 collection: api
 category: avatar
+methods: ["Joints.addattach()", "Joints.clearjoinData()", "Joints.clearjoinData()", "Joints.clearjoinData()","Joints.clearjoinData()","Joints.gotoHome()"]
+tag: animation-of-joints
 ---
 
 Click is a Python package for creating beautiful command line interfaces in a composable way with as little code as necessary. It's the Command

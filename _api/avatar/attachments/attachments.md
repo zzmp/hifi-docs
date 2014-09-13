@@ -3,6 +3,8 @@ layout: doc
 title: Attachments
 collection: api
 category: avatar
+methods: ["Myattachment.addattach()", "Myattachment.clearjoinData()", "Myattachment.clearjoinData()", "Myattachment.clearjoinData()","Myattachment.clearjoinData()","Myattachment.gotoHome()"]
+tag: attachments
 ---
 
 Click is a Python package for creating beautiful command line interfaces in a composable way with as little code as necessary. It's the Command

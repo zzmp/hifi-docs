@@ -3,7 +3,8 @@ layout: doc
 title: Audio Callbacks
 collection: api
 category: audio
-developer: true
+methods: ["audio.start()", "audio.stop()", "audio.phause()", "audio.replay()"]
+tag: audio-callbacks
 ---
 
 Click is a Python package for creating beautiful command line interfaces in a composable way with as little code as necessary. It's the Command

@@ -4,10 +4,12 @@ layout: default
 
 <!-- The api layout lists a search bar on the left 
      side and a content section on the right. -->
-
+<script>
+    var tag = "{{ page.tag }}";
+</script>
 <div class="hf doc page">
   <div class="component-header">
-      {{ page.category | replace: '-', ' ' | capitalize }}
+      {% if page.collection == "api" %}<span>JavaScript API</span> <i> > </i>{% endif %}{{ page.category | replace: '-', ' ' | capitalize }}
   </div>
 
   {% include search_form.html %}
@@ -16,8 +18,11 @@ layout: default
 
   <aside class="hf index">
     {% include search_results.html %}
-
-    {% include index.html %}
+    {% if page.collection == "articles" || page.collection == "managing" %}
+      {% include using.html %}
+    {% else %}
+      {% include developing.html %}
+    {% endif %}
   </aside>
 
   <article class="hf article">    

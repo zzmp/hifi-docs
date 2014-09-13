@@ -3,6 +3,8 @@ layout: doc
 title: Functions
 collection: api
 category: avatar
+methods: ["MyAvatar.addThrust()", "MyAvatar.clearjoinData()", "MyAvatar.clearjoinData()", "MyAvatar.clearjoinData()", "MyAvatar.clearjoinData()","MyAvatar.clearjoinData()","MyAvatar.clearjoinData()","MyAvatar.clearjoinData()","MyAvatar.gotoHome()"]
+tag: functions
 ---
 
 Click is a Python package for creating beautiful command line interfaces in a composable way with as little code as necessary. It's the Command
