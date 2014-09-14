@@ -96,37 +96,40 @@ $beige:   #EDEDED; // really only used in the header
 
 body {
   font-size: 18px;
-  font-family: proxima-nova, sans-serif;
+  font-family: "proxima-nova, sans-serif";
 }
 
-h1,h2,h3,h4,h5,h6 { 
-  font-family: Quadon-Bold,Georgia,serif; 
-  font-weight: normal; 
+h1,h2,h3,h4,h5,h6 {
+  font-family: "proxima-nova, sans-serif";
+  font-weight: normal;
   margin-top: 1em;
 }
 
-h2 { font-size: 18px;
-font-family: proxima-nova, sans-serif;
-  color: $blue; 
+h2 {
+  font-size: 18px;
+  font-family: "proxima-nova, sans-serif";
+  color: $blue;
   margin-top: 0;
-}
-article { 
-  font-family: proxima-nova, sans-serif;   
+  font-weight: bold;
 }
 
-p { 
-  margin: .6em 0px 1.2em; 
+article {
+  font-family: "proxima-nova, sans-serif";
 }
 
-a, a:link, a:visited { 
-  color: $blue; 
-  text-decoration: none; 
+p {
+  margin: .6em 0px 1.2em;
 }
 
-a:hover { 
-  color: $blue; 
-  text-decoration: none; 
-  border-bottom: 1px solid $blue; 
+a, a:link, a:visited {
+  color: $blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $blue;
+  text-decoration: none;
+  border-bottom: 1px solid $blue;
 }
 
 /* Component Imports */
@@ -137,48 +140,48 @@ a:hover {
 @import 'syntax.scss';
 
 .hf.doc.page .search .icon {
-    position: absolute;
-    margin-top: 15px;
+  position: absolute;
+  margin-top: 15px;
 }
 
 .hf.doc.page .search #search-query {
-    padding-left: 30px;
+  padding-left: 30px;
 }
 
 .hf.home  .search .icon {
-    position: relative;
-    top: 17px;
-    left: 18px;
+  position: relative;
+  top: 17px;
+  left: 18px;
 }
 
-pre,code { 
-  font-family: Inconsolata, Menlo, Monaco, monospaced !important;
+pre,code {
+  font-family: "Inconsolata, Menlo, Monaco, monospaced" !important;
   background: #EDEDED;
   font-size: 14px;
 }
 
-pre { 
-  padding: .2em .4em; 
+pre {
+  padding: .2em .4em;
   margin: .5em 0;
 }
 
 footer { 
-    margin-top: 30px !important;
+  margin-top: 30px !important;
 }
 
 #ubernerds {
-    text-align: center;
-    margin-top: 15px;
+  text-align: center;
+  margin-top: 15px;
 }
 
 #ubernerds p, #ubernerds ul, #ubernerds li {
-    display: inline;
-    margin: 0px;
-    padding: 0px;
+  display: inline;
+  margin: 0px;
+  padding: 0px;
 }
 
 .fa-search:before {
-    color: #3398cb;
-    position: relative;
-    top: -2px;
+  color: #3398cb;
+  position: relative;
+  top: -2px;
 }

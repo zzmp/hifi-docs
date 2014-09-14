@@ -5,10 +5,10 @@ $(function() {
         entries:  '.entries',
         template: '#search-results-template'
     });
-    if (tag != "") {
+    if (typeof tag != 'undefined' && tag != "") {
       $('.methods-'+tag).addClass("selected");
     }
-    $('.sub-methods a').click(function() { 
+    $('.sub-methods a').click(function() {
       $('.sub-methods a').removeClass("sub-methods-selected");
       $(this).addClass("sub-methods-selected");
     });

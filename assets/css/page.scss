@@ -121,6 +121,8 @@
 .hf.home.page section h2 {
     font-size: 35px;
     line-height: 40px;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .hf.home.page section.using {
@@ -148,7 +150,7 @@
 }
 
 .search > form > input[type="submit"] {
-    font-family: FontAwesome;
+    font-family: "FontAwesome";
 }
 
 .hf.home.page > .index ul {
@@ -198,6 +200,7 @@
     padding: 30px;
     font-size: 14px;
     padding-top: 20px;
+    text-align: justify;
 }
 
 .hf.links {
@@ -241,6 +244,7 @@
     padding: 0px;
     margin-top: 0px;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .hf.doc.page .index ul {
@@ -255,9 +259,10 @@
 
 .hf.doc.page .component-header {
     flex: 1 1 100%;
-    font-family: Quadon-Bold,Georgia,serif;
+    font-family: "proxima-nova, sans-serif";
     font-size: 20px;
     color: #333;
+    font-weight: bold;
 }
 
 /* Index component */
@@ -413,6 +418,7 @@ div.index .developing h3.audio {
 div.index  h3 {
     margin-top: 10px !important;
     font-size: 20px;
+    font-weight: bold;
 }
 
 div.index .using ul,
@@ -535,10 +541,10 @@ li.sub-category {
 }
 
 .hf.home.page li.sub-category:hover,
-.hf.doc.page > .index ul.javascript-api li.methods.selected span.title { 
+.hf.doc.page > .index ul.javascript-api li.methods.selected span.title {
   color: #333 !important;
   cursor: default !important;
-  
+
 }
 
 div.index .developing h3.avatar,
@@ -569,7 +575,7 @@ div.index .developing h3.particles {
     margin-right: 5px;
 }
 
-.hf.doc.page > .index ul.javascript-api i { 
+.hf.doc.page > .index ul.javascript-api i {
     border-left: 5px solid #666666;
     vertical-align: top;
     position: relative;
@@ -577,7 +583,7 @@ div.index .developing h3.particles {
 }
 
 .hf.doc.page > .index ul.javascript-api span.title,
-.hf.doc.page div#search-results a b { 
+.hf.doc.page div#search-results a b {
   color: #3398cb;
   font-weight: bold;
   border: 0px;
@@ -589,7 +595,7 @@ div.index .developing h3.particles {
     padding: 0px;
 }
 
-.hf.doc.page ul.javascript-api ul.sub-methods { 
+.hf.doc.page ul.javascript-api ul.sub-methods {
   margin-left: 15px;
   padding-bottom: 0px;
 }
@@ -602,20 +608,20 @@ div.index .developing h3.particles {
     display: none;
 }
 
-.hf.doc.page .article ul { 
+.hf.doc.page .article ul {
     margin-left: 15px;
     text-indent: -2px;
     font-size: 9px;
 }
 
-.hf.doc.page a.method { 
+.hf.doc.page a.method {
   padding: 0px;
   color: #333;
   font-size: 14px;
 }
 
 .hf.doc.page div#search-results a,
-.hf.doc.page .index a { 
+.hf.doc.page .index a {
   padding: 0px;
   border: 0px;
 }
@@ -628,23 +634,23 @@ div.index .developing h3.particles {
   text-indent: -3px;
 }
 
-li.methods.selected i { 
+li.methods.selected i {
   border-top: 5px solid #333 !important;
   border-left: 5px solid transparent !important;
   border-right: 5px solid transparent !important;
 }
 
-.hf.doc.page > .index ul.javascript-api li.methods.selected .sub-methods  { 
+.hf.doc.page > .index ul.javascript-api li.methods.selected .sub-methods  {
   display: block !important;
 }
 
 div.component-header .fa-home,
-div.component-header .fa-angle-right { 
+div.component-header .fa-angle-right {
   text-align: left;
   color: #666666;
 }
 
-div.component-header a { 
+div.component-header a {
   border: 0px;
 }
 
@@ -654,7 +660,7 @@ div.component-header .sub-header-selected {
   padding-right: 5px;
 }
 
-div.component-header .sub-header-category { 
+div.component-header .sub-header-category {
    padding-left: 5px;
 }
 
