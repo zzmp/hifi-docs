@@ -6,7 +6,7 @@ baseurl: ""
 url: "http://docs.highfidelity.io"
 twitter_username: highfidelityinc
 github_username:  highfidelity
-
+sub_base_path: ""
 base_github_url: "https://github.com/highfidelity/hifi-docs"
 
 # Build settings
