@@ -2158,6 +2158,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1em; }
 
 h2 {
+  font-size: 18px;
+  font-family: proxima-nova, sans-serif;
   color: #3398CB;
   margin-top: 0; }
 
@@ -2418,11 +2420,6 @@ a:hover {
 
   #site-links a > span {
     display: none; } }
-/* Page Components
-*
-* I just put them all in here cause they're all pretty related.
-*/
-/* Page Declarations */
 .hf.page {
   display: -webkit-box;
   display: -moz-box;
@@ -2435,7 +2432,6 @@ a:hover {
   max-width: 848px;
   margin: 0 auto; }
 
-/* Search */
 .hf.page .search > form > input {
   color: #3398CB;
   font-size: 20px;
@@ -2659,7 +2655,8 @@ a:hover {
 .hf.doc.page ul.build-from-source li:hover span,
 .hf.doc.page ul.diagrams li:hover span,
 .hf.doc.page ul.build-from-source li:hover,
-.hf.doc.page ul.diagrams li:hover {
+.hf.doc.page ul.diagrams li:hover,
+.sub-methods-selected span {
   border: 0px;
   color: #3398cb;
   cursor: pointer; }
@@ -2921,12 +2918,13 @@ div.index .developing h3.particles {
   padding: 0px; }
 
 .hf.doc.page ul.javascript-api ul.sub-methods {
-  margin-left: 15px; }
+  margin-left: 15px;
+  padding-bottom: 0px; }
 
-.hf.doc.page h3.avatar,
-.hf.doc.page h3.voxels,
-.hf.doc.page h3.audio,
-.hf.doc.page h3.particles,
+.hf.doc.page aside.developing-aside h3.avatar,
+.hf.doc.page aside.developing-aside h3.voxels,
+.hf.doc.page aside.developing-aside h3.audio,
+.hf.doc.page aside.developing-aside h3.particles,
 .hf.home.page ul.sub-methods {
   display: none; }
 
@@ -2942,7 +2940,8 @@ div.index .developing h3.particles {
 
 .hf.doc.page div#search-results a,
 .hf.doc.page .index a {
-  padding: 0px; }
+  padding: 0px;
+  border: 0px; }
 
 .hf.doc.page ul.build-from-source,
 .hf.doc.page ul.diagrams {
@@ -2958,6 +2957,22 @@ li.methods.selected i {
 
 .hf.doc.page > .index ul.javascript-api li.methods.selected .sub-methods {
   display: block !important; }
+
+div.component-header .fa-home,
+div.component-header .fa-angle-right {
+  text-align: left;
+  color: #666666; }
+
+div.component-header a {
+  border: 0px; }
+
+div.component-header .sub-header-selected {
+  color: #666;
+  padding-left: 3px;
+  padding-right: 5px; }
+
+div.component-header .sub-header-category {
+  padding-left: 5px; }
 
 @media all and (max-width: 800px) {
   .hf.home.page > section {
@@ -3284,8 +3299,9 @@ li.methods.selected i {
   left: 18px; }
 
 pre, code {
-  font-family: "FantasqueSansMono-Regular";
-  background: #EDEDED; }
+  font-family: Inconsolata, Menlo, Monaco, monospaced !important;
+  background: #EDEDED;
+  font-size: 14px; }
 
 pre {
   padding: .2em .4em;
@@ -3307,10 +3323,5 @@ footer {
   color: #3398cb;
   position: relative;
   top: -2px; }
-
-pre, code {
-  font-family: Inconsolata, Menlo, Monaco, monospaced !important;
-  background: #EDEDED;
-  font-size: 14px; }
 
 /*# sourceMappingURL=main.min.css.map */

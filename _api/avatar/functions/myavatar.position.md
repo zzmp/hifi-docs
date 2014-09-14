@@ -66,3 +66,6 @@ You can get the library directly from PyPI:
 	{% highlight bash %}
     $ pip install click
 	{% endhighlight %}
+
+Go to home
+<a id="MyAvatar.gotoHome()">MyAvatar.gotoHome()</a>

@@ -6,7 +6,7 @@
   {% for page in site.api %}
   {% if page.category == cat %}
   <li class="methods methods-{{page.tag}}">
-      <a href="{{ page.url }}" class="title"><span class="title {{page.key}}"><i></i>{{ page.title }}</span></a>
+      <a href="{{ page.url | replace: '.html', '' }}" class="title"><span class="title {{page.key}}"><i></i>{{ page.title }}</span></a>
       {% if page.methods %}
 	<ul class="sub-methods">
 	  {% for method in page.methods %}
@@ -27,7 +27,7 @@
   {% for page in site.api-articles %}
   {% if page.category == cat %}
   <li>
-    <a href="{{ page.url }}">
+    <a href="{{ page.url | replace: '.html', '' }}">
       <span class="title {{page.key}}">{{ page.title }}</span>
       <span class="details">{{ page.tags }}</span>
     </a>
