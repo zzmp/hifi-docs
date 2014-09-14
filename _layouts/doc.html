@@ -6,17 +6,18 @@ layout: default
      side and a content section on the right. -->
 <script>
     var tag = "{{ page.tag }}";
+    var isPageAPI = ("{{page.collection}}" == "articles" || "{{page.collection}}" == "managing") ? false : true;
 </script>
 <div class="hf doc page">
   <div class="component-header">
-      {% if page.collection == "api" %}<span>JavaScript API</span> <i> > </i>{% endif %}{{ page.category | replace: '-', ' ' | capitalize }}
+     <a href="/{{site.sub_base_path}}" class="fa fa-home fa-fw"></a> <i class="fa fa-angle-right"></i> {% if page.collection == "api" %}<span class="sub-header-selected">JavaScript API</span> <i class="fa fa-angle-right"></i>{% endif %}<span class="sub-header-category">{{ page.category | replace: '-', ' ' | capitalize }}</span>
   </div>
 
   {% include search_form.html %}
 
   {% include edit_on_github.html %}
 
-  <aside class="hf index">
+  <aside class="hf index {% if page.collection != 'articles' || page.collection != 'managing' %} developing-aside {% endif %}">
     {% include search_results.html %}
     {% if page.collection == "articles" || page.collection == "managing" %}
       {% include using.html %}
