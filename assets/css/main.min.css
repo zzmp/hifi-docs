@@ -2586,8 +2586,7 @@ a:hover {
   border-top: 1px solid #E2E2E2;
   padding: 30px;
   font-size: 14px;
-  padding-top: 20px;
-  text-align: justify; }
+  padding-top: 20px; }
 
 .hf.links {
   flex: 2 1 70%;
@@ -2662,7 +2661,8 @@ a:hover {
 .hf.doc.page ul.diagrams li:hover span,
 .hf.doc.page ul.build-from-source li:hover,
 .hf.doc.page ul.diagrams li:hover,
-.sub-methods-selected span {
+.sub-methods-selected span,
+.hf.page .index ul li:hover span.title {
   border: 0px;
   color: #3398cb;
   cursor: pointer; }
