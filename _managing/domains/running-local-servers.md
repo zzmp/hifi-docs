@@ -13,49 +13,51 @@ At a minimum you need to run a domain-server and multiple assignment-clients.  T
 * In a terminal start the domain-server:
 
 {% highlight js %} 
-
-```
 # navigate to the domain-server directory
 cd ~/my-repo/build/domain-server/Debug/
 # run the executable
 ./domain-server
-```
 {% endhighlight %}
 
 * In a second terminal start the assignment-clients:
-```
+{% highlight js %}
 cd ~/my-repo/build/assignment-client/Debug/
 mkdir resources
 ./assignment-client -n 5
-```
+{% endhighlight %}
+
 ## Linux
 * Assuming a successful build in a fresh repo...
 * In a terminal start the domain-server:
-```
+{% highlight js %}
 cd ~/my-repo/build/domain-server/
 ./domain-server
-```
+{% endhighlight %}
+
 * In a second terminal start the assignment-clients:
-```
+{% highlight js %}
 cd ~/my-repo/build/assignment-client/
 mkdir resources
 ./assignment-client -n 5
-```
+{% endhighlight %}
+
 * In the interface client: File --> Go To Domain... --> 127.0.0.1
 
 ## Windows
 * Assuming a successful build in a fresh repo...
 * Click the start button and run cmd.exe (Command window):
-```
+{% highlight js %}
 cd <hifi_folder>/build/domain-server/Release
 domain-server.exe
-```
+{% endhighlight %}
+
 * In a second command window start the assignment-clients:
-```
+{% highlight js %}
 cd <hifi_folder>/build/assignment-client/Release
 mkdir resources
 assignment-client.exe -n 5
-```
+{% endhighlight %}
+
 * In the interface client: File --> Go To Domain... --> 127.0.0.1 (localhost)
 * Please note that currently the assignment clients still take a lot of CPU.
 * Also note that at this moment only interfaces clients running on windows seem to be able to connect to a domain-server running on windows. Mac interface clients will crash the moment they arrive.
