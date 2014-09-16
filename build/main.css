@@ -2125,7 +2125,7 @@ img[height] {
  * Screen sizes: */
 body {
   font-size: 18px;
-  font-family: "proxima-nova, sans-serif"; }
+  font-family: proxima-nova, sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Quadon-Bold,Georgia,serif;
@@ -2138,7 +2138,7 @@ h2 {
   margin-top: 0; }
 
 article {
-  font-family: "proxima-nova, sans-serif"; }
+  font-family: proxima-nova, sans-serif; }
 
 p {
   margin: .6em 0px 1.2em; }
@@ -2590,7 +2590,7 @@ a:hover {
   color: #3398CB; }
 
 .search > form > input[type="submit"] {
-  font-family: "FontAwesome"; }
+  font-family: FontAwesome; }
 
 .hf.home.page > .index ul {
   list-style-type: disc;
@@ -2879,7 +2879,7 @@ div.index ul.devices li span.hand-controllers {
   line-height: 40px;
   padding-left: 50px; }
 
-div.index ul.devices li span.hdm {
+div.index ul.devices li span.hmd {
   background: url(/assets/images/icons/hmds.svg) no-repeat;
   background-size: 28px 53px;
   background-position: 0px -9px;
@@ -3401,7 +3401,7 @@ div.component-header .sub-header-category {
   left: 18px; }
 
 pre, code {
-  font-family: "Inconsolata, Menlo, Monaco, monospaced" !important;
+  font-family: Inconsolata, Menlo, Monaco, monospaced !important;
   background: #EDEDED;
   font-size: 14px; }
 
