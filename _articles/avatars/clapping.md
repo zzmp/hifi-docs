@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Exploring Avatar Scripts: clap.js
+title: Exploring Avatar Scripts
 collection: articles
 category: avatars
 tags: [avatar, javascript, clap.js]
