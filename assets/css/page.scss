@@ -243,7 +243,7 @@
     padding: 0px;
     margin-top: 0px;
     margin-bottom: 10px;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .hf.doc.page .index ul {
@@ -258,10 +258,9 @@
 
 .hf.doc.page .component-header {
     flex: 1 1 100%;
-    font-family: "proxima-nova, sans-serif";
+    font-family: Quadon-Bold,Georgia,serif;
     font-size: 20px;
     color: #333;
-    font-weight: bold;
 }
 
 /* Index component */
@@ -418,7 +417,6 @@ div.index .developing h3.audio {
 div.index  h3 {
     margin-top: 10px !important;
     font-size: 20px;
-    font-weight: bold;
 }
 
 div.index .using ul,
