@@ -14,7 +14,7 @@ Upon running the interface, you'll be presented with your brand-new digital body
 
 ![Default Body](./images/default_body_n_head.png "Default Body")
 
-Although adorable, this little guy has no legs, eliminating your ability to use many of the example scripts provided by High Fidelity. Let's customize the avatar to be a not only a bit more functional, but also bit more personalized. 
+Although adorable, this little guy has no legs, eliminating your ability to use many of the example scripts provided by High Fidelity. Let's customize the avatar to be not only a bit more functional, but also bit more personalized. 
 
 ## Body and Head
 
