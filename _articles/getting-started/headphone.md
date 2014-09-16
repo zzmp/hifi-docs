@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: New User Notes
+title: Headphones and microphone
 collection: articles
 category: getting-started
 tags: []

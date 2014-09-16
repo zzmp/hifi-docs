@@ -23,6 +23,7 @@ module Jekyll
       # stop word exclusion configuration
       @min_length = lunr_config['min_length']
       @stopwords_file = lunr_config['stopwords']
+      @isAPI = false
     end
 
     # Index all pages except pages matching any value in config['lunr_excludes'] or with date['exclude_from_search']
@@ -34,7 +35,7 @@ module Jekyll
       items = pages_to_index(site)
       content_renderer = PageRenderer.new(site)
       index = []
-
+      
       site.collections.each do |name, collection|
         collection.docs.each do |document|
           items << document
@@ -46,7 +47,10 @@ module Jekyll
 
         entry.strip_index_suffix_from_url! if @strip_index_html
         entry.strip_stopwords!(stopwords, @min_length) if File.exists?(@stopwords_file) 
-        
+	@isAPI = true
+        if entry.collection == "articles" || entry.collection == "managing"
+	  @isAPI = false
+	end
         index << {
           :title => entry.title, 
           :url => entry.url,
@@ -54,7 +58,9 @@ module Jekyll
           :categories => entry.categories,
           :collection => entry.collection,
           :class => entry.class,
-          :body => entry.body
+          :body => entry.body,
+	  :api => @isAPI,
+	  :tags => entry.tags
         }
         
         puts 'Indexed ' << "#{entry.title} (#{entry.collection} - #{entry.url})"
@@ -82,7 +88,6 @@ module Jekyll
     def stopwords
       @stopwords ||= IO.readlines(@stopwords_file).map { |l| l.strip }
     end
-    
     def pages_to_index(site)
       items = []
       
@@ -132,7 +137,7 @@ module Jekyll
     def self.create_from_document(document, renderer)
       data = document.to_liquid
 
-      SearchEntry.new(data['title'], data['url'], Time.now, '', data['content'], data['collection'])
+      SearchEntry.new(data['title'], data['url'], Time.now, '', data['content'], data['collection'], data['tags'])
     end
     
     def self.create_from_page(page, renderer)
@@ -141,7 +146,7 @@ module Jekyll
       date = nil
       categories = []
       
-      SearchEntry.new(title, url, date, categories, body, nil)
+      SearchEntry.new(title, url, date, categories, body, nil, nil)
     end
     
     def self.create_from_post(post, renderer)
@@ -150,7 +155,7 @@ module Jekyll
       date = post.date
       categories = post.categories
       
-      SearchEntry.new(title, url, date, categories, body, nil)
+      SearchEntry.new(title, url, date, categories, body, nil, nil)
     end
 
     def self.extract_title_and_url(item)
@@ -158,10 +163,10 @@ module Jekyll
       [ data['title'], data['url'] ]
     end
 
-    attr_reader :title, :url, :date, :categories, :body, :collection
+    attr_reader :title, :url, :date, :categories, :body, :collection, :tags
     
-    def initialize(title, url, date, categories, body, collection)
-      @title, @url, @date, @categories, @body, @collection = title, url, date, categories, body, collection
+    def initialize(title, url, date, categories, body, collection, tags)
+      @title, @url, @date, @categories, @body, @collection, @tags = title, url, date, categories, body, collection, tags
     end
     
     def strip_index_suffix_from_url!

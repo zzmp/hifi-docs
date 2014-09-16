@@ -6,7 +6,7 @@ baseurl: ""
 url: "http://docs.highfidelity.io"
 twitter_username: highfidelityinc
 github_username:  highfidelity
-
+sub_base_path: ""
 base_github_url: "https://github.com/highfidelity/hifi-docs"
 
 # Build settings
@@ -19,9 +19,15 @@ collections:
     output: true
   articles:
     output: true
+  managing:
+    output: ture
+  api-articles:
+    output: true
   
-api-categories: [avatars, particles, voxels, audio]
-article-categories: [getting-started, scripts, settings, avatars, voxels, audio]
+article-categories: [getting-started, scripts, settings, avatars, devices, "voxels-meshes & particles", audio]
+managing-categories: [assignment-clients, domains]
+api-categories: [avatar, particles, voxels, audio]
+api-article-categories: [build-from-source, diagrams]
 
 # API content settings
 #api-section-list: [avatars, particles, voxels, audio]

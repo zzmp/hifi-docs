@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Demo Article
+title: How do accounts and login work ?
 collection: articles
 category: getting-started
 tags: [demo]
