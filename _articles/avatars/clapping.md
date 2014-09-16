@@ -4,7 +4,6 @@ title: Exploring Avatar Scripts: clap.js
 collection: articles
 category: avatars
 tags: [avatar, javascript, clap.js]
-
 ---
 
 # Introducing MyAvatar
