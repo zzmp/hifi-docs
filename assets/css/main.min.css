@@ -2153,16 +2153,14 @@ body {
   font-family: "proxima-nova, sans-serif"; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "proxima-nova, sans-serif";
+  font-family: Quadon-Bold,Georgia,serif;
   font-weight: normal;
   margin-top: 1em; }
 
 h2 {
   font-size: 18px;
-  font-family: "proxima-nova, sans-serif";
   color: #3398CB;
-  margin-top: 0;
-  font-weight: bold; }
+  margin-top: 0; }
 
 article {
   font-family: "proxima-nova, sans-serif"; }
@@ -2523,7 +2521,6 @@ a:hover {
 .hf.home.page section h2 {
   font-size: 35px;
   line-height: 40px;
-  font-weight: bold;
   margin-bottom: 5px; }
 
 .hf.home.page section.using {
@@ -2624,7 +2621,7 @@ a:hover {
   padding: 0px;
   margin-top: 0px;
   margin-bottom: 10px;
-  font-weight: bold; }
+  font-weight: normal; }
 
 .hf.doc.page .index ul {
   list-style-type: none;
@@ -2636,10 +2633,9 @@ a:hover {
 
 .hf.doc.page .component-header {
   flex: 1 1 100%;
-  font-family: "proxima-nova, sans-serif";
+  font-family: Quadon-Bold,Georgia,serif;
   font-size: 20px;
-  color: #333;
-  font-weight: bold; }
+  color: #333; }
 
 /* Index component */
 .index {
@@ -2773,8 +2769,7 @@ div.index .developing h3.audio {
 
 div.index h3 {
   margin-top: 10px !important;
-  font-size: 20px;
-  font-weight: bold; }
+  font-size: 20px; }
 
 div.index .using ul,
 div.index .using h3 {

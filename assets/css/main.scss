@@ -73,7 +73,7 @@
   font-style: italic;
 }
  
-
+ 
 /* Note:
  *
  * We sometimes use Bootstrap, linked via the header before the main stylesheet.
@@ -100,17 +100,15 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: "proxima-nova, sans-serif";
+  font-family: Quadon-Bold,Georgia,serif;
   font-weight: normal;
   margin-top: 1em;
 }
 
 h2 {
   font-size: 18px;
-  font-family: "proxima-nova, sans-serif";
   color: $blue;
   margin-top: 0;
-  font-weight: bold;
 }
 
 article {
