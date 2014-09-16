@@ -11,12 +11,17 @@ At a minimum you need to run a domain-server and multiple assignment-clients.  T
 ## Mac
 * Assuming a successful build in a fresh repo...
 * In a terminal start the domain-server:
+
+{% highlight js %} 
+
 ```
 # navigate to the domain-server directory
 cd ~/my-repo/build/domain-server/Debug/
 # run the executable
 ./domain-server
 ```
+{% endhighlight %}
+
 * In a second terminal start the assignment-clients:
 ```
 cd ~/my-repo/build/assignment-client/Debug/
