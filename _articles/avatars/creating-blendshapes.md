@@ -17,7 +17,7 @@ The base model should have what ever expression you want your avatar to have by 
 ![neutral face](https://s3-us-west-1.amazonaws.com/highfidelity-public/images/neutral.jpg) 
 
 
-So, for example if your base model has it’s mouth open, when you are not smiling or your mouth is closed, your Avatar’s mouth will look open to other Avatars. It will also mean that if you open your mouth, you will be starting from a default open mouth position and your mouth will appear twice as open to other Avatars in Interface. 
+So, for example if your base model has its mouth open, when you are not smiling or your mouth is closed, your Avatar’s mouth will look open to other Avatars. It will also mean that if you open your mouth, you will be starting from a default open mouth position and your mouth will appear twice as open to other Avatars in Interface. 
 
 Always "freeze transformation" and "delete history" on the base model before proceeding to blendshape, joints setup and paint weighting.
 
@@ -111,14 +111,14 @@ Always "freeze transformation" and "delete history" on the base model before pro
 
 ### Unwrap the UV 
 
-Setup a texture for the 3D model. No one texture file can be larger than 1024x1024. Remember that the higher resolution the textures you use, the slower they will appear to other Avatar’s around you and possibly degrade the experience for others. 
+Setup a texture for the 3D model. No one texture file can be larger than 1024x1024. Remember that the higher resolution the textures you use, the slower they will appear to other Avatars around you and possibly degrade the experience for others. 
 
 Specularity and Ambient color are currently not supported but bump mapping is if a normal map texture is referenced. 
 
 Textures that contain alpha information are supported in Interface, but not currently in Faceshift. 
 Setup Armature 
 
-Rename bones, paint weight, and parent any extra 3D object to the armature. If you want to take advantage of Facshift’s Head Pose and Eye Tracking, you must create those joints and name them jointNeck, jointEyeLeft and jointEyeRight. 
+Rename bones, paint weight, and parent any extra 3D object to the armature. If you want to take advantage of Faceshifts' Head Pose and Eye Tracking, you must create those joints and name them jointNeck, jointEyeLeft and jointEyeRight. 
 
 ### Create shape keys (blendshapes) 
 

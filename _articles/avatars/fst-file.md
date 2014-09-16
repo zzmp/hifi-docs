@@ -52,7 +52,7 @@ bs = Puff = Mouth.Puff = 1<br>
 bs = Sneer = Mouth.Sneer = 1<br>
 
 
-The information at the top of this file specifies the name (name) of the avatar and where the .fbx file (filename) and texture files (texdir) can be found. It also specifies the scale (scale) of the model. If after importing your model you find it to be too small or too large. You should adjust the scale and reupload the fst file. If created together, the head and body models' scale should be the same in each .fst file. 
+The information at the top of this file specifies the name (name) of the avatar and where the .fbx file (filename) and texture files (texdir) can be found. It also specifies the scale (scale) of the model. If after importing your model you find it to be too small or too large. You should adjust the scale and re-upload the fst file. If created together, the head and body models' scale should be the same in each .fst file. 
 
 Below the model name are the Level of Detail mappings. LOD's are reduced (in polygons) versions for your highest resolution model. These LOD's are shown to others when they are at the specified distances listed in the LOD . So for example:
  
