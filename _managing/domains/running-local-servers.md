@@ -12,7 +12,7 @@ At a minimum you need to run a domain-server and multiple assignment-clients.  T
 * Assuming a successful build in a fresh repo...
 * In a terminal start the domain-server:
 
-{% highlight js %} 
+{% highlight sh %} 
 # navigate to the domain-server directory
 cd ~/my-repo/build/domain-server/Debug/
 # run the executable
@@ -20,7 +20,7 @@ cd ~/my-repo/build/domain-server/Debug/
 {% endhighlight %}
 
 * In a second terminal start the assignment-clients:
-{% highlight js %}
+{% highlight sh %}
 cd ~/my-repo/build/assignment-client/Debug/
 mkdir resources
 ./assignment-client -n 5
@@ -29,13 +29,13 @@ mkdir resources
 ## Linux
 * Assuming a successful build in a fresh repo...
 * In a terminal start the domain-server:
-{% highlight js %}
+{% highlight sh %}
 cd ~/my-repo/build/domain-server/
 ./domain-server
 {% endhighlight %}
 
 * In a second terminal start the assignment-clients:
-{% highlight js %}
+{% highlight sh %}
 cd ~/my-repo/build/assignment-client/
 mkdir resources
 ./assignment-client -n 5
@@ -46,13 +46,13 @@ mkdir resources
 ## Windows
 * Assuming a successful build in a fresh repo...
 * Click the start button and run cmd.exe (Command window):
-{% highlight js %}
+{% highlight sh %}
 cd <hifi_folder>/build/domain-server/Release
 domain-server.exe
 {% endhighlight %}
 
 * In a second command window start the assignment-clients:
-{% highlight js %}
+{% highlight sh %}
 cd <hifi_folder>/build/assignment-client/Release
 mkdir resources
 assignment-client.exe -n 5
