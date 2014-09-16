@@ -7,5 +7,4 @@ category: scripts
 
 {:toc}
 
-Here&rsquo;s an overview of Markdown syntax that you can use anywhere on GitHub.com or in your own text files.
-
+The Running Scripts panel is a powerful tool for users and developers alike.
