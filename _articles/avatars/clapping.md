@@ -115,7 +115,7 @@ In this section, we'll replace the "SHIFT" key with the "SPACE" bar for starting
 
 First, take a look at the code responsible for assigning the "SHIFT" key the responsibility for starting and stopping the animation:
 
-```
+{% highlight js %}
 ...
 
 Controller.keyPressEvent.connect(function(event) {
@@ -139,7 +139,7 @@ Controller.keyReleaseEvent.connect(function(event) {
 
 ...
 
-```
+{% endhighlight %}
 
 Back in the "File" menu, click on "Stop all running scripts" to ensure a clean slate. Next, open the "Script Editor" from the "Tools" menu, and paste in the `clap.js` code, included at the end of this file. 
 
@@ -149,7 +149,7 @@ Verify that the script is running by hitting the SHIFT key and verifying that th
 
 Now, replace both instances of "SHIFT" with "SPACE" in the script:
 
-```
+{% highlight js %}
 ...
 
 Controller.keyPressEvent.connect(function(event) {
@@ -173,7 +173,7 @@ Controller.keyReleaseEvent.connect(function(event) {
 
 ...
 
-```
+{% endhighlight %}
 Go back to the Interface and try to clap by hitting the SHIFT key. Now try to clap by hitting the SPACE key. 
 
 ## Uploading the your new script
@@ -186,7 +186,7 @@ You can upload this file via "Open and Run Script File" option on the "File" men
 
 For reference purposes, the script at the time of writing is included below:
 
-```
+{% highlight js %}
 //
 //  clap.js
 //  examples
@@ -333,4 +333,4 @@ function stopClapping() {
 
 // Connect a call back that happens every frame
 Script.update.connect(maybePlaySound);
-```
+{% endhighlight %}
