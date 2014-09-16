@@ -6,8 +6,7 @@ category: avatars
 tags: properties
 ---
 
-
-`scale` refers to the size of your avatar, a float. The minimum scale of MyAvatar (`MIN_AVATAR_SCALE`) is .05, and the maximum size of MyAvatar (`MAX_AVATAR_SCALE`) is 1000.
+`scale` refers to the size of MyAvatar, a float. The minimum scale of MyAvatar (`MIN_AVATAR_SCALE`) is .05, and the maximum size of MyAvatar (`MAX_AVATAR_SCALE`) is 1000.
 
 ## Example
 
