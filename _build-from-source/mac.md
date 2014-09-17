@@ -1,7 +1,7 @@
 ---
 layout: doc
 title: Mac OS X 10.8+
-collection: api-articles
+collection: build-from-source
 category: build-from-source
 key: mac
 ---

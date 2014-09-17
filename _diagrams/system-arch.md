@@ -1,9 +1,8 @@
 ---
 layout: doc
-title: Linux
-collection: api-articles
-category: build-from-source
-key: linux
+title: System Architecture
+collection: diagrams
+category: diagrams
 ---
 
 {:toc}

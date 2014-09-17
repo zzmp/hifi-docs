@@ -1,8 +1,9 @@
 ---
 layout: doc
-title: Octal Codes
-collection: api-articles
-category: diagrams
+title: Windows 7 & 8
+collection: build-from-source
+category: build-from-source
+key: windows
 ---
 
 {:toc}
