@@ -8,9 +8,10 @@ tag: functions
 ---
 
 
-[MyAvatar.animation()]
-[MyAvatar.addThrust()]
-[MyAvatar.attach()]
+## [MyAvatar.animation()](#MyAvatar.animation())
+
+## [MyAvatar.addThrust()]
+## [MyAvatar.attach()]
 [MyAvatar.clearJointData()]
 [MyAvatar.decreaseSize()]
 [MyAvatar.detatch()]
