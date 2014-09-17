@@ -8,7 +8,7 @@ tags: [avatar, javascript, clap.js]
 
 # Introducing MyAvatar
 
-You've downloaded and built the High Fidelity interface, and your Occulus Rift is on pre-order. Now what? Might as well get to know your alter-ego, MyAvatar. 
+You've downloaded and built the High Fidelity interface, and your Oculus Rift is on pre-order. Now what? Might as well get to know your alter-ego, MyAvatar. 
 
 Upon running the interface, you'll be presented with your brand-new digital body: 
 
