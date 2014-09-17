@@ -312,47 +312,280 @@ Observe that MyAvatar is now being impaled by a guitar.
 To remove the guitar, run `MyAvatar.detachOne(guitarModel);`.
 
 
-
 ## [MyAvatar.getAcceleration()](#MyAvatar.getAcceleration())
+
+
+`getAcceleration` returns the acceleration of MyAvatar as a vector.
+
+## Example
+
+{% highlight js %}
+> JSON.stringify(MyAvatar.getAcceleration())
+<  {"x":0,"y":0,"z":0}
+{% endhighlight %}
 
 
 ## [MyAvatar.getAngularAcceleration()](#MyAvatar.getAngularAcceleration())
 
+`getAngularAcceleration` returns the angular acceleration of MyAvatar as a vector.
+
+## Example
+
+{% highlight js %}
+> JSON.stringify(MyAvatar.getAngularAcceleration())
+<  {"x":0,"y":0,"z":0}
+{% endhighlight %}
+
 
 ## [MyAvatar.getAngularVelocity()](#MyAvatar.getAngularVelocity())
+
+`getAngularVelocity` returns the angular velocity of MyAvatar as a vector.
+
+## Example
+
+```
+> JSON.stringify(MyAvatar.getAngularVelocity())
+<  {"x":0,"y":0,"z":0}
+```
+
 
 
 ## [MyAvatar.getJointCombinedRotation()](#MyAvatar.getJointCombinedRotation())
 
+`getJointCombinedRotation` accepts either a string (example, "Hips") or an integer index of a target body part, and returns a vector of the combined rotation of the body part in question. 
+
+## Overloads
+
+* Vec3 MyAvatar.getJointCombinedRotation(const QString& name)
+
+## Example
+
+```
+> JSON.stringify(MyAvatar.getJointCombinedRotation("Hips"))
+<  {"x":-0.000038061141822254285,"y":0.9019246697425842,"z":-0.00001822586818889249,"w":-0.4318934679031372}
+> JSON.stringify(MyAvatar.getJointCombinedRotation(0))
+<  {"x":-0.000038061141822254285,"y":0.9019246697425842,"z":-0.00001822586818889249,"w":-0.4318934679031372}
+```
+
 
 ## [MyAvatar.getJointIndex()](#MyAvatar.getJointIndex())
+
+Given the string name of a MyAvatar joint, `getJointIndex` returns the integer index of the bodypart, or -1 if inputs are invalid.
+
+## Example
+
+```
+> MyAvatar.getJointIndex("Shoes")
+< 3
+> MyAvatar.getJointIndex("Invalid Joint Name")
+< -1
+```
 
 
 ## [MyAvatar.getJointNames()](#MyAvatar.getJointNames())
 
+Returns `jointNames`, an array of strings describing the joints of MyAvatar.  
+
+## Example
+
+You can take a look at the list of joint names by merely running `MyAvatar.getJointNames()`:
+
+```
+> MyAvatar.getJointNames()
+< Hips,BodyParts,Moustaches,Tops,Beards,Shoes,Hair,Eyewear,Hats,Bottoms,RightUpLeg,RightLeg,RightFoot,RightToeBase,RightToe_End,LeftUpLeg,LeftLeg,LeftFoot,LeftToeBase,LeftToe_End,Spine,Spine1,Spine2,RightShoulder,RightArm,RightForeArm,RightHand,RightHandPinky1,RightHandPinky2,RightHandPinky3,RightHandPinky4,RightHandRing1,RightHandRing2,RightHandRing3,RightHandRing4,RightHandMiddle1,RightHandMiddle2,RightHandMiddle3,RightHandMiddle4,RightHandIndex1,RightHandIndex2,RightHandIndex3,RightHandIndex4,RightHandThumb1,RightHandThumb2,RightHandThumb3,RightHandThumb4,LeftShoulder,LeftArm,LeftForeArm,LeftHand,LeftHandPinky1,LeftHandPinky2,LeftHandPinky3,LeftHandPinky4,LeftHandRing1,LeftHandRing2,LeftHandRing3,LeftHandRing4,LeftHandMiddle1,LeftHandMiddle2,LeftHandMiddle3,LeftHandMiddle4,LeftHandIndex1,LeftHandIndex2,LeftHandIndex3,LeftHandIndex4,LeftHandThumb1,LeftHandThumb2,LeftHandThumb3,LeftHandThumb4,Neck,Head,HeadTop_End
+```
+
+To see the command in a more practical application, take a look at the `crazylegs.js` script:
+
+```
+var FREQUENCY = 5.0;
+var AMPLITUDE = 45.0;
+var cumulativeTime = 0.0;
+```
+
+After some preliminaries, the script calls `MyAvatar.getJointNames()`, then prints it to the console:
+```
+var jointList = MyAvatar.getJointNames(); 
+var jointMappings = "\n# Joint list start";
+for (var i = 0; i < jointList.length; i++) {
+    jointMappings = jointMappings + "\njointIndex = " + jointList[i] + " = " + i;
+}
+print(jointMappings + "\n# Joint list end");
+```
+
+Then the script continues, animating MyAvatar's legs
+
+```
+Script.update.connect(function(deltaTime) {
+    cumulativeTime += deltaTime;
+    MyAvatar.setJointData("RightUpLeg", Quat.fromPitchYawRollDegrees(AMPLITUDE * Math.sin(cumulativeTime * FREQUENCY), 0.0, 0.0));
+    MyAvatar.setJointData("LeftUpLeg", Quat.fromPitchYawRollDegrees(-AMPLITUDE * Math.sin(cumulativeTime * FREQUENCY), 0.0, 0.0));
+    MyAvatar.setJointData("RightLeg", Quat.fromPitchYawRollDegrees(
+        AMPLITUDE * (1.0 + Math.sin(cumulativeTime * FREQUENCY)),0.0, 0.0));
+    MyAvatar.setJointData("LeftLeg", Quat.fromPitchYawRollDegrees(
+        AMPLITUDE * (1.0 - Math.sin(cumulativeTime * FREQUENCY)),0.0, 0.0));
+});
+
+Script.scriptEnding.connect(function() {
+    MyAvatar.clearJointData("RightUpLeg");
+    MyAvatar.clearJointData("LeftUpLeg");
+    MyAvatar.clearJointData("RightLeg");
+    MyAvatar.clearJointData("LeftLeg");
+});
+```
+
 
 ## [MyAvatar.getJointPosition()](#MyAvatar.getJointPosition())
+
+`getJointPosition` accepts either a string (example, "Hips") or an integer index of a target body part, and returns a vector of the position of the body part in question. 
+
+## Overloads
+
+* Vec3 MyAvatar.getJointPosition(QString& name)
+
+## Example
+
+```
+> JSON.stringify(MyAvatar.getJointPosition("Hips"))
+<  {"x":7229.2587890625,"y":4950.5380859375,"z":5042.74951171875}
+> JSON.stringify(MyAvatar.getJointPosition(0))
+< {"x":7229.2587890625,"y":4950.5380859375,"z":5042.74951171875}
+```
 
 
 ## [MyAvatar.getJointRotation()](#MyAvatar.getJointRotation())
 
+`getJointRotation` returns current joint rotation in quaternion. 
+
+## Example
+
+```
+> bodyPart = MyAvatar.getJointNames()[3];
+< Shoes
+> JSON.stringify(MyAvatar.getJointRotation(bodyPart))
+< {"x":0,"y":0,"z":0,"w":1}
+```
+
 
 ## [MyAvatar.getTargetAvatarPosition()](#MyAvatar.getTargetAvatarPosition())
+
+`getTargetAvatarPosition` returns a three-dimensional vector describing the position of the avatar that your mouse is hovering over. If your mouse is not currently hovering over an avatar, all fields are zero. 
+
+## Example
+
+```
+> JSON.stringify(MyAvatar.getTargetAvatarPosition())
+< {"x":0,"y":0,"z":0}
+```
 
 
 ## [MyAvatar.getThrust()](#MyAvatar.getThrust())
 
+`getThrust` returns MyAvatar's `thrust` property.
+
+## Example
+
+```
+> JSON.stringify(MyAvatar.getThrust())
+< {"x":0,"y":0,"z":0}
+```
+
 
 ## [MyAvatar.goHome()](#MyAvatar.goHome())
+
+`goHome` sends MyAvatar back to its origin.
+
+## Example
+
+```
+> JSON.stringify(MyAvatar.position)
+< {"x":7462,"y":115"z":2201}
+> MyAvatar.goHome()
+< JSON.stringify(MyAvatar.position)
+> {"x":6270,"y":206.85147094726562,"z":6000}
+```
 
 
 ## [MyAvatar.increaseSize()](#MyAvatar.increaseSize())
 
+`increaseSize` increases the scale property of MyAvatar by the `SCALING_RATIO`, which has default value .05. The maximum scale of the avatar (`MAX_AVATAR_SCALE`) is 1000.
+
+## Example
+
+```
+> MyAvatar.scale
+< 1.1024998426437378
+> MyAvatar.increaseSize()
+< undefined
+> MyAvatar.scale
+< 1.1576248407363892
+```
+
 
 ## [MyAvatar.position()](#MyAvatar.position())
+
+Lost this -- need to add it back.
 
 
 ## [MyAvatar.resetSize()](#MyAvatar.resetSize())
 
+`resetSize` sets the `scale` of MyAvatar to 1. 
+
+## Example
+
+```
+> MyAvatar.scale
+< 0.949999988079071
+> MyAvatar.resetSize()
+< undefined
+> MyAvatar.scale
+< 1
+```
+
+
 
 ## [MyAvatar.setJointData()](#MyAvatar.setJointData())
+
+`setJointData` sets a target bodypart's rotation in quaternion. 
+
+## Example
+
+Take a look at the `crazylegs.js` script. 
+
+```
+var FREQUENCY = 5.0;
+var AMPLITUDE = 45.0;
+var cumulativeTime = 0.0;
+var jointList = MyAvatar.getJointNames(); 
+var jointMappings = "\n# Joint list start";
+
+for (var i = 0; i < jointList.length; i++) {
+    jointMappings = jointMappings + "\njointIndex = " + jointList[i] + " = " + i;
+}
+print(jointMappings + "\n# Joint list end"); 
+```
+
+After some preliminaries, the script sets `MyAvatar.setJointData()` in several fun configurations to give MyAvatar a funny walk.
+
+```
+Script.update.connect(function(deltaTime) {
+    cumulativeTime += deltaTime;
+    MyAvatar.setJointData("RightUpLeg", Quat.fromPitchYawRollDegrees(AMPLITUDE * Math.sin(cumulativeTime * FREQUENCY), 0.0, 0.0));
+    MyAvatar.setJointData("LeftUpLeg", Quat.fromPitchYawRollDegrees(-AMPLITUDE * Math.sin(cumulativeTime * FREQUENCY), 0.0, 0.0));
+    MyAvatar.setJointData("RightLeg", Quat.fromPitchYawRollDegrees(
+        AMPLITUDE * (1.0 + Math.sin(cumulativeTime * FREQUENCY)),0.0, 0.0));
+    MyAvatar.setJointData("LeftLeg", Quat.fromPitchYawRollDegrees(
+        AMPLITUDE * (1.0 - Math.sin(cumulativeTime * FREQUENCY)),0.0, 0.0));
+});
+```
+
+Upon the conclusion of the script, the affected joint data is cleared, returning MyAvatar to the standing position: 
+
+```
+Script.scriptEnding.connect(function() {
+    MyAvatar.clearJointData("RightUpLeg");
+    MyAvatar.clearJointData("LeftUpLeg");
+    MyAvatar.clearJointData("RightLeg");
+    MyAvatar.clearJointData("LeftLeg");
+});
+```
