@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Traning in Faceshift
+title: Training in Faceshift
 collection: articles
 category: avatars
 tags: [faceshift]
