@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: MyAvatar Animations
+title: MyAvatar.Animation
 collection: api
 category: avatars
 tags: functions
@@ -25,7 +25,7 @@ Give MyAvatar a break by stopping the animation:
 
 For a more in-depth look at using animation, take a look at the full `clap.js` script below:
 
-```
+{% highlight js %}
 //
 //  clap.js
 //  examples
@@ -172,4 +172,4 @@ function stopClapping() {
 
 // Connect a call back that happens every frame
 Script.update.connect(maybePlaySound);
-```
+{% endhighlight %}
