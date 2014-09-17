@@ -1,3 +1,12 @@
+---
+layout: doc
+title: Coal's CentOS 6.5 Domain-Server and Assignment-Client Compile Guide
+collection: managing
+category: domains
+---
+
+{:toc}
+
 ### Coal's CentOS 6.5 Domain-Server and Assignment-Client Compile Guide
 
 I wrote this originally for virtual machines (KVM, not OpenVZ).
