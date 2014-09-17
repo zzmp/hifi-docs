@@ -2,7 +2,8 @@
 layout: doc
 title: New User Notes
 collection: articles
-category: getting started
+category: getting-started
+tags: [basics]
 ---
 
 {:toc}
