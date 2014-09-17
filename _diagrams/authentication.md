@@ -1,9 +1,8 @@
 ---
 layout: doc
-title: Windows 7 & 8
-collection: api-articles
-category: build-from-source
-key: windows
+title: Authentication
+collection: diagrams
+category: diagrams
 ---
 
 {:toc}

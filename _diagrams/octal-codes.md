@@ -1,7 +1,7 @@
 ---
 layout: doc
-title: Authentication
-collection: api-articles
+title: Octal Codes
+collection: diagrams
 category: diagrams
 ---
 

@@ -21,13 +21,15 @@ collections:
     output: true
   managing:
     output: ture
-  api-articles:
-    output: true
+  build-from-source:
+    output: ture
+  diagrams:
+    output: ture
   
 article-categories: [getting-started, scripts, settings, avatars, devices, "voxels-meshes & particles", audio]
 managing-categories: [assignment-clients, domains]
 api-categories: [avatar, particles, voxels, audio]
-api-article-categories: [build-from-source, diagrams]
+
 
 # API content settings
 #api-section-list: [avatars, particles, voxels, audio]

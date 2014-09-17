@@ -1,39 +1,45 @@
 <h3 class="javascript-api">JavaScript API</h3>
-{% for cat in site.api-categories %}
-<h3 class="{{cat}}">&nbsp;</h3>
-<ul class="javascript-api {{cat}}">
-  <li class="sub-category">{{ cat | replace: '-', ' ' | capitalize }}</li>
-  {% for page in site.api %}
-  {% if page.category == cat %}
-  <li class="methods methods-{{page.tag}}">
-      <a href="{{ page.url | replace: '.html', '' }}" class="title"><span class="title {{page.key}}"><i></i>{{ page.title }}</span></a>
-      {% if page.methods %}
-	<ul class="sub-methods">
-	  {% for method in page.methods %}
-		<li><a class="method" href="#{{method}}"><span>{{method}}</span></a></li>
-	  {% endfor %}
-	</ul>
+  {% for subpagecat in site.api-categories %}
+    <h3 class="{{subpagecat}}">&nbsp;</h3>
+    <ul class="javascript-api {{subpagecat}}">
+      <li class="sub-category">{{ subpagecat | replace: '-', ' ' | capitalize }}</li>
+      {% for subpage in site.api %}
+      {% if subpage.category == subpagecat %}
+      <li class="methods methods-{{subpage.tag}}">
+          <a href="{{ subpage.url | replace: '.html', '' }}" class="title"><span class="title {{subpage.key}}"><i></i>{{ subpage.title }}</span></a>
+          {% if subpage.methods %}
+            <ul class="sub-methods">
+              {% for method in subpage.methods %}
+                    <li><a class="method" href="#{{method}}"><span>{{method}}</span></a></li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+      </li>
       {% endif %}
-  </li>
-  {% endif %}
+      {% endfor %}
+    </ul>
   {% endfor %}
-</ul>
-{% endfor %}
 
-{% for cat in site.api-article-categories %}
 <i></i>
-<h3 class="{{cat}}">{{ cat | replace: '-', ' ' | capitalize }}</h3>
-<ul class="{{cat}}">
-  {% for page in site.api-articles %}
-  {% if page.category == cat %}
-  <li>
-    <a href="{{ page.url | replace: '.html', '' }}">
-      <span class="title {{page.key}}">{{ page.title }}</span>
-      <span class="details">{{ page.tags }}</span>
-    </a>
-  </li>
-  {% endif %}
+<h3 class="build-from-source">Build from source</h3>
+<ul class="build-from-source">
+  {% for page in site.build-from-source %}
+    <li>
+      <a href="{{ page.url | replace: '.html', '' }}">
+        <span class="title {{page.key}}">{{ page.title }}</span>
+      </a>
+    </li>
   {% endfor %}
 </ul>
-{% endfor %}
 
+<i></i>
+<h3 class="diagrams">Diagrams</h3>
+<ul class="diagrams">
+  {% for page in site.diagrams %}
+    <li>
+      <a href="{{ page.url | replace: '.html', '' }}">
+        <span class="title {{page.key}}">{{ page.title }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
