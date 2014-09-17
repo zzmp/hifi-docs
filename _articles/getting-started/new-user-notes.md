@@ -16,6 +16,7 @@ _A collection of notes for new users_
 
 Use Command-S or Control-S to take a Snapshot, it will save to _Users>Username>Library>Application Support>Interface_ on Mac.
 
+
 ## Key tips and useful shortcuts
 
 * Use 'Tab' to toggle the voxel editor on and off
@@ -24,6 +25,7 @@ Use Command-S or Control-S to take a Snapshot, it will save to _Users>Username>L
 * If you create a Voxel and want to undo use Ctrl+Z
 * A great location to learn how to build and not worry about making any mistakes is on the Sandbox. To get there type '@' then 'sandbox'
 * To bring up the text chat window click 'enter' to close click 'esc'
+
 
 ## Useful software
 
@@ -40,6 +42,7 @@ Recent versions of OSX hide the Library directory/folder by default, and it must
 If you prefer a less permanent way to go to the User Library folder:
 Finder --> Go --> press the Alt key --> then you can select the Library folder
 
+
 ## OS X: Setting up FaceShift
 
 1. Load fsHighFidelity
@@ -48,14 +51,17 @@ Finder --> Go --> press the Alt key --> then you can select the Library folder
 4. Enable Network Streaming under Tracking>Network>Faceshift Network
 5. Enable Faceshift (TCP) in Interface under Developer>Avatar Options
 
+
 ## OS X: Setting up the Razer Hydra
 
 1. Download the Sixense SDK from http://sixense.com/hardware/sixensesdk
 2. Copy lib/osx_x64/release_dll/libsixense_x64.dylib to Applications/Interface/Contents/Frameworks 
 
+
 ## OS X: Setting up the Oculus Rift
 
 _We're currently working on adding the needed resources to the installer to enable Rift mode._
+
 
 # Troubleshooting
 
