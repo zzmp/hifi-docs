@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: How do script works?
+title: How do script work?
 collection: articles
 category: scripts
 ---
