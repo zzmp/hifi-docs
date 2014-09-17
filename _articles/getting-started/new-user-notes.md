@@ -11,9 +11,13 @@ tags: [basics]
 _A collection of notes for new users_
 
 #Basic Features
+
 ##Snapshots
+
 Use Command-S or Control-S to take a Snapshot, it will save to _Users>Username>Library>Application Support>Interface_ on Mac.
+
 ##Key tips and useful shortcuts
+
 * Use 'Tab' to toggle the voxel editor on and off
 * Use '0' to create a voxel
 * To see all the scripts that are running go to File>Running Scipts . To add additional scripts or run your own, go [here](https://alphas.highfidelity.io/t/fun-and-useful-js-scripts/154) to learn more. 
