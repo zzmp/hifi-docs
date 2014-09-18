@@ -8,5 +8,8 @@ key: motion-controllers
 
 {:toc}
 
-Here&rsquo;s an overview of Markdown syntax that you can use anywhere on GitHub.com or in your own text files.
+# Leap Motion
+
+The Leap Motion is supported by Interface. We are currently fine tuning some of the functionality with the intention of full support of Leap's latest SDK, which is still in Beta. You can follow their progress on [their website](https://developer.leapmotion.com/)
+
 
