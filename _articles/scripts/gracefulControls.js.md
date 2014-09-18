@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: gracefulControls.js
+title: Script: gracefulControls.js
 collection: articles
 category: scripts
 ---
@@ -9,12 +9,10 @@ category: scripts
 
 # What it does
 
-`gracefulControls.js` was designed to offer an alternative means of controlling your avatar and moving around in Hifi.
+`gracefulControls.js` was designed to offer an alternative means of controlling your avatar and moving around in Hifi. All movement is dampened, including mouselook, so the experience might be a bit like playing an FPS design for geriatrics.
 
 
 # Controls
-
-The controls are similar that of a first person shooter built for 85 y/o grandmas. All movement is dampened, including mouselook.
 
 Use **WASD** to move forward and strafe left or right, Q for brake, E takes you up, C takes you down
 
