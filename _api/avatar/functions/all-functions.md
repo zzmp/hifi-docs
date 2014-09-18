@@ -29,7 +29,7 @@ Give MyAvatar a break by stopping the animation:
 
 For a more in-depth look at using animation, take a look at the full `clap.js` script below:
 
-```javascript
+```js
 //
 //  clap.js
 //  examples
