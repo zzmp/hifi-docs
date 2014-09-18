@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Script - gracefulControls.js
+title: gracefulControls.js
 collection: articles
 category: scripts
 ---
