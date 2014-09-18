@@ -29,7 +29,7 @@ Give MyAvatar a break by stopping the animation:
 
 For a more in-depth look at using animation, take a look at the full `clap.js` script below:
 
-{% highlight js %}
+```javascript
 //
 //  clap.js
 //  examples
@@ -176,7 +176,7 @@ function stopClapping() {
 
 // Connect a call back that happens every frame
 Script.update.connect(maybePlaySound);
-{% endhighlight %}
+```
 
 
 ## [MyAvatar.addThrust()](#MyAvatar.addThrust())
@@ -207,16 +207,16 @@ Attach a guitar to your avatar.
 
 Using the JavaScript Console, first set the attachmentURL:
 
-{% highlight js %}
+```javascript
 > var guitarModel = "https://s3-us-west-1.amazonaws.com/highfidelity-public/models/attachments/guitar.fst";
-{% endhighlight %}
+```
 
 Next, attach `guitarModel` to MyAvatar's hips:
 
-{% highlight js %}
+```javascript
 > MyAvatar.attach(guitarModel, "Hips", {x: -0.0, y: -0.0, z: 0.0}, Quat.fromPitchYawRollDegrees(0, 0, 0), 1.0);
 > MyAvatar.getAttachmentData();
-{% endhighlight %}
+```
 
 Observe that your avatar is now being impaled by a guitar. 
 
@@ -233,7 +233,7 @@ Take a look at the `crazylegs.js` script.
 
 First, joints are wildly manipulated:
 
-{% highlight js %}
+```javascript
 var FREQUENCY = 5.0;
 var AMPLITUDE = 45.0;
 var cumulativeTime = 0.0;
@@ -254,18 +254,18 @@ Script.update.connect(function(deltaTime) {
     MyAvatar.setJointData("LeftLeg", Quat.fromPitchYawRollDegrees(
         AMPLITUDE * (1.0 - Math.sin(cumulativeTime * FREQUENCY)),0.0, 0.0));
 });
-{% endhighlight %}
+```
 
 Upon the conclusion of the script, the affected joint data is cleared, returning the MyAvatar to the default standing position: 
 
-{% highlight js %}
+```javascript
 Script.scriptEnding.connect(function() {
     MyAvatar.clearJointData("RightUpLeg");
     MyAvatar.clearJointData("LeftUpLeg");
     MyAvatar.clearJointData("RightLeg");
     MyAvatar.clearJointData("LeftLeg");
 });
-{% endhighlight %}
+```
 
 
 
@@ -275,14 +275,14 @@ Script.scriptEnding.connect(function() {
 
 ## Example
 
-{% highlight js %}
+```javascript
 > MyAvatar.scale
 < 1.336745023727417
 > MyAvatar.decreaseSize()
 < undefined
 > MyAvatar.scale
 < 1.2699077129364014
-{% endhighlight %}
+```
 
 
 ## [MyAvatar.detatch()](#MyAvatar.detatch())
@@ -302,10 +302,10 @@ Before we use `detach`, we need to attach a model to MyAvatar.
 
 Using the JavaScript Console, attach a guitar model to MyAvatar:
 
-{% highlight js %}
+```javascript
 > var guitarModel = "https://s3-us-west-1.amazonaws.com/highfidelity-public/models/attachments/guitar.fst";
 > MyAvatar.attach(guitarModel, "Hips", {x: -0.0, y: -0.0, z: 0.0}, Quat.fromPitchYawRollDegrees(0, 0, 0), 1.0);
-{% endhighlight %}
+```
 
 Observe that MyAvatar is now being impaled by a guitar. 
 
@@ -319,10 +319,10 @@ To remove the guitar, run `MyAvatar.detachOne(guitarModel);`.
 
 ## Example
 
-{% highlight js %}
+```javascript
 > JSON.stringify(MyAvatar.getAcceleration())
 <  {"x":0,"y":0,"z":0}
-{% endhighlight %}
+```
 
 
 ## [MyAvatar.getAngularAcceleration()](#MyAvatar.getAngularAcceleration())
@@ -331,10 +331,10 @@ To remove the guitar, run `MyAvatar.detachOne(guitarModel);`.
 
 ## Example
 
-{% highlight js %}
+```javascript
 > JSON.stringify(MyAvatar.getAngularAcceleration())
 <  {"x":0,"y":0,"z":0}
-{% endhighlight %}
+```
 
 
 ## [MyAvatar.getAngularVelocity()](#MyAvatar.getAngularVelocity())
@@ -459,7 +459,7 @@ Script.scriptEnding.connect(function() {
 
 ## Example
 
-```
+``` javascript
 > bodyPart = MyAvatar.getJointNames()[3];
 < Shoes
 > JSON.stringify(MyAvatar.getJointRotation(bodyPart))
@@ -473,7 +473,7 @@ Script.scriptEnding.connect(function() {
 
 ## Example
 
-```
+```javascript
 > JSON.stringify(MyAvatar.getTargetAvatarPosition())
 < {"x":0,"y":0,"z":0}
 ```
@@ -485,7 +485,7 @@ Script.scriptEnding.connect(function() {
 
 ## Example
 
-```
+```javascript
 > JSON.stringify(MyAvatar.getThrust())
 < {"x":0,"y":0,"z":0}
 ```
@@ -497,7 +497,7 @@ Script.scriptEnding.connect(function() {
 
 ## Example
 
-```
+```javascript
 > JSON.stringify(MyAvatar.position)
 < {"x":7462,"y":115"z":2201}
 > MyAvatar.goHome()
@@ -512,7 +512,7 @@ Script.scriptEnding.connect(function() {
 
 ## Example
 
-```
+```javascript
 > MyAvatar.scale
 < 1.1024998426437378
 > MyAvatar.increaseSize()
@@ -533,7 +533,7 @@ Lost this -- need to add it back.
 
 ## Example
 
-```
+```javascript
 > MyAvatar.scale
 < 0.949999988079071
 > MyAvatar.resetSize()
@@ -543,16 +543,16 @@ Lost this -- need to add it back.
 ```
 
 
-
 ## [MyAvatar.setJointData()](#MyAvatar.setJointData())
 
 `setJointData` sets a target bodypart's rotation in quaternion. 
+
 
 ## Example
 
 Take a look at the `crazylegs.js` script. 
 
-```
+```javascript
 var FREQUENCY = 5.0;
 var AMPLITUDE = 45.0;
 var cumulativeTime = 0.0;
@@ -567,7 +567,8 @@ print(jointMappings + "\n# Joint list end");
 
 After some preliminaries, the script sets `MyAvatar.setJointData()` in several fun configurations to give MyAvatar a funny walk.
 
-```
+
+```javascript
 Script.update.connect(function(deltaTime) {
     cumulativeTime += deltaTime;
     MyAvatar.setJointData("RightUpLeg", Quat.fromPitchYawRollDegrees(AMPLITUDE * Math.sin(cumulativeTime * FREQUENCY), 0.0, 0.0));
@@ -579,9 +580,9 @@ Script.update.connect(function(deltaTime) {
 });
 ```
 
-Upon the conclusion of the script, the affected joint data is cleared, returning MyAvatar to the standing position: 
 
-```
+Upon the conclusion of the script, the affected joint data is cleared, returning MyAvatar to the standing position: 
+```javascript
 Script.scriptEnding.connect(function() {
     MyAvatar.clearJointData("RightUpLeg");
     MyAvatar.clearJointData("LeftUpLeg");
