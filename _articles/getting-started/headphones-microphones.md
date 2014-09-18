@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Headphones & microphone
+title: Headphones & mics
 collection: articles
 category: getting-started
 tags: [audio]
