@@ -8,5 +8,8 @@ key: motion-capture-suits
 
 {:toc}
 
-Here&rsquo;s an overview of Markdown syntax that you can use anywhere on GitHub.com or in your own text files.
+Currently the only mocap suit we support is the [PrioVR](http://priovr.com). In the future we plan to support others.
 
+# PrioVR
+
+The PrioVR requires Windows ...
