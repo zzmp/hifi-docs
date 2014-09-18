@@ -40,7 +40,8 @@ You can add a different body with legs via the same menu:
 
 
 # Customizing your Avatar with JavaScript
-## *Teach your Avatar to Clap*
+
+## Teach your Avatar to Clap
 
 ## Introduction
 
