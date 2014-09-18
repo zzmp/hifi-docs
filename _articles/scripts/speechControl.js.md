@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: speechControl.js
+title: Script: speechControl.js
 collection: articles
 category: scripts
 ---
