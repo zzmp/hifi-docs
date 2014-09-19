@@ -10,7 +10,7 @@ tags: [avatar, javascript, clap.js]
 
 You've downloaded and built the High Fidelity interface, and your Oculus Rift is on pre-order. Now what? Might as well get to know your alter-ego, MyAvatar. 
 
-Upon running the interface, you'll be presented with your brand-new digital body: 
+Upon running the Interface, you'll be presented with your brand-new digital body: 
 
 ![Default Body](./images/default_body_n_head.png "Default Body")
 
