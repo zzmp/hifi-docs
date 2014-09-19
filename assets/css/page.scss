@@ -11,6 +11,10 @@
     margin: 0 auto;
 }
 
+.hf.doc.page {
+    max-width: 1024px;
+}
+
 .hf.page .search > form > input {
     color: $blue;
     font-size: 20px;
@@ -172,7 +176,7 @@
 /* Doc Page */
 
 .hf.doc.page > .search {
-    flex: 1 1 30%;
+    flex: 1 1 25%;
     border-top: 1px solid #E2E2E2;
     border-right: 1px solid #E2E2E2;
 }
@@ -194,15 +198,16 @@
 }
 
 .hf.doc.page > article {
-    flex: 2 1 70%;
+    flex: 2 1 75%;
     border-top: 1px solid #E2E2E2;
     padding: 30px;
     font-size: 16px;
     padding-top: 20px;
+    padding-right: 0px;
 }
 
 .hf.links {
-    flex: 2 1 70%;
+    flex: 2 1 75%;
     align-self: center;
     display: flex;
     justify-content: flex-end;
@@ -222,7 +227,7 @@
 }
 
 .hf.doc.page .index  {
-    flex: 1 1 30%;
+    flex: 1 1 25%;
     border-width: 1px 1px 0 0;
     border-style: solid;
     border-color: #E2E2E2;
