@@ -6,39 +6,6 @@ category: avatars
 tags: [avatar, javascript, clap.js]
 ---
 
-# Introducing MyAvatar
-
-You've downloaded and built the High Fidelity interface, and your Oculus Rift is on pre-order. Now what? Might as well get to know your alter-ego, MyAvatar. 
-
-Upon running the Interface, you'll be presented with your brand-new digital body: 
-
-![Default Body](./images/default_body_n_head.png "Default Body")
-
-Although adorable, this little guy has no legs, eliminating your ability to use many of the example scripts provided by High Fidelity. Let's customize the avatar to be not only a bit more functional, but also bit more personalized. 
-
-## Body and Head
-
-Open up the Preferences menu via the Interface menu:
-
-![interface](./images/interface.png "Interface")
-
-You'll see the options to set your avatar's head and body. 
-
-Play around with the dropdowns by for the head and body to customize your avatar. 
-
-For example, this is the default avatar with the `ChrisStylized_6.fst` head:
-
-![Chris Head](./images/ChrisStylized_6.png "Chris Head")
-
-You can add a different body with legs via the same menu:
-
-![Big Body](./images/body.png "Body")
-
-## Attachments
-
-## Animations
-
-
 # Customizing your Avatar with JavaScript
 
 ## Teach your Avatar to Clap
