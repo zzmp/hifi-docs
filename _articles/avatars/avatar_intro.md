@@ -43,7 +43,7 @@ If you're having trouble moving around using the keyboard, ("w"/"s"" for +/- x, 
 
 ## Attachments
 
-There's more to life than the body you want. The next step is to acquire the possesions. 
+There's more to life than the body you want. The next step is to acquire possessions. 
 
 Let's say you are ready to start your virtual life as a cowboy surfer. You've picked out your body:
 
@@ -60,6 +60,3 @@ Voila! Your are now surfing the world wide web in style.
 ## Explore!
 
 Surfboard in hand (or at feet), use the keyboard and arrow keys to explore and build. 
-
-
-
