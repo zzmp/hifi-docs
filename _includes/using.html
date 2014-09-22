@@ -6,7 +6,7 @@
   {% if page.category == cat %}
   <li>
     <a href="{{ page.url | replace: '.html', '' }}">
-      <span class="title {{page.key}}">{{ page.title }}</span>
+      <b>.</b><span class="title {{page.key}}">{{ page.title }}</span>
     </a>
   </li>
   {% endif %}
@@ -22,7 +22,7 @@
   {% if page.category == manage %}
   <li>
     <a href="{{ page.url | replace: '.html', ''}}">
-      <span class="title {{page.key}}">{{ page.title }}</span>
+      <b>.</b><span class="title {{page.key}}">{{ page.title }}</span>
     </a>
   </li>
   {% endif %}

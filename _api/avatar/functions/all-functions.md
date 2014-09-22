@@ -29,7 +29,7 @@ Give MyAvatar a break by stopping the animation:
 
 For a more in-depth look at using animation, take a look at the full `clap.js` script below:
 
-``` js
+```
 //
 //  clap.js
 //  examples
@@ -207,13 +207,13 @@ Attach a guitar to your avatar.
 
 Using the JavaScript Console, first set the attachmentURL:
 
-```javascript
+```js
 > var guitarModel = "https://s3-us-west-1.amazonaws.com/highfidelity-public/models/attachments/guitar.fst";
 ```
 
 Next, attach `guitarModel` to MyAvatar's hips:
 
-```javascript
+```js
 > MyAvatar.attach(guitarModel, "Hips", {x: -0.0, y: -0.0, z: 0.0}, Quat.fromPitchYawRollDegrees(0, 0, 0), 1.0);
 > MyAvatar.getAttachmentData();
 ```
@@ -233,7 +233,7 @@ Take a look at the `crazylegs.js` script.
 
 First, joints are wildly manipulated:
 
-```javascript
+```js
 var FREQUENCY = 5.0;
 var AMPLITUDE = 45.0;
 var cumulativeTime = 0.0;
@@ -258,7 +258,7 @@ Script.update.connect(function(deltaTime) {
 
 Upon the conclusion of the script, the affected joint data is cleared, returning the MyAvatar to the default standing position: 
 
-```javascript
+```js
 Script.scriptEnding.connect(function() {
     MyAvatar.clearJointData("RightUpLeg");
     MyAvatar.clearJointData("LeftUpLeg");
@@ -275,7 +275,7 @@ Script.scriptEnding.connect(function() {
 
 ## Example
 
-```javascript
+```js
 > MyAvatar.scale
 < 1.336745023727417
 > MyAvatar.decreaseSize()
@@ -302,7 +302,7 @@ Before we use `detach`, we need to attach a model to MyAvatar.
 
 Using the JavaScript Console, attach a guitar model to MyAvatar:
 
-```javascript
+```js
 > var guitarModel = "https://s3-us-west-1.amazonaws.com/highfidelity-public/models/attachments/guitar.fst";
 > MyAvatar.attach(guitarModel, "Hips", {x: -0.0, y: -0.0, z: 0.0}, Quat.fromPitchYawRollDegrees(0, 0, 0), 1.0);
 ```
@@ -319,7 +319,7 @@ To remove the guitar, run `MyAvatar.detachOne(guitarModel);`.
 
 ## Example
 
-```javascript
+```js
 > JSON.stringify(MyAvatar.getAcceleration())
 <  {"x":0,"y":0,"z":0}
 ```
@@ -331,7 +331,7 @@ To remove the guitar, run `MyAvatar.detachOne(guitarModel);`.
 
 ## Example
 
-```javascript
+```js
 > JSON.stringify(MyAvatar.getAngularAcceleration())
 <  {"x":0,"y":0,"z":0}
 ```
@@ -473,7 +473,7 @@ Script.scriptEnding.connect(function() {
 
 ## Example
 
-```javascript
+```js
 > JSON.stringify(MyAvatar.getTargetAvatarPosition())
 < {"x":0,"y":0,"z":0}
 ```
@@ -485,7 +485,7 @@ Script.scriptEnding.connect(function() {
 
 ## Example
 
-```javascript
+```js
 > JSON.stringify(MyAvatar.getThrust())
 < {"x":0,"y":0,"z":0}
 ```
@@ -497,7 +497,7 @@ Script.scriptEnding.connect(function() {
 
 ## Example
 
-```javascript
+```js
 > JSON.stringify(MyAvatar.position)
 < {"x":7462,"y":115"z":2201}
 > MyAvatar.goHome()
@@ -512,7 +512,7 @@ Script.scriptEnding.connect(function() {
 
 ## Example
 
-```javascript
+```js
 > MyAvatar.scale
 < 1.1024998426437378
 > MyAvatar.increaseSize()
@@ -533,7 +533,7 @@ Lost this -- need to add it back.
 
 ## Example
 
-```javascript
+```js
 > MyAvatar.scale
 < 0.949999988079071
 > MyAvatar.resetSize()
@@ -552,7 +552,7 @@ Lost this -- need to add it back.
 
 Take a look at the `crazylegs.js` script. 
 
-```javascript
+```js
 var FREQUENCY = 5.0;
 var AMPLITUDE = 45.0;
 var cumulativeTime = 0.0;
@@ -568,7 +568,7 @@ print(jointMappings + "\n# Joint list end");
 After some preliminaries, the script sets `MyAvatar.setJointData()` in several fun configurations to give MyAvatar a funny walk.
 
 
-```javascript
+```js
 Script.update.connect(function(deltaTime) {
     cumulativeTime += deltaTime;
     MyAvatar.setJointData("RightUpLeg", Quat.fromPitchYawRollDegrees(AMPLITUDE * Math.sin(cumulativeTime * FREQUENCY), 0.0, 0.0));
@@ -582,7 +582,7 @@ Script.update.connect(function(deltaTime) {
 
 
 Upon the conclusion of the script, the affected joint data is cleared, returning MyAvatar to the standing position: 
-```javascript
+```js
 Script.scriptEnding.connect(function() {
     MyAvatar.clearJointData("RightUpLeg");
     MyAvatar.clearJointData("LeftUpLeg");

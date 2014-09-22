@@ -81,6 +81,7 @@
     margin-left: 20px;
     width: calc(50% - 20px);
     margin-top: 5px;
+    line-height: 16px;
 }
 
 .hf.home #search-entries-api {
@@ -89,6 +90,7 @@
     margin-left: 25px;
     width: calc(50% - 25px);
     margin-top: 5px;
+    line-height: 16px;
 }
 
 .hf.doc #search-header,
@@ -97,6 +99,14 @@
 }
 .hf.doc.page .article ul li {
   font-size: 16px;
+}
+
+.hf.doc #search-entries-user article {
+  line-height: 15px;
+}
+
+.hf.doc #search-entries-user {
+  margin-bottom: 10px;
 }
 
 @media all and (max-width: 806px) {
@@ -157,10 +167,9 @@
 }
 
 .hf.home.page > .index ul {
-    list-style-type: disc;
-    list-style-position: inside;
     font-size: 10px;
     padding-bottom: 20px;
+    list-style-type: none;
 }
 
 .hf.home.page > .index ul.javascript-api {
@@ -291,15 +300,12 @@
 .hf.doc.page ul.build-from-source li:hover,
 .hf.doc.page ul.diagrams li:hover,
 .sub-methods-selected span,
-.hf.page .index ul li:hover span.title {
+.hf.page .index ul li:hover span.title,
+.hf.page > .index ul li:hover a b,
+.hf.doc #search-entries-user article:hover span {
     border: 0px;
     color: #3398cb;
     cursor: pointer;
-}
-
-.index span {
-    display: block;
-    width: 100%;
 }
 
 .index span.title {
@@ -628,14 +634,6 @@ div.index .developing h3.particles {
   border: 0px;
 }
 
-.hf.doc.page ul.build-from-source,
-.hf.doc.page ul.diagrams {
-  list-style: disc;
-  font-size: 15px;
-  margin-left: 16px;
-  text-indent: -3px;
-}
-
 li.methods.selected i {
   border-top: 5px solid #333 !important;
   border-left: 5px solid transparent !important;
@@ -664,6 +662,35 @@ div.component-header .sub-header-selected {
 
 div.component-header .sub-header-category {
    padding-left: 5px;
+}
+
+.hf.page > .index ul li a b {
+  display: inline-block;
+  font-size: 15px;
+  color: #333;
+  position: relative;
+  top: -2px;
+  margin-right: 6px;
+  vertical-align: top;
+}
+
+.hf.page > .index ul li a span {
+  display: inline-block;
+  width: calc(100% - 15px);
+  line-height: 15px;
+}
+
+.hf.home.page > .index ul.devices li a span {
+  line-height: 40px;
+}
+
+.hf.home.page > .index ul.build-from-source li a span {
+  line-height: 35px;
+}
+
+.hf.home.page > .index ul.devices li a b,
+.hf.home.page > .index ul.build-from-source li a b {
+  display: none;
 }
 
 @media all and (max-width: 800px) {
