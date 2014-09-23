@@ -6,7 +6,6 @@ category: devices
 key: hand-controllers
 ---
 
-{:toc}
 
 # Razer Hydra
 

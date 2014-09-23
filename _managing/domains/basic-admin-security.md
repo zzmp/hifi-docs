@@ -5,7 +5,6 @@ collection: managing
 category: domains
 ---
 
-{:toc}
 
 In order to get basic security on your domain webpage (http://yourdomain:40100). You need to create or edit the config.json in your domain's resource folder.
 

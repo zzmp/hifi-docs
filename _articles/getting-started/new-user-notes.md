@@ -6,7 +6,6 @@ category: getting-started
 tags: [basics]
 ---
 
-{:toc}
 
 _A collection of notes for new users_
 

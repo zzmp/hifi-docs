@@ -5,7 +5,6 @@ collection: managing
 category: domains
 ---
 
-{:toc}
 
 The most basic option you have is via the Stack Manager, a tool that will launch all necessary servers for you, and allow you to run the entire Hifi system locally, without even connecting to the internet.
 
