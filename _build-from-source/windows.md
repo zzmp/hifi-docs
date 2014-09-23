@@ -22,7 +22,7 @@ CMake
 === 
 Hifi uses CMake to generate build files and project files for your platform.
 
-####Generating build files
+#### Generating build files
 Create a build directory in the root of your checkout and then run the CMake build from there. This will keep the rest of the directory clean.
 
     mkdir build
@@ -30,7 +30,7 @@ Create a build directory in the root of your checkout and then run the CMake bui
     cmake ..
 
 ===
-#####Visual Studio
+##### Visual Studio
 
 Currently building on Windows has been tested using the following compilers:
 * Visual Studio C++ 2010 Express
@@ -38,7 +38,7 @@ Currently building on Windows has been tested using the following compilers:
 
 (If anyone can test using Visual Studio 2013 Express then please update this document)
 
-#####Windows SDK 7.1
+##### Windows SDK 7.1
 
 Whichever version of Visual Studio you use, you will need [Microsoft Windows SDK for Windows 7 and .NET Framework 4](http://www.microsoft.com/en-us/download/details.aspx?id=8279).
 
@@ -65,7 +65,7 @@ If you get an error while installing the VS2010 SP1 Compiler update saying that 
 
 Some of the build instructions will ask you to start a Visual Studio Command Prompt. You should have a shortcut in your Start menu called "Open Visual Studio Command Prompt (2010)" which will do so.
 
-#####Visual Studio 2013
+##### Visual Studio 2013
 
 This product must be purchased separately.
 
@@ -90,7 +90,7 @@ Once Qt is installed, you need to manually configure the following:
 * Make sure the Qt runtime DLLs are loadable. You must do this before you attempt to build because some tools for the build depend on Qt. E.g., add to the PATH: `Qt\5.2.0\msvc2010_opengl\bin\`. 
 * Set the QT_CMAKE_PREFIX_PATH environment variable to your `Qt\5.2.0\msvc2010_opengl` directory.
 
-####External Libraries
+#### External Libraries
 
 CMake will need to know where the headers and libraries for required external dependencies are. 
 
@@ -182,10 +182,10 @@ If you're using Visual Studio 2013 then pass "Visual Studio 12" instead of "Visu
 
 Open %HIFI_DIR%\build\hifi.sln and compile.
 
-####Running Interface
+#### Running Interface
 If you need to debug Interface, you can run interface from within Visual Studio (see the section below). You can also run Interface by launching it from command line or File Explorer from %HIFI_DIR%\build\interface\Debug\interface.exe
 
-####Debugging Interface
+#### Debugging Interface
 * In the Solution Explorer, right click interface and click Set as StartUp Project
 * Set the "Working Directory" for the Interface debugging sessions to the Debug output directory so that your application can load resources. Do this: right click interface and click Properties, choose Debugging from Configuration Properties, set Working Directory to .\Debug
 * Now you can run and debug interface through Visual Studio
@@ -193,13 +193,10 @@ If you need to debug Interface, you can run interface from within Visual Studio 
 Optional Components
 ===
 
-####QXmpp
+#### QXmpp
 
 You can find QXmpp [here](https://github.com/qxmpp-project/qxmpp). The inclusion of the QXmpp enables text chat in the Interface client.
 
 #### Devices
 
 You can support external input/output devices such as Leap Motion, Faceplus, Faceshift, PrioVR, MIDI, Razer Hydra and more by adding each individual SDK in the visible building path. Refer to the readme file available in each device folder in [interface/external/](interface/external) for the detailed explanation of the requirements to use the device.
-
-
-
