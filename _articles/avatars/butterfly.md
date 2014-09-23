@@ -68,7 +68,7 @@ Stop the running script. Around line 50, update BUTTERFLY_VELOCITY to something 
 
 ![Stats View](./images/stats_view.png "Stats View")
 
-```
+```js
 var BUTTERFLY_GRAVITY = 0;//-0.06;
 var BUTTERFLY_FLAP_SPEED = 1.0;
 var BUTTERFLY_VELOCITY = 20; /*butterflies should be zooming around with you now!*/
@@ -95,7 +95,7 @@ Logs are an indispensable part of any scripting. You might have noticed that the
 
 Let's change that by adding the a command to print towards the end of the function `addButterfly()`:
 
-```
+```js
 function addButterfly() {
 
 ...
@@ -110,7 +110,7 @@ function addButterfly() {
 ```
 Run the script, and notice the debug log now says:
 
-```
+```js
 > Butterfly added!
 > Butterfly added!
 ```
@@ -127,7 +127,7 @@ Directly above the print statement is a promising line:
 
 Let's try adding `properties.position` to the print statement:
 
-```
+```js
 print("Butterfly added at: " + properties.position);
 ```
 
@@ -140,7 +140,7 @@ Take a look at the output:
 
 This isn't very human-readable. Let's JSON.stringify it:
 
-```
+```js
 print("Butterfly added at: " + JSON.stringify(properties.position));
 ```
 
@@ -153,7 +153,7 @@ The output looks a bit nicer now:
 
 You can make the output a bit more readable by adding something like the following to your version of `butterfly.js`:
 
-```
+```js
 function readable(item){
 	var output = '', val; //initialize as string
 	for (val in item)
@@ -167,7 +167,7 @@ function readable(item){
 
 ... for which the output of 
 
-```
+```js
 	print("Butterfly added at: " + readable(properties.position));
 ```
 
