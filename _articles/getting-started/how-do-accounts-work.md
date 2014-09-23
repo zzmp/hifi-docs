@@ -6,7 +6,6 @@ category: getting-started
 tags: [accounts]
 ---
 
-{:toc}
 
 # Alpha Accounts
 

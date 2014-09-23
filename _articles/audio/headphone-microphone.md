@@ -5,7 +5,6 @@ collection: articles
 category: audio
 ---
 
-{:toc}
 
 A headphone and microphone are important peripherals when interacting in the High Fidelity metaverse. All audio passed through our system is uncompressed and, when enabled, appropriately spacialized.
 

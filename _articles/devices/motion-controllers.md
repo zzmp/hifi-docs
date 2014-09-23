@@ -6,7 +6,6 @@ category: devices
 key: motion-controllers
 ---
 
-{:toc}
 
 # Leap Motion
 

@@ -5,7 +5,6 @@ collection: managing
 category: domains
 ---
 
-{:toc}
 
 ### Coal's CentOS 6.5 Domain-Server and Assignment-Client Compile Guide
 

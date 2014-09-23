@@ -6,7 +6,6 @@ category: build-from-source
 key: windows
 ---
 
-{:toc}
 
 Dependencies
 ===

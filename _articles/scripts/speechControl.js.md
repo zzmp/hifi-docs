@@ -5,7 +5,6 @@ collection: articles
 category: scripts
 ---
 
-{:toc}
 
 # Mac
 

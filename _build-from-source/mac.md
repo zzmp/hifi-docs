@@ -6,7 +6,6 @@ category: build-from-source
 key: mac
 ---
 
-{:toc}
 
 Dependencies
 ===
