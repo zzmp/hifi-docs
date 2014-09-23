@@ -15,7 +15,7 @@ category: scripts
 
 Use **WASD** to move forward and strafe left or right, Q for brake, E takes you up, C takes you down
 
-```javascript
+```js
 var DEFAULT_PARAMETERS = {
     // Coefficient to use for linear drag.  Higher numbers will cause motion to
     // slow down more quickly.
