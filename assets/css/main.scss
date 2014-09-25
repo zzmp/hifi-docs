@@ -27,9 +27,9 @@
 // Import web fonts
 @import "//hello.myfonts.net/count/2b9bf7";
 @font-face {
-	font-family: 'Quadon-Bold';
-	src: url('/assets/fonts/2B9BF7_0_0.eot');
-	src: url('/assets/fonts/2B9BF7_0_0.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/2B9BF7_0_0.woff') format('woff'),url('/assets/fonts/2B9BF7_0_0.ttf') format('truetype');
+        font-family: 'Quadon-Bold';
+        src: url('/assets/fonts/2B9BF7_0_0.eot');
+        src: url('/assets/fonts/2B9BF7_0_0.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/2B9BF7_0_0.woff') format('woff'),url('/assets/fonts/2B9BF7_0_0.ttf') format('truetype');
 }
 @import "//openfontlibrary.org/face/fantasque-sans-mono";
 @font-face {
@@ -72,17 +72,17 @@
   font-weight: Fantasque Sans Mono Regular;
   font-style: italic;
 }
- 
- 
+
+
 /* Note:
  *
  * We sometimes use Bootstrap, linked via the header before the main stylesheet.
- * Hoever, sometimes you don't want to use Bootstrap styles. All of the 
+ * Hoever, sometimes you don't want to use Bootstrap styles. All of the
  * super-custom styles are prefixed with the `hf` class.
  *
  *
  * ## Global Styles and Settings ##
- * 
+ *
  * Screen sizes: */
 $medium: 900px;
 $small:  600px;
@@ -164,7 +164,7 @@ pre {
   margin: .5em 0;
 }
 
-footer { 
+footer {
   margin-top: 30px !important;
 }
 

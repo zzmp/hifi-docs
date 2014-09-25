@@ -4,8 +4,8 @@
 <ul class="{{cat}}">
   {% for page in site.articles %}
   {% if page.category == cat %}
-  <li>
-    <a href="{{ page.url | replace: '.html', '' }}">
+  <li class="page-link">
+    <a  href="{{ page.url | replace: '.html', '' }}">
       <b>.</b><span class="title {{page.key}}">{{ page.title }}</span>
     </a>
   </li>
@@ -20,8 +20,8 @@
 <ul class="{{manage}}">
   {% for page in site.managing %}
   {% if page.category == manage %}
-  <li>
-    <a href="{{ page.url | replace: '.html', ''}}">
+  <li class="page-link">
+    <a  href="{{ page.url | replace: '.html', ''}}">
       <b>.</b><span class="title {{page.key}}">{{ page.title }}</span>
     </a>
   </li>

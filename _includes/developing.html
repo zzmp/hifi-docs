@@ -24,8 +24,8 @@
 <h3 class="build-from-source">Build from source</h3>
 <ul class="build-from-source">
   {% for page in site.build-from-source %}
-    <li>
-      <a href="{{ page.url | replace: '.html', '' }}">
+    <li class="page-link">
+      <a  href="{{ page.url | replace: '.html', '' }}">
         <b>.</b><span class="title {{page.key}}">{{ page.title }}</span>
       </a>
     </li>
@@ -36,8 +36,8 @@
 <h3 class="diagrams">Diagrams</h3>
 <ul class="diagrams">
   {% for page in site.diagrams %}
-    <li>
-      <a href="{{ page.url | replace: '.html', '' }}">
+    <li class="page-link">
+      <a  href="{{ page.url | replace: '.html', '' }}">
         <b>.</b><span class="title {{page.key}}">{{ page.title }}</span>
       </a>
     </li>
