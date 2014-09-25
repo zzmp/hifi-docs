@@ -266,7 +266,8 @@
 }
 
 .hf.doc.page .index ul li {
-    line-height: 20px;
+    line-height: 120%;
+    padding-bottom: 2px;
 }
 
 .hf.doc.page .component-header {
@@ -587,12 +588,12 @@ div.index .developing h3.particles {
     border-left: 5px solid #666666;
     vertical-align: top;
     position: relative;
-    top: 5px;
+    top: 3px;
 }
 
 .hf.doc.page > .index ul.javascript-api span.title,
 .hf.doc.page div#search-results a b {
-  color: #3398cb;
+  color: #333;
   font-weight: bold;
   border: 0px;
 }
@@ -695,6 +696,15 @@ div.component-header .sub-header-category {
 .hf.home.page > .index ul.devices li a b,
 .hf.home.page > .index ul.build-from-source li a b {
   display: none;
+}
+
+.hf.doc.page .index ul span.title {
+  font-size: 14px;
+}
+
+.page-link a.selected b,
+.page-link a.selected span {
+  color: #3398CB !important;
 }
 
 @media all and (max-width: 800px) {
