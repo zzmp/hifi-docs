@@ -18,4 +18,15 @@ $(function() {
     $('.hf.article h2 a').each(function() {
       $(this).parent('h2').attr('id', $( this ).attr('href').substring(1));
     });
+
+    $('.hf.home #search-query').keypress(function() {
+        if ($(this).val().length >= 1) {
+          $("#search-wrapper .search").addClass('selected');
+        }
+    });
+    $('.hf.home #search-query').keyup(function() {
+        if ($(this).val().length < 1) {
+          $("#search-wrapper .search").removeClass('selected');
+        }
+    });
 });
