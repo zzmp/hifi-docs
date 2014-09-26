@@ -7,7 +7,7 @@ tags: []
 
 ---
 
-# Contributing to the High Fidelity Documentation
+# [Contributing to the High Fidelity Documentation](#Contributing)
 
 Would you like to share your hints, tips and techniques for exploring and scripting in High Fidelity? We welcome your contributions. 
 
@@ -79,7 +79,7 @@ Include your images in their own, appropriately-labeled directory.
 
 -------------
 
-# Reviewing Contributions to the High Fidelity Documentation
+# [Reviewing Contributions to the High Fidelity Documentation](#Reviewing)
 
 There are two sides (or perhaps more) to reviewing documentation: ensuring the documentation is easy to read, and ensuring a novice reader would be able to easily follow the instructions in the documentation. 
 
