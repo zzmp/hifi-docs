@@ -13,7 +13,7 @@ layout: default
      <a href="/{{site.sub_base_path}}" class="fa fa-home fa-fw"></a> <i class="fa fa-angle-right"></i> {% if page.collection == "api" %}<span class="sub-header-selected">JavaScript API</span> <i class="fa fa-angle-right"></i>{% endif %}<span class="sub-header-category">{{ page.category | replace: '-', ' ' | capitalize }}</span>
   </div>
 
-  {% include search_form.html %}
+  {% include search_doc_form.html %}
 
   {% include edit_on_github.html %}
 
