@@ -27,7 +27,16 @@
 
 .hf.page .search > form > input:focus {
     outline: none;
-    font-weight: bold;
+}
+
+.hf.home.page .search.selected {
+    position: absolute;
+    width: 100%;
+    box-shadow: #ccc 5px 5px 12px 0px;
+    min-height: 70px;
+    background: #fff;
+    z-index: 999;
+    padding-bottom: 10px;
 }
 
 .hf.home.page #search-header,
@@ -72,7 +81,8 @@
 .hf.home.page #search-results .header.right {
     margin-left: 25px;
     float: left;
-    width: calc(50% - 25px);
+    width: calc(50% - 40px);
+    margin-right: 15px;
 }
 
 .hf.home #search-entries-user {
@@ -124,8 +134,10 @@
     justify-content: center;
 }
 
-.hf.home.page > .search {
+.hf.home.page #search-wrapper {
     flex: 2 2 100%;
+    position: relative;
+    min-height: 80px;
 }
 
 .hf.home.page section {
@@ -150,15 +162,16 @@
     border-left: 0
 }
 
-.hf.home.page > .search > form {
+.hf.home.page #search-wrapper > .search > form {
     display: flex;
     justify-content: center;
+    padding-right: 15px;
 }
 
-.hf.page > .search > form > input + i.fa  {
+.hf.page #search-wrapper > .search > form > input + i.fa  {
     color: $black;
 }
-.hf.page > .search > form > input:focus + i.fa  {
+.hf.page #search-wrapper > .search > form > input:focus + i.fa  {
     color: $blue;
 }
 
@@ -184,25 +197,24 @@
 
 /* Doc Page */
 
-.hf.doc.page > .search {
+.hf.doc.page #search-wrapper {
     flex: 1 1 25%;
     border-top: 1px solid #E2E2E2;
     border-right: 1px solid #E2E2E2;
 }
 
-.hf.doc.page > .search > form {
+.hf.doc.page #search-wrapper > .search > form {
     padding: 0px;
 }
 
-.hf.doc.page > .search > form > input {
+.hf.doc.page #search-wrapper > .search > form > input {
     border-top: 0;
     border-bottom: 0;
-    padding: 13px;
     width: 100%;
 }
 
-.hf.doc.page > .search > form > input,
-.hf.doc.page > .links {
+.hf.doc.page #search-wrapper > .search > form > input,
+.hf.doc.page #search-wrapper > .links {
     font-size: .9em;
 }
 
@@ -283,7 +295,6 @@
     display: flex;
     width: 100%;
     padding-left: 22px;
-    padding-top: 30px;
 }
 
 .index a {
@@ -707,6 +718,7 @@ div.component-header .sub-header-category {
   color: #3398CB !important;
 }
 
+
 @media all and (max-width: 800px) {
     .hf.home.page > section {
         flex: 1 1 100%;
@@ -718,10 +730,10 @@ div.component-header .sub-header-category {
 }
 
 @media all and (max-width: 600px) {
-    .hf.home.page > .search > form {
+    .hf.home.page #search-wrapper > .search > form {
         padding: 0;
     }
-    .hf.doc.page > .search > form > input {
+    .hf.doc.page #search-wrapper > .search > form > input {
         text-align: center;
         width: 100%;
         border: 0;

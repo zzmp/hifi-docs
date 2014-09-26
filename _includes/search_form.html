@@ -1,6 +1,20 @@
-<div class="search">
-  <form action="/search" method="get" onSubmit="return false;">
-    <i class="icon fa fa-search fa-lg"></i>
-    <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off"></input>
-  </form>
+<div id="search-wrapper">
+  <div class="search">
+    <form action="/search" method="get" onSubmit="return false;">
+      <i class="icon fa fa-search fa-lg"></i>
+      <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off"></input>
+    </form>
+    <div id="search-results" style="display: none;">
+      <div id="search-header">
+        <div class="header left">
+            <h3>For users & admins</h3>
+        </div>
+        <div class="header right">
+            <h3>For Developers</h3>
+        </div>
+      </div>
+      <div class="entries">
+      </div>
+    </div>
+  </div>
 </div>
