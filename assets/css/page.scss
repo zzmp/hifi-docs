@@ -33,6 +33,9 @@
     position: absolute;
     width: 100%;
     box-shadow: #ccc 5px 5px 12px 0px;
+    -webkit-box-shadow: #ccc 5px 5px 12px 0px;
+    -moz-box-shadow: #ccc 5px 5px 12px 0px;
+    -ms-box-shadow: #ccc 5px 5px 12px 0px;
     min-height: 70px;
     background: #fff;
     z-index: 999;
@@ -197,7 +200,7 @@
 
 /* Doc Page */
 
-.hf.doc.page #search-wrapper {
+.hf.doc.page .search {
     flex: 1 1 25%;
     border-top: 1px solid #E2E2E2;
     border-right: 1px solid #E2E2E2;
@@ -314,7 +317,7 @@
 .sub-methods-selected span,
 .hf.page .index ul li:hover span.title,
 .hf.page > .index ul li:hover a b,
-.hf.doc #search-entries-user article:hover span {
+.hf.doc #search-entries-api article:hover span {
     border: 0px;
     color: #3398cb;
     cursor: pointer;
