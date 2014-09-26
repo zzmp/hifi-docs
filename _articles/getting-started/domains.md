@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Running a script
+title: Existing domains
 collection: articles
 category: getting-started
 tags: [domains]
