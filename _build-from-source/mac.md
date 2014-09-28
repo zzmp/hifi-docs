@@ -9,26 +9,13 @@ key: mac
 
 # Dependencies
 
-
 * [cmake](http://www.cmake.org/cmake/resources/software.html) ~> 2.8.12.2
 * [Qt](http://qt-project.org/downloads) ~> 5.2.0
 * [glm](http://glm.g-truc.net/0.9.5/index.html) ~> 0.9.5.2
 * [OpenSSL](https://www.openssl.org/related/binaries.html) ~> 1.0.1g
-  * IMPORTANT: OpenSSL 1.0.1g is critical to avoid a security vulnerability.
-
-## Linux only
-
-* [freeglut](http://freeglut.sourceforge.net/) ~> 2.8.0
-* [zLib](http://www.zlib.net/) ~> 1.2.8
-
-## Windows only
-
-* [GLEW](http://glew.sourceforge.net/) ~> 1.10.0
-* [freeglut MSVC](http://www.transmissionzero.co.uk/software/freeglut-devel/) ~> 2.8.1
-* [zLib](http://www.zlib.net/) ~> 1.2.8
+    * IMPORTANT: OpenSSL 1.0.1g is critical to avoid a security vulnerability.
 
 # CMake
-
 
 Hifi uses CMake to generate build files and project files for your platform.
 
@@ -70,19 +57,9 @@ In the examples below the variable `$NAME` would be replaced by the name of the 
 * `$NAME_ROOT_DIR` - set this variable in your ENV
 * `HIFI_LIB_DIR` - set this variable in your ENV to your High Fidelity lib folder, should contain a folder '$name'
 
-# UNIX
+# OS X
 
-In general, as long as external dependencies are placed in OS standard locations, CMake will successfully find them during its run. When possible, you may choose to install depencies from your package manager of choice, or from source.
-
-## Linux
-
-Should you choose not to install Qt5 via a package manager that handles dependencies for you, you may be missing some Qt5 dependencies. On Ubuntu, for example, the following additional packages are required:
-
-    libasound2 libxmu-dev libxi-dev freeglut3-dev libasound2-dev libjack-dev
-
-## OS X
-
-### Package Managers
+## Package Managers
 
 [Homebrew](http://brew.sh/) is an excellent package manager for OS X. It makes install of all hifi dependencies very simple.
 
@@ -97,7 +74,7 @@ We have a [homebrew formulas repository](https://github.com/highfidelity/homebre
 
 *Our [qt5 homebrew formula](https://raw.github.com/highfidelity/homebrew-formulas/master/qt5.rb) is for a patched version of Qt 5.2.0 stable that removes wireless network scanning that can reduce real-time audio performance. We recommended you use this formula to install Qt.*
 
-### Xcode
+## Xcode
 
 If Xcode is your editor of choice, you can ask CMake to generate Xcode project files instead of Unix Makefiles.
 
@@ -109,14 +86,14 @@ If the build completes successfully, you will have built targets for all compone
 
 
 
-### Optional Components
+## Optional Components
 
-#### QXmpp
+### QXmpp
 
 You can find QXmpp [here](https://github.com/qxmpp-project/qxmpp). The inclusion of the QXmpp enables text chat in the Interface client.
 
 OS X users who tap our [homebrew formulas repository](https://github.com/highfidelity/homebrew-formulas) can install QXmpp via homebrew - `brew install highfidelity/formulas/qxmpp`.
 
-## Devices
+# Devices
 
 You can support external input/output devices such as Leap Motion, Faceplus, Faceshift, PrioVR, MIDI, Razr Hydra and more by adding each individual SDK in the visible building path. Refer to the readme file available in each device folder in `interface/external` for the detailed explanation of the requirements to use the device.
