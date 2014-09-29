@@ -18,234 +18,175 @@ This gives different results than the following:
 ```
 
 ## id
-
+// TODO why is this always "{00000000-0000-0000-0000-000000000000}"? Why is it a string?
 Type: string
 Description:
 Default Value: `{00000000-0000-0000-0000-000000000000}`
 
-### Example
-
 ## isKnownID
-
+//TODO is this true?
 Type: boolean
-Description:
+Description: Returns `true` if the entity in question has been found. 
 Default Value: `false`
 
-### Example
-
 ## type
-
+//TODO are there more types? These are the only ones I found in use
 Type: string
-Description:
+Description: Entities are of three types, "Box", "Sphere", and "Model". "Model" types may be animated and take on more complex shapes and rigs than Boxes and Spheres. 
 Default Value: `Unknown`
-
-### Example
 
 ## position
 
 Type: object
-Description:
+Description: The location of the entity in the universe. 
 Default Value: `{x:0, y:0, z:0}`
-
-### Example
 
 ## dimensions
 
 Type: object
-Description:
+Description: The dimensions of the the created entity. 
 Default Value: `{x:0.10000000149011612,y:0.10000000149011612,z:0.10000000149011612}`
 
-### Example
-
 ## naturalDimensions
-
+//TODO - why are these always `{x:1, y:1, z:1}`?
 Type: object
-Description:
+Description: 
 Default Value: `{x:1, y:1, z:1}`
-
-### Example
 
 ## rotation
 
-Type:
-Description:
+Type: object
+Description: The rotation of the entity about its `registrationPoint`.
 Default Value: `{x:0, y:0, z:0, w:1}`
-
-### Example
 
 ## velocity
 
-Type:
-Description:
+Type: object
+Description: The velocity of the entity. 
 Default Value: `{x:0, y:0, z:0}`
-
-### Example
 
 ## gravity
 
 Type:
-Description:
+Description: `gravity` refers to the direction(s) and velocity in which the entity is pulled.
 Default Value: `{x:0, y:0, z:0}`
-
-### Example
 
 ## damping
 
 Type: number
-Description:
+Description: `damping` is a force synchronous with the velocity of the entity but opposite in direction to its velocity. 
 Default Value `0.5`
 
-### Example
-
 ## mass
-
+// TODO what does this do? Is the force of gravity stronger on entities with more mass (F=ma), or does this have to do more with behavior during collisions?
 Type: number
 Description:
 Default Value: `1`
 
-### Example
-
 ## lifetime
 
 Type: number
-Description:
+Description: `lifetime` is the number of seconds an entity will exist. Use `-1` for unlimited lifetime. 
 Default Value: `-1`
-
-### Example
 
 ## age
 
 Type: number
-Description:
-Default Value: `1411962496`
-
-### Example
+Description: `age` returns the age of the entity in seconds.
+Default Value: some small number
 
 ## ageAsText
 
 Type: string
-Description:
-Default Value: `16342 days 3 hours 48 minutes 16 seconds`
-
-### Example
+Description: `ageAsText` returns the age of the entity as a string formatted as: "X hours X minutes X seconds"
+Default Value: some small age.
 
 ## script
-
+//TODO - what does this property do? It was hard to find an example because of the ubiquity of the word
 Type: string
 Description:
 Default Value: `""`
 
-### Example
-
 ## registrationPoint
-
+//TODO is this correct? I tried rotating entities but they all seemed to be rotating about the same registration point
 Type: object
-Description:
+Description: `registrationPoint` is the default location of an entity from which its  co-ordinates are determined. It is used as the point of reference when the entity is moved or rotated.
 Default Value: `{x:0.5, y:0.5, z:0.5}`
-
-### Example
 
 ## angularVelocity
 
 Type: obect
-Description:
+Description: `angularVelocity` refers to the angular velocity of the entity about an axis. 
 Default Value: `{x:0, y:0, z:0}`
-
-### Example
 
 ## angularDamping
 
 Type: number
-Description:
+Description: `angularDamping` is a force synchronous with the angular velocity of the entity but opposite in direction.
 Default Value: `0.5`
-
-### Example
 
 ## visible
 
 Type: boolean
-Description:
+Description: `visible` is a value determining whether or not an entity is visible. 
 Default Value: `true`
-
-### Example
 
 ## color
 
 Type: object
-Description:
+Description: The `color` object contains the color settings for entities using the RGB color system. 
 Default Value: `{red:0, green:0, blue:0}`
-
-### Example
 
 ## modelURL
 
 Type: string
-Description:
+Description: `modelURL` points to the URL storing the model to be used in a "Model"-type entity. 
 Default Value: `""`
-
-### Example
 
 ## animationURL
 
 Type: string
-Description:
+Description: `animationURL` points to the URL storing the animation to be used in a "Model"-type entity. 
 Default Value: `""`
-
-### Example
 
 ## animationIsPlaying
 
 Type: bool
-Description:
+Description: `animationIsPlaying` determines whether the animation of a "Model"-type entity is playing. 
 Default Value: `false`
 
-### Example
-
 ## animationFrameIndex
-
+//TODO please verify
 Type: number
-Description:
+Description: `animationFrameIndex` is the index of the animation to be played next. 
 Default Value: `0`
-
-### Example
 
 ## animationFPS
 
 Type: number
-Description:
+Description: `animationFPS` refers to the number of frames per second played for the animation of a "Model"-type entity. 
 Default Value: `30`
-
-### Example
 
 ## glowLevel
 
 Type: number
-Description:
+Description: `glowLevel` is number from 0 to 1 describing how much light an entity emits.
 Default Value: `0`
-
-### Example
 
 ## ignoreForCollisions
 
 Type: boolean
-Description:
+Description: `ignoreForCollisions` describes how other objects collide with an entity. If `true`, other objects will pass through the entity upon collision. If `false`, other objects will collide with the entity. 
 Default Value: `false`
-
-### Example
 
 ## collisionsWillMove
 
 Type: boolean
-Description:
+Description: `collisionsWillMove` determines whether an entity will move in a collision event. If `true`, if the entity is in a collision with another object, the entity will move accordingly. If `false`, the entity is equivalent to an immovable object. 
 Default Value: `false`
 
-### Example
-
 ## sittingPoints
-
+//TODO what is sitting points?
 Type: object
 Description:
 Default Value: `{length:0}`
-
-### Example
-
