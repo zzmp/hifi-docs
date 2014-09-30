@@ -155,14 +155,14 @@ a:hover {
 
 pre,code {
   font-family: Inconsolata, Menlo, Monaco, monospaced !important;
-  background: #EDEDED;
+  background: #F5F5F5;
   font-size: 14px;
-  max-width: 700px;
+  max-width: calc(100% - 60px);
 }
 
 pre {
-  padding: .2em .4em;
-  margin: .5em 0;
+  padding: 20px;
+  margin-top: 0px 10px 10px 10px;
 }
 
 footer {

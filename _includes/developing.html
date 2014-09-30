@@ -1,4 +1,3 @@
-<h3 class="javascript-api">JavaScript API</h3>
   {% for subpagecat in site.api-categories %}
     <h3 class="{{subpagecat}}">&nbsp;</h3>
     <ul class="javascript-api {{subpagecat}}">
@@ -6,7 +5,7 @@
       {% for subpage in site.api %}
       {% if subpage.category == subpagecat %}
       <li class="methods methods-{{subpage.tag}}">
-          <a href="{{ subpage.url | replace: '.html', '' }}" class="title"><span class="title {{subpage.key}}"><i></i>{{ subpage.title }}</span></a>
+          <a href="{{ subpage.url | replace: '.html', '' }}" class="title"><span class="title {{subpage.key}}"><i class="fa fa-caret-right"></i>{{ subpage.title }}</span></a>
           {% if subpage.methods %}
             <ul class="sub-methods">
               {% for method in subpage.methods %}
