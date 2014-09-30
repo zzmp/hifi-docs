@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: doc_default
 ---
 
 <!-- The api layout lists a search bar on the left 
@@ -9,14 +9,6 @@ layout: default
     var isPageAPI = ("{{page.collection}}" == "articles" || "{{page.collection}}" == "managing") ? false : true;
 </script>
 <div class="hf doc page">
-  <div class="component-header">
-     <a href="/{{site.sub_base_path}}" class="fa fa-home fa-fw"></a> <i class="fa fa-angle-right"></i> {% if page.collection == "api" %}<span class="sub-header-selected">JavaScript API</span> <i class="fa fa-angle-right"></i>{% endif %}<span class="sub-header-category">{{ page.category | replace: '-', ' ' | capitalize }}</span>
-  </div>
-
-  {% include search_doc_form.html %}
-
-  {% include edit_on_github.html %}
-
   {% if page.collection == 'articles'%}
      <aside class="hf index">
   {% elsif page.collection == "managing" %}
@@ -24,7 +16,7 @@ layout: default
   {% else %}
      <aside class="hf index developing-aside">
   {% endif %}
-    {% include search_results.html %}
+    <span class="home-page"><i class="fa fa-home"></i><span>Index</span></span>
     {% if page.collection == 'articles'%}
       {% include using.html %}
     {% elsif page.collection == "managing" %}
@@ -37,5 +29,7 @@ layout: default
   <article class="hf article">    
     <h2>{{ page.title }}</h2>
     {{ content }}
+    {% include footer.html %}
   </article>
 </div>
+{% include edit_on_github.html %}
