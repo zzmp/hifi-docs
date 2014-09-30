@@ -7,6 +7,7 @@ $(function() {
     });
     if (typeof tag != 'undefined' && tag != "") {
       $('.methods-'+tag).addClass("selected");
+      $('.methods-'+tag).find('i').removeClass('fa-caret-right').addClass('fa-caret-down');
     }
 
     $('.page-link a[href="' + window.location.pathname +'"]').addClass('selected');
@@ -17,6 +18,7 @@ $(function() {
     });
     $('.hf.article h2 a').each(function() {
       $(this).parent('h2').attr('id', $( this ).attr('href').substring(1));
+      $(this).parent('h2').addClass("anchor-fragment");
     });
 
     $('.hf.home #search-query').keypress(function() {
