@@ -16,9 +16,9 @@ Description: `isKnownID` returns `true` if the client knows the true identity of
 Default Value: `false` until the server authorizes creation
 
 ## type
-//TODO are there more types? These are the only ones I found in use:
+
 Type: string
-Description: Entities are of three types, "Box", "Sphere", and "Model". "Model" types may be animated and take on more complex shapes and rigs than Boxes and Spheres. 
+Description: Entities are of three types, "Box", "Sphere", and "Model". "Model" types may be animated and take on more complex shapes and meshes than Boxes and Spheres. 
 Default Value: `Unknown`
 
 ## position
@@ -34,9 +34,9 @@ Description: The dimensions of the the created entity.
 Default Value: `{x:0.10000000149011612,y:0.10000000149011612,z:0.10000000149011612}`
 
 ## naturalDimensions
-//TODO - why are these always `{x:1, y:1, z:1}`?
+
 Type: object
-Description: 
+Description: `naturalDimensions` describes the dimensions of Model-type entities with valid meshes. 
 Default Value: `{x:1, y:1, z:1}`
 
 ## rotation
@@ -64,9 +64,9 @@ Description: `damping` is a force synchronous with the velocity of the entity bu
 Default Value `0.5`
 
 ## mass
-// TODO what does this do? Is the force of gravity stronger on entities with more mass (F=ma), or does this have to do more with behavior during collisions?
+
 Type: number
-Description:
+Description: Currently having nothing to do with `gravity`, the `mass` property determines an entity's behavior during collisions. 
 Default Value: `1`
 
 ## lifetime
@@ -79,22 +79,14 @@ Default Value: `-1`
 
 Type: number
 Description: `age` returns the age of the entity in seconds.
-Default Value: some small number
 
 ## ageAsText
 
 Type: string
 Description: `ageAsText` returns the age of the entity as a string formatted as: "X hours X minutes X seconds"
-Default Value: some small age.
-
-## script
-//TODO - what does this property do? It was hard to find an example because of the ubiquity of the word
-Type: string
-Description:
-Default Value: `""`
 
 ## registrationPoint
-//TODO is this correct? I tried rotating entities but they all seemed to be rotating about the same registration point. This seems to be a common situation (there was a post in the forum about it)
+
 Type: object
 Description: `registrationPoint` is the default location of an entity from which its  co-ordinates are determined. It is used as the point of reference when the entity is moved or rotated.
 Default Value: `{x:0.5, y:0.5, z:0.5}`
@@ -142,7 +134,7 @@ Description: `animationIsPlaying` determines whether the animation of a "Model"-
 Default Value: `false`
 
 ## animationFrameIndex
-//TODO please verify
+
 Type: number
 Description: `animationFrameIndex` is the index of the animation to be played next. 
 Default Value: `0`
@@ -172,7 +164,7 @@ Description: `collisionsWillMove` determines whether an entity will move in a co
 Default Value: `false`
 
 ## sittingPoints
-//TODO what is sitting points?
+
 Type: object
 Description:
 Default Value: `{length:0}`
